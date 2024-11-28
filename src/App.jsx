@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
 import './App.css';
 
 import Footer from './components/Footer';
@@ -27,10 +25,10 @@ function App() {
           <header>
             <section className="about-me">
                 <div className="about-me-img-cont">
-                    <picture>
-                        <source className="about-me-img" srcSet="../public/minglee.png" media={"min-width: 400px"} />
-                        <img className="about-me-img" src="../public/minglee-2.png" alt="" />
-                    </picture>
+                    {/* <picture> */}
+                        {/* <source className="about-me-img" srcSet="../public/profile.jpg" media="min-width: 400px" /> */}
+                        <img className="about-me-img" src="../public/profile.jpg" alt="" />
+                    {/* </picture> */}
                     <div className="img-name">Andrew Tran</div>
                 </div>
                 <div className="about-me-card">

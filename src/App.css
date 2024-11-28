@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Suez+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
 
 body {
     --beige: #e2d8cc;
     --beige-shadow: #9a958d;
     --sharp-orange: #ff6054;
-    --purple-accent: #261933;
+    /* --purple-accent: #261933; */
+    --navy-accent: #223552;
     --slate: #6a6e76;
     --font-dark: #2f2620;
     --font-silver: #dadada;
@@ -27,6 +26,12 @@ body {
     align-items: center;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
 button {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -35,17 +40,17 @@ button {
 
 h1, nav, main, footer {
     max-width: 1200px;
-    box-shadow: 12px 10px 20px -2px var(--slate), -12px 10px 10px 2px var(--slate);
+    box-shadow: 12px 10px 20px -2px var(--slate), -12px 10px 20px 0px var(--slate);
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     color: var(--font-dark);
     width: 100%;
     text-align: center;
     padding: 70px 0;
-    background-image: url("./public/sunset.png");
+    background-image: url("./public/sunset2.png");
     background-size: cover;
     background-position: 50% 50%;
     margin: 0;
@@ -82,7 +87,7 @@ nav {
     }
 
     li:hover {
-        background-color: var(--purple-accent);
+        background-color: var(--navy-accent);
         border-radius: 5px;
         transform: scale(1.1);
         box-shadow: 2px 2px 2px var(--font-dark);
@@ -132,7 +137,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(172.5deg, var(--purple-accent) 65.5%, var(--beige-shadow) 66%, var(--beige) 67%);
+            background: linear-gradient(172.5deg, var(--navy-accent) 65.5%, var(--beige-shadow) 66%, var(--beige) 67%);
         }
 
         .about-me-img-cont {
@@ -141,14 +146,18 @@ main {
             justify-content: center;
         }
 
+        .about-me-img {
+            width: 350px;
+        }
+
         .img-name {
             position: absolute;
             bottom: 0;
             padding: 5px 0;
-            font-size: max(1vw, 2.75rem);
-            font-weight: 400;
-            color: var(--font-silver);
-            text-shadow: 2px 3px var(--slate);
+            font-size: max(1vw, 3rem);
+            font-weight: 300;
+            color: var(--font-dark);
+            text-shadow: 2px 2px var(--font-silver);
         }
 
         .about-me-card {
@@ -161,7 +170,7 @@ main {
         }
 
             .about-me-text {
-                line-height: 1.5rem;
+                line-height: 1.25rem;
             }
 
     .project, .project-img {
@@ -252,7 +261,7 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    background-color: var(--purple-accent);
+    background-color: var(--navy-accent);
     font-size: 1rem;
     color: var(--font-silver);
     width: 100%;
@@ -316,6 +325,10 @@ footer {
         text-wrap: nowrap;
         position: relative;
         left: -5vw;
+        font-weight: 300;
+        color: var(--font-silver);
+        text-shadow: 2px 3px var(--font-dark);
+
     }
 
     .about-me-card {
@@ -333,7 +346,7 @@ footer {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body {
         margin: 0;
     }
@@ -347,7 +360,7 @@ footer {
     }
 
     li {
-        margin: 0;
+        margin: 5px;
         padding: 5px;
     }    
 
@@ -379,6 +392,8 @@ footer {
         left: unset;
         position: absolute;
         bottom: 0;
+        color: var(--font-dark);
+        text-shadow: 2px 2px var(--font-silver);
     }
 
     .about-me-card {

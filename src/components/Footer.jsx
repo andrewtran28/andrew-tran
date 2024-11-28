@@ -13,7 +13,9 @@ function Footer () {
                     <h2>Contact me</h2>
                     <p>Feel free to reach out to me for any inquiries or opportunities if you think our work can be mutually beneficial!</p>
                     <div className="contact-card">
-                            <img className="icon" src={location} />
+                            <a href="https://maps.app.goo.gl/Yq9zvF317Vr6qHgF9" target="_blank" rel="noopener noreferrer">
+                                <img className="icon" src={location} />
+                            </a>
                             <span>Ottawa, ON, Canada</span><br />
                         </div> 
                         <div className="contact-card">
@@ -21,7 +23,9 @@ function Footer () {
                             <span>613-316-0250</span><br />
                         </div>
                         <div className="contact-card">
-                            <img className="icon" src={email} />
+                            <a href="mailto:tran.andrew@outlook.com">
+                                <img className="icon" src={email} />
+                            </a>
                             <span>tran.andrew@outlook.com</span>
                         </div>
                         <div className="contact-btns">

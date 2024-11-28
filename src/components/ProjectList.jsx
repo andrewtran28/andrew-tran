@@ -9,7 +9,7 @@ function ProjectList () {
             desc: `A single-page-application of a mock online web-store. Features a homepage, store, and shopping cart to hold and purchase items.`,
             gh_url: "https://github.com/andrewtran28/shopping-cart",
             ext_url: "https://thriftcity.netlify.app/home",
-            tags: ["React", "JavaScript", ],
+            tags: ["React", "JavaScript", "API", "Router"],
         },
         {
             name: "Memory-Card Game",
@@ -17,7 +17,7 @@ function ProjectList () {
             desc: `A React web application game that tests your memory. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.`,
             gh_url: "https://github.com/andrewtran28/memory-card-game",
             ext_url: "https://acnh-memory-game.netlify.app/",
-            tags: ["React", "JavaScript", ],
+            tags: ["React", "JavaScript", "API"],
         },
         {
             name: "CV-Application Maker",
@@ -30,10 +30,10 @@ function ProjectList () {
         {
             name: "Homepage",
             img: "../public/projects/homepage.png",
-            desc: `A homepage that displays my GitHub projects and overview about myself. The site is responsive and adjusts to various device screen sizes.`,
+            desc: `A homepage that displays my GitHub projects and overview about myself. The site is responsive and adjusts to various device screen sizes. Fun fact: This page design may look familiar...`,
             gh_url: "https://github.com/andrewtran28/homepage",
             ext_url: "https://andrewtran28.github.io/homepage/",
-            tags: ["React", "JavaScript", ],            
+            tags: ["React", "JavaScript", "CSS", "Responsive" ],            
         },
         {
             name: "Battleship",
@@ -99,16 +99,38 @@ function ProjectList () {
             ext_url: "https://andrewtran28.github.io/signup-form/",
             tags: ["JavaScript",],
         },
+        {
+            name: "Rock-Paper-Scissors",
+            img: "../public/projects/rock-paper-scissors.png",
+            desc: `Play Rock-Paper-Scissors against a computer player. Includes features such as changing the win condition and toggling cheats.`,
+            gh_url: "https://github.com/andrewtran28/rock-paper-scissors.git",
+            ext_url: "https://andrewtran28.github.io/rock-paper-scissors",
+            tags: ["JavaScript",],
+        },
+        {
+            name: "Landing Page",
+            img: "../public/projects/landing-page.png",
+            desc: `A common webpage design of a landing page for a website. This project was my introduction to CSS and flex design.`,
+            gh_url: "https://github.com/andrewtran28/landing-page",
+            ext_url: "https://andrewtran28.github.io/landing-page",
+            tags: ["JavaScript",],
+        },
+        {
+            name: "HTML Recipes Website",
+            img: "../public/projects/recipes.png",
+            desc: `My VERY first project and website. My introduction to HTML, CSS (as well as getting carried away with "border-radius" and "background-color").`,
+            gh_url: "https://github.com/andrewtran28/recipes",
+            ext_url: "https://andrewtran28.github.io/recipes",
+            tags: ["JavaScript",],
+        },
     ];
 
     const [page, setPage] = useState (0);
     const PER_PAGE = 4;
     const TOTAL_PAGES = Math.ceil(data.length/PER_PAGE);
-
     const startIndex = page * PER_PAGE;
     const endIndex = startIndex + PER_PAGE;
     const currentPage = data.slice(startIndex, endIndex);
-
     const isPreviousDisabled = (page === 0);
     const isNextDisabled = endIndex >= data.length;
 
@@ -142,7 +164,7 @@ function ProjectList () {
                 <button onClick={handlePrevious} disabled={isPreviousDisabled}>
                     Previous
                 </button>
-                <div className="projects-page-num">{page} of {TOTAL_PAGES}</div>
+                <div className="projects-page-num">{page + 1} of {TOTAL_PAGES}</div>
                 <button onClick={handleNext} disabled={isNextDisabled}>
                     Next
                 </button>                
