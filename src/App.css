@@ -50,7 +50,7 @@ h1 {
     width: 100%;
     text-align: center;
     padding: 70px 0;
-    background-image: url("./public/sunset2.png");
+    background-image: url("public/sunset.png");
     background-size: cover;
     background-position: 50% 50%;
     margin: 0;
