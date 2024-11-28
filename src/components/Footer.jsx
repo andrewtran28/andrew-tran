@@ -1,8 +1,8 @@
 import location from '../assets/icons/location.png';
 import phone from '../assets/icons/phone.png';
 import email from '../assets/icons/email.png';
-import githubWhite from '../assets/icons/github_light.png';
-import linkedinWhite from '../assets/icons/linkedin_light.png';
+import githubLight from '../assets/icons/github_light.png';
+import linkedinLight from '../assets/icons/linkedin_light.png';
 
 function Footer () {
     return (
@@ -10,7 +10,7 @@ function Footer () {
             <footer>
                 <div className="contact-cont">
                     <h2>Contact me</h2>
-                    <p>Please reach out to me if there are any inquiries or opportunities. Your time to view this website is greatly appreciated. Thank you!</p>
+                    <p>Please reach out to me if there are any inquiries or opportunities. Your time viewing this website is greatly appreciated. Thank you!</p>
                     <div className="contact-card">
                             <a href="https://maps.app.goo.gl/Yq9zvF317Vr6qHgF9" target="_blank" rel="noopener noreferrer">
                                 <img className="icon" src={location} />
@@ -28,8 +28,8 @@ function Footer () {
                             <span>tran.andrew@outlook.com</span>
                         </div>
                         <div className="contact-btns">
-                            <a href="https://github.com/andrewtran28"><img className="contact-icon" src={githubWhite}/></a>
-                            <img className="contact-icon" src={linkedinWhite} />
+                            <a href="https://github.com/andrewtran28"><img className="contact-icon" src={githubLight}/></a>
+                            <a href="https://www.linkedin.com/in/andrew-tran-canada"><img className="contact-icon" src={linkedinLight} /></a>
                         </div>
                 </div>
                 <picture>

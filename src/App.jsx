@@ -1,52 +1,36 @@
 import './App.css';
 
 import Footer from './components/Footer';
-import ProjectList from './components/ProjectList';
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 
-import github from './assets/icons/github.png';
-import linkedin from './assets/icons/linkedin.png';
+import { Link, useParams } from 'react-router-dom';
 
 function App() {
-  // const { name } = useParams();
+  const { name } = useParams();
 
   return (
     <>
-      <h1>Andrew Tran</h1>
+      <h1 id="top-header">Andrew Tran</h1>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>About</li>
+            <li><Link to="../home">Home</Link></li>
+            <li><Link to="../portfolio">Portfolio</Link></li>
+            <li><Link to="../about">About</Link></li>
           </ul>
         </nav>
 
         <main>
-          <header>
-            <section className="about-me">
-              <div className="about-me-img-cont">
-                <img className="about-me-img" src="/profile.jpg" alt="" />
-                <div className="img-name">Andrew Tran</div>
-              </div>
-              <div className="about-me-card">
-                <h2>About me</h2>
-                <p className="about-me-text">Hey there! I am a self-taught programmer who wants to pursue a career in web development. My original background comes from electrical engineering, working with power system distribution for buildings. I have always been a <em>DIY</em>, hands-on kind of guy who enjoys designing and creating things. Hobbies of mine include wood-working, 3D printing, rock-climbing, and of course... video games.</p>
-                <div className="about-btns">
-                  <a href="https://github.com/andrewtran28">
-                    <img className="contact-icon" src={github} />
-                  </a>
-                  <img className="contact-icon" src={linkedin} />
-              </div>
-              </div>
-            </section>
-          </header>
-
-          <ProjectList />
-          {/* {name === "home" ? (
-            <App
-            />
+          {name === "home" ? (
+            <Home />
+          ) : name === "portfolio" ? (
+            <Portfolio />
+          ) : name === "about" ? (
+            <About />
           ) : (
-            <App />
-          )} */}
+            <Home />
+          )}
         </main>
 
         <Footer />

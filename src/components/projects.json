@@ -5,28 +5,28 @@
         "desc": "A single-page application for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
         "gh_url": "https://github.com/andrewtran28/shopping-cart",
         "ext_url": "https://thriftcity.netlify.app/home",
-        "tags": ["React", "JavaScript", "API", "Router", "states", "side effects", "carousel", "SPA"]
+        "tags": ["React", "JavaScript", "API", "Router", "States", "Side-Effects", "Carousel", "SPA"]
     },
     {
         "name": "Memory-Card Game",
         "img": "/projects/memory-card-game.png",
-        "desc": "A React web application game that tests your memory. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
+        "desc": "Webapp game that tests your memory by. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
         "gh_url": "https://github.com/andrewtran28/memory-card-game",
         "ext_url": "https://acnh-memory-game.netlify.app/",
-        "tags": ["React", "JavaScript", "API", "states"]
+        "tags": ["React", "JavaScript", "API", "States"]
     },
     {
         "name": "CV-Application Maker",
         "img": "/projects/cv-application.png",
-        "desc": "A React application concept where users can input their information and generate a live preview of their CV/Résumé.",
+        "desc": "A React application concept where users can input their inFormsation and generate a live preview of their CV/Résumé.",
         "gh_url": "https://github.com/andrewtran28/cv-application",
         "ext_url": "https://andrewtran28-cv-application.netlify.app/",
-        "tags": ["React", "JavaScript", "states", "form"]
+        "tags": ["React", "JavaScript", "States", "Forms"]
     },
     {
         "name": "Homepage",
         "img": "/projects/homepage.png",
-        "desc": "A homepage that displays my GitHub projects and overview about myself. The site is responsive and adjusts to various device screen sizes. Fun fact: This page design may look familiar...",
+        "desc": "A homepage that displays my GitHub projects and overview about myself. The site is Responsive and adjusts to various device screen sizes.",
         "gh_url": "https://github.com/andrewtran28/homepage",
         "ext_url": "https://andrewtran28.github.io/homepage/",
         "tags": ["React", "JavaScript", "CSS", "Responsive", "HTML" ]            
@@ -37,7 +37,7 @@
         "desc": "Webapp of the classic Battleship game. Play against a computer player and try to destroy all of their ships before they destroy yours.",
         "gh_url": "https://github.com/andrewtran28/battleship",
         "ext_url": "https://andrewtran28.github.io/battleship/",
-        "tags": ["JavaScript", "test", "jest", "classes"]
+        "tags": ["JavaScript", "Test", "Jest", "JS Classes"]
     },
     {
         "name": "myWeather App",
@@ -45,7 +45,7 @@
         "desc": "Webapp that takes a given location and retrieves weather data from Visual Crossing API. The data is shown, as well as a related GIF from GIPHY",
         "gh_url": "https://github.com/andrewtran28/weather-app",
         "ext_url": "https://andrewtran28.github.io/weather-app/",
-        "tags": ["JavaScript", "API", "form", "responsive"]
+        "tags": ["JavaScript", "API", "Forms", "Responsive"]
     },
     {
         "name": "Tic-Tac-Toe",
@@ -61,7 +61,7 @@
         "desc": "A webpage layout design for a general dashboard on the admin page.",
         "gh_url": "https://github.com/andrewtran28/admin-dashboard",
         "ext_url": "https://andrewtran28.github.io/admin-dashboard/",
-        "tags": ["CSS", "grid"]
+        "tags": ["CSS", "Grid"]
     },
     {
         "name": "myLibrary App",
@@ -69,7 +69,7 @@
         "desc": "My Library is a simple library webapp concept that displays user-inputted book entries and keeping track of which books are read.",
         "gh_url": "https://github.com/andrewtran28/library",
         "ext_url": "https://andrewtran28.github.io/library/",
-        "tags": ["JavaScript", "grid", "form"]
+        "tags": ["JavaScript", "Grid", "Forms"]
     },
     {
         "name": "Etch-Pad",
@@ -77,7 +77,7 @@
         "desc": "The magic Etch-Pad is a webapp that allows you to paint on a customizable board. Features include random colour mode, erase mode, and resizing the resolution of the canvas.",
         "gh_url": "https://github.com/andrewtran28/etch-pad",
         "ext_url": "https://andrewtran28.github.io/etch-pad/",
-        "tags": ["CSS", "flex", "JavaScript"]
+        "tags": ["CSS", "Flex", "JavaScript"]
     },
     {
         "name": "Simple Calculator",
@@ -91,9 +91,9 @@
         "name": "Sign-up Form",
         "img": "/projects/signup-form.png",
         "desc": "A webpage layout design for a sign-up form. A small concept project that demonstrates form filling and different types of input field requirements.",
-        "gh_url": "https://github.com/andrewtran28/signup-form",
-        "ext_url": "https://andrewtran28.github.io/signup-form/",
-        "tags": [ "CSS", "form" ]
+        "gh_url": "https://github.com/andrewtran28/signup-Forms",
+        "ext_url": "https://andrewtran28.github.io/signup-Forms/",
+        "tags": [ "CSS", "Forms" ]
     },
     {
         "name": "Rock-Paper-Scissors",
@@ -106,10 +106,10 @@
     {
         "name": "Landing Page",
         "img": "/projects/landing-page.png",
-        "desc": "A common webpage design of a landing page for a website. This project was my introduction to CSS and flex design.",
+        "desc": "A common webpage design of a landing page for a website. This project was my introduction to CSS and Flex design.",
         "gh_url": "https://github.com/andrewtran28/landing-page",
         "ext_url": "https://andrewtran28.github.io/landing-page",
-        "tags": ["CSS", "flex"]
+        "tags": ["CSS", "Flex", "HTML"]
     },
     {
         "name": "HTML Recipes Website",

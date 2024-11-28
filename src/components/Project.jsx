@@ -9,6 +9,13 @@ function Project ({name, img, desc, gh_url, ext_url, tags}) {
                 <div className="project-sub">
                     <div className="project-name">{name}</div>
                     <div className="project-text">{desc}</div>
+                    <div className="project-tags">
+                        {tags.map((tag, i) => {
+                            return (
+                                <span key={i} className="project-tag">{tag} </span>
+                            )
+                        })}
+                    </div>
                     <div className="project-btns">
                         <a href={gh_url}>
                             <img className="icon" src={github} />

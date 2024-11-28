@@ -4,7 +4,6 @@ body {
     --beige: #e2d8cc;
     --beige-shadow: #9a958d;
     --sharp-orange: #ff6054;
-    /* --purple-accent: #261933; */
     --navy-accent: #223552;
     --slate: #6a6e76;
     --font-dark: #2f2620;
@@ -27,10 +26,15 @@ body {
 }
 
 a {
+    text-decoration: none;
     margin: 0;
     padding: 0;
     line-height: 0;
 }
+
+li a {
+    color: inherit;
+}           
 
 button {
     -webkit-user-select: none; /* Safari */
@@ -38,12 +42,12 @@ button {
     user-select: none; /* Standard syntax */
 }
 
-h1, nav, main, footer {
+#top-header, nav, main, footer {
     max-width: 1200px;
     box-shadow: 12px 10px 20px -2px var(--slate), -12px 10px 20px 0px var(--slate);
 }
 
-h1 {
+#top-header {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 6rem;
     color: var(--font-dark);
@@ -85,7 +89,6 @@ nav {
         padding: 10px;
         transition-duration: 0.2s;
     }
-
     li:hover {
         background-color: var(--navy-accent);
         border-radius: 5px;
@@ -93,19 +96,11 @@ nav {
         box-shadow: 2px 2px 2px var(--font-dark);
     }
 
-.about-btns {
-    margin: 15px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-}
-
     .contact-icon {
         padding-right: 10px;
         height: 2rem;
         transition-duration: 0.2s;
     }
-
     .contact-icon:hover {
         transform: scale(1.25);
     }
@@ -114,148 +109,15 @@ nav {
     padding-right: 10px;
     height: 1.5rem;
 }
-
-    .icon:hover {
-        transform: scale(1.25);
-        transition-duration: 0.2s;
-    }
+.icon:hover {
+    transform: scale(1.25);
+    transition-duration: 0.2s;
+}
 
 main {
     background-color: var(--beige);
     width: 100%;
     padding-bottom: 30px;
-}
-
-    .about-me {
-        display: flex;
-        align-items: center;
-    }
-
-        header {
-            position: relative;
-            padding: 2.5vh 4vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(172.5deg, var(--navy-accent) 65.5%, var(--beige-shadow) 66%, var(--beige) 67%);
-        }
-
-        .about-me-img-cont {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .about-me-img {
-            width: 350px;
-        }
-
-        .img-name {
-            position: absolute;
-            bottom: 0;
-            padding: 5px 0;
-            font-size: max(1vw, 3rem);
-            font-weight: 300;
-            color: var(--font-dark);
-            text-shadow: 2px 2px var(--font-silver);
-        }
-
-        .about-me-card {
-            background-color: var(--slate);
-            color: var(--font-silver);
-            min-height: 250px;
-            padding: 0 20px;
-            position: relative;
-            box-shadow: 0 5px 5px var(--beige-shadow);
-        }
-
-            .about-me-text {
-                line-height: 1.25rem;
-            }
-
-    .project, .project-img {
-        background-color: var(--accent-gray);
-        width: 400px;
-        object-fit: contain;
-    }
-
-    .projects-cont {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 450px);
-        justify-content: center;
-        justify-items: center;
-        gap: 40px 20px;
-        margin: 20px 0;
-    }
-
-        .project {
-            background-color: var(--slate);
-            border-bottom: 5px solid var(--sharp-orange);
-            border-radius: 5px;
-            color: var(--font-silver);
-            box-shadow: 5px 5px 5px var(--beige-shadow);
-            position: relative;
-            min-height: 500px;
-        }
-
-        .project-img {
-            padding: 0;
-            height: 350px;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-        }
-
-        .project-sub {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .project-name {
-            margin: 5px 10px;
-            font-size: 1.5rem;
-            font-weight: 500;
-            white-space: break-spaces;
-        }
-
-        .project-text {
-            margin: 5px 10px;
-            font-size: 1rem;
-            background: var(--silver);
-        }
-
-        .project-btns {
-            margin: 10px 0;
-            top: 0;
-            right: 0;
-            position: absolute;
-        }
-
-.projects-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.projects-page-num {
-    margin: 10px;
-    width: 50px;
-    text-align: center;
-}
-
-.projects-nav button {
-    border: 2px solid var(--slate);
-    border-radius: 5px;
-    background-color: var(--font-silver);
-    font-family: 'outfit';
-    width: 80px;
-    transition-duration: 0.2s;
-}
-.projects-nav button:hover {
-    background-color: var(--accent-gray);
-}
-.projects-nav button:disabled {
-    opacity: 0%;
 }
 
 footer {
@@ -268,36 +130,36 @@ footer {
     padding: 20px 0;
 }
 
-    .contact-cont {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: 0 50px;
-        max-width: 450px;
-    }
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 50px;
+    max-width: 450px;
+}
 
-        .contact-card {
-            display: flex;
-            align-items: center;
-            line-height: 2rem;
-        }
+.contact-card {
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+}
 
-        .contact-btns {
-            margin: 10px 0;
-        }
+.contact-btns {
+    margin: 10px 0;
+}
 
-    #contact-img {
-        margin: 0 -10px;
-        max-width: 100%;
-    }
+#contact-img {
+    margin: 0 -10px;
+    max-width: 100%;
+}
 
 @media (max-width: 1000px) {
     body {
         margin: 0 10px;
     }
 
-    h1 {
-        font-size: 4.5rem;
+    #top-header {
+        font-size: 5rem;
     }
 
     nav {
@@ -308,34 +170,6 @@ footer {
         margin: 0 10px;
     }
 
-    .about-me {
-        display: block;
-    }
-
-    .about-me-img-cont {
-        float: left;
-        margin: 0 -50px 0px 0px;
-        width: 450px;
-        height: auto;
-        left: 11vw;
-        z-index: 1;
-    }
-
-    .img-name {
-        text-wrap: nowrap;
-        position: relative;
-        left: -5vw;
-        font-weight: 300;
-        color: var(--font-silver);
-        text-shadow: 2px 3px var(--font-dark);
-
-    }
-
-    .about-me-card {
-        padding: 40px;
-        margin: 60px 20px 30px 60px;
-    }
-
     footer {
         flex-wrap: wrap;
     }
@@ -344,6 +178,7 @@ footer {
         margin: 0;
         max-width: 100%;
     }
+
 }
 
 @media (max-width: 800px) {
@@ -355,14 +190,13 @@ footer {
         margin: 0;
     }
     
-    h1 {
+    #top-header {
         font-size: 3.5rem;
     }
 
     nav {
-        /* border: 1px solid red; */
-        /* width: 100%; */
         font-size: 1.25rem;
+        padding: 10px 0;
     }
 
     li {
@@ -377,45 +211,9 @@ footer {
     }
 
     main {
-        width: 100vh;
         box-shadow: none;
         margin: 0;
         justify-content: center;
-    }
-
-    .about-me {
-        display:flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-
-    .about-me-img-cont {
-        width: auto;
-        margin: 0;
-        left: 0;
-    }
-
-    .img-name {
-        left: unset;
-        position: absolute;
-        bottom: 0;
-        color: var(--font-dark);
-        text-shadow: 2px 2px var(--font-silver);
-    }
-
-    .about-me {
-        max-width: 400px;
-    }
-    .about-me-card {
-        /* border: 1px solid red; */
-        box-shadow: none;
-        margin: 0;
-        padding: 0 20px 40px 20px;
-    }
-
-    .about-me-img-cont picture {
-        height: 340px;
     }
 
     #contact-img {

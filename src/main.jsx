@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx'
-// import Homepage from './components/Homepage.jsx';
-// import Portfolio from './components/Storepage.jsx';
-// import About from './components/Storepage.jsx';
+import Home from './components/Home.jsx';
+import Portfolio from './components/Portfolio.jsx';
+import About from './components/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,10 +16,10 @@ const router = createBrowserRouter([
     path: "/:name",
     element: <App />,
     children: [
-      // { index: true, element: <Homepage /> },
-      // { path: "home", element: <Homepage /> },
-      // { path: "store", element: <Storepage /> },
-      // { path: "checkout", element: <Checkout /> },
+      { index: true, element: <Home /> },
+      { path: "home", element: <Home /> },
+      { path: "portfolio", element: <Portfolio /> },
+      { path: "about", element: <About /> },
     ],
   },
 ]);
