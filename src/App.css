@@ -175,7 +175,7 @@ main {
 
     .project, .project-img {
         background-color: var(--accent-gray);
-        width: 425px;
+        width: 400px;
         object-fit: contain;
     }
 
@@ -351,11 +351,17 @@ footer {
         margin: 0;
     }
 
+    #root {
+        margin: 0;
+    }
+    
     h1 {
         font-size: 3.5rem;
     }
 
     nav {
+        /* border: 1px solid red; */
+        /* width: 100%; */
         font-size: 1.25rem;
     }
 
@@ -371,6 +377,8 @@ footer {
     }
 
     main {
+        width: 100vh;
+        box-shadow: none;
         margin: 0;
         justify-content: center;
     }
@@ -396,7 +404,12 @@ footer {
         text-shadow: 2px 2px var(--font-silver);
     }
 
+    .about-me {
+        max-width: 400px;
+    }
     .about-me-card {
+        /* border: 1px solid red; */
+        box-shadow: none;
         margin: 0;
         padding: 0 20px 40px 20px;
     }
@@ -408,11 +421,5 @@ footer {
     #contact-img {
         margin: 0;
         max-width: 100%;
-    }
-}
-
-@media (max-width: 399px) {
-    .about-me-img-cont {
-        max-height: 277px;
     }
 }
