@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from './App.jsx'
 // import Homepage from './components/Homepage.jsx';
-// import Storepage from './components/Storepage.jsx';
-// import Checkout from './components/Storepage.jsx';
+// import Portfolio from './components/Storepage.jsx';
+// import About from './components/Storepage.jsx';
 
 const router = createBrowserRouter([
   {

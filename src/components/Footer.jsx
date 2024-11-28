@@ -10,7 +10,7 @@ function Footer () {
             <footer>
                 <div className="contact-cont">
                     <h2>Contact me</h2>
-                    <p>Feel free to reach out to me for any inquiries or opportunities if you think our work can be mutually beneficial!</p>
+                    <p>Please reach out to me if there are any inquiries or opportunities. Your time to view this website is greatly appreciated. Thank you!</p>
                     <div className="contact-card">
                             <a href="https://maps.app.goo.gl/Yq9zvF317Vr6qHgF9" target="_blank" rel="noopener noreferrer">
                                 <img className="icon" src={location} />
