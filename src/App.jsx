@@ -5,7 +5,6 @@ import ProjectList from './components/ProjectList';
 
 import github from './assets/icons/github.png';
 import linkedin from './assets/icons/linkedin.png';
-import twitter from './assets/icons/twitter.png';
 
 function App() {
   // const { name } = useParams();
@@ -26,8 +25,8 @@ function App() {
             <section className="about-me">
                 <div className="about-me-img-cont">
                     {/* <picture> */}
-                        {/* <source className="about-me-img" srcSet="../public/profile.jpg" media="min-width: 400px" /> */}
-                        <img className="about-me-img" src="../public/profile.jpg" alt="" />
+                        {/* <source className="about-me-img" srcSet="/profile.jpg" media="min-width: 400px" /> */}
+                        <img className="about-me-img" src="/profile.jpg" alt="" />
                     {/* </picture> */}
                     <div className="img-name">Andrew Tran</div>
                 </div>
@@ -39,7 +38,6 @@ function App() {
                           <img className="contact-icon" src={github} />
                         </a>
                         <img className="contact-icon" src={linkedin} />
-                        <img className="contact-icon" src={twitter} />
                     </div>
                 </div>
             </section>

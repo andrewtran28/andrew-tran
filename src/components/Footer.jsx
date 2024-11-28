@@ -3,7 +3,6 @@ import phone from '../assets/icons/phone.png';
 import email from '../assets/icons/email.png';
 import githubWhite from '../assets/icons/github_light.png';
 import linkedinWhite from '../assets/icons/linkedin_light.png';
-import twitterWhite from '../assets/icons/twitter_light.png';
 
 function Footer () {
     return (
@@ -31,12 +30,11 @@ function Footer () {
                         <div className="contact-btns">
                             <a href="https://github.com/andrewtran28"><img className="contact-icon" src={githubWhite}/></a>
                             <img className="contact-icon" src={linkedinWhite} />
-                            <img className="contact-icon" src={twitterWhite} />
                         </div>
                 </div>
                 <picture>
-                    <source id="contact-img" media="(max-width: 1050px)" srcSet="../public/minglee2-2.png" />
-                    <img id="contact-img" src="../public/minglee2.png" alt="" />
+                    <source id="contact-img" media="(max-width: 1050px)" srcSet="/minglee2-2.png" />
+                    <img id="contact-img" src="/minglee2.png" alt="" />
                 </picture>
             </footer>                   
         </>
