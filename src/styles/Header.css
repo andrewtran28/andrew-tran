@@ -1,0 +1,85 @@
+#top-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6rem;
+  color: var(--font-dark);
+  width: 100%;
+  text-align: center;
+  padding: 70px 0;
+  background-image: url("/sunset.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0;
+  transition-duration: 0.2s;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+nav {
+  background-color: var(--sharp-orange);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--font-silver);
+  width: 100%;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px 20px;
+  transition-duration: 0.2s;
+}
+li:hover {
+  background-color: var(--navy-accent);
+  border-radius: 5px;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px var(--font-dark);
+}
+
+@media (max-width: 1000px) {
+  #top-header {
+    font-size: 5rem;
+  }
+
+  nav {
+    font-size: 1.75rem;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  #top-header {
+    font-size: 3.5rem;
+  }
+
+  nav {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  li {
+    margin: 10px;
+    padding: 0 10px;
+  }
+
+  li:hover {
+    border-radius: 4px;
+    transform: scale(1);
+    box-shadow: 1px 1px 1px var(--font-dark);
+  }
+}
