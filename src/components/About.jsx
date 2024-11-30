@@ -22,9 +22,9 @@ function About() {
       "Hello.",
       "Hey!",
       "Sup.",
-      "[Waves]",
+      "Hi.",
       "Oi!",
-      "Hola!",
+      "*Waves*",
       "Bonjour.",
       "What's up?",
     ];
@@ -46,7 +46,6 @@ function About() {
   const handleHoverWord = (e) => {
     e.target.textContent = "video games";
     e.target.style = `
-      font-family: 'Courier New';
       color: #ff6054;
       cursor: default;
       transition-duration: 0.2s;
@@ -64,7 +63,7 @@ function About() {
       <div id="about-accent">
         <section id="about-me">
           <div className="about-me-img-cont">
-            <img className="about-me-img" src="/profile.jpg" alt="" />
+            <img className="about-me-img" src="/profile_colour.jpg" alt="" />
             <div className="img-name">Andrew Tran</div>
           </div>
           <div className="about-me-card">

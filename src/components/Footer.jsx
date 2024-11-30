@@ -52,7 +52,12 @@ function Footer() {
             media="(max-width: 1000px)"
             srcSet="/profile_mountain2.jpg"
           />
-          <img id="contact-img" src="/profile_mountain.jpg" alt="" />
+          <img
+            id="contact-img"
+            src="/profile_mountain.jpg"
+            alt=""
+            loading="lazy"
+          />
         </picture>
       </footer>
     </>

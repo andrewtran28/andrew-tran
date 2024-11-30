@@ -58,6 +58,10 @@
   color: var(--font-silver);
   box-shadow: 5px 5px 5px var(--beige-shadow);
   min-height: 525px;
+  transition-duration: 0.2s;
+}
+.project:hover {
+  transform: scale(1.02);
 }
 
 .project-img {

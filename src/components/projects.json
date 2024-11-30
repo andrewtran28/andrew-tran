@@ -99,8 +99,8 @@
     "name": "Sign-up Form",
     "img": "/projects/signup-form.png",
     "desc": "A webpage layout design for a sign-up form. A small concept project that demonstrates form filling and different types of input field requirements.",
-    "gh_url": "https://github.com/andrewtran28/signup-Forms",
-    "ext_url": "https://andrewtran28.github.io/signup-Forms/",
+    "gh_url": "https://github.com/andrewtran28/signup-form",
+    "ext_url": "https://andrewtran28.github.io/signup-form/",
     "tags": ["CSS", "Forms"]
   },
   {

@@ -10,6 +10,9 @@
   background-position: 50% 50%;
   margin: 0;
   transition-duration: 0.2s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 nav {
@@ -48,30 +51,6 @@ nav ul {
   background-color: var(--navy-accent);
   box-shadow: 2px 2px 2px var(--font-dark);
 }
-/* li {
-  cursor: pointer;
-  margin: 0 20px;
-  color: (--font-silver);
-}
-li:hover {
-  background-color: var(--navy-accent);
-  border-radius: 5px;
-  transform: scale(1.1);
-  box-shadow: 2px 2px 2px var(--font-dark);
-} */
-
-/* li a {
-  padding: 5px 10px;
-  color: inherit;
-  transform: scale(1.1);
-  transition-duration: 0.2s;
-}
-li a:hover {
-  background-color: var(--navy-accent);
-  border-radius: 5px;
-  transform: scale(1.1);
-  box-shadow: 2px 2px 2px var(--font-dark);
-} */
 
 @media (max-width: 1000px) {
   #top-header {
