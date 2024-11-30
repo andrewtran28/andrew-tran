@@ -10,7 +10,7 @@ body {
   --font-silver: #dadada;
   --accent-gray: #aeadb0;
 
-  font-family: "Outfit", "Ubuntu", sans-serif;
+  font-family: "Outfit", Arial, sans-serif;
   background-color: var(--accent-gray);
   margin: 0;
   padding: 0;
@@ -23,6 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 #top-header,
@@ -38,10 +44,6 @@ a {
   margin: 0;
   padding: 0;
   line-height: 0;
-}
-
-li a {
-  color: inherit;
 }
 
 button {

@@ -2,7 +2,7 @@
   {
     "name": "Thrift City",
     "img": "/projects/thrift-city.png",
-    "desc": "A single-page application for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
+    "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
     "gh_url": "https://github.com/andrewtran28/shopping-cart",
     "ext_url": "https://thriftcity.netlify.app/home",
     "tags": [

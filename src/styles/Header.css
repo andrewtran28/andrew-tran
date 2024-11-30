@@ -12,12 +12,6 @@
   transition-duration: 0.2s;
 }
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
 nav {
   background-color: var(--sharp-orange);
   font-size: 2rem;
@@ -35,18 +29,49 @@ nav ul {
   list-style: none;
 }
 
-li {
+.nav-list {
+  margin: 0 20px;
+  transition-duration: 0.2s;
+}
+.nav-list:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: var(--font-silver);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: inherit;
+  transition-duration: 0.2s;
+}
+.nav-link:hover {
+  background-color: var(--navy-accent);
+  box-shadow: 2px 2px 2px var(--font-dark);
+}
+/* li {
   cursor: pointer;
   margin: 0 20px;
-  padding: 10px 20px;
-  transition-duration: 0.2s;
+  color: (--font-silver);
 }
 li:hover {
   background-color: var(--navy-accent);
   border-radius: 5px;
   transform: scale(1.1);
   box-shadow: 2px 2px 2px var(--font-dark);
+} */
+
+/* li a {
+  padding: 5px 10px;
+  color: inherit;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
 }
+li a:hover {
+  background-color: var(--navy-accent);
+  border-radius: 5px;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px var(--font-dark);
+} */
 
 @media (max-width: 1000px) {
   #top-header {
@@ -57,7 +82,7 @@ li:hover {
     font-size: 1.75rem;
   }
 
-  li {
+  .nav-list {
     margin: 0 10px;
   }
 }
@@ -72,14 +97,8 @@ li:hover {
     padding: 10px 0;
   }
 
-  li {
+  .nav-list {
     margin: 10px;
     padding: 0 10px;
-  }
-
-  li:hover {
-    border-radius: 4px;
-    transform: scale(1);
-    box-shadow: 1px 1px 1px var(--font-dark);
   }
 }

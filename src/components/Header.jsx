@@ -7,14 +7,20 @@ function Header() {
       <h1 id="top-header">Andrew Tran</h1>
       <nav>
         <ul>
-          <li>
-            <Link to="../home">Home</Link>
+          <li className="nav-list">
+            <Link className="nav-link" to="../home">
+              Home
+            </Link>
           </li>
-          <li>
-            <Link to="../portfolio">Portfolio</Link>
+          <li className="nav-list">
+            <Link className="nav-link" to="../portfolio">
+              Portfolio
+            </Link>
           </li>
-          <li>
-            <Link to="../about">About</Link>
+          <li className="nav-list">
+            <Link className="nav-link" to="../about">
+              About
+            </Link>
           </li>
         </ul>
       </nav>

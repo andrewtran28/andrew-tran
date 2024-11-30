@@ -11,8 +11,9 @@ function Home() {
 
   return (
     <>
-      <h1>This is the homepage.</h1>
-
+      <h1>Hey there! I want to become a full-stack developer.</h1>
+      <h1>Form. follows. Function.</h1>
+      These are words that mean
       <h2>Experience</h2>
       <h2>Education</h2>
       <hr />

@@ -27,15 +27,15 @@ function Footer() {
             <br />
           </div>
           <div className="contact-card">
-            <img className="icon" src={phone} />
-            <span>613-316-0250</span>
-            <br />
-          </div>
-          <div className="contact-card">
             <a href="mailto:tran.andrew@outlook.com">
               <img className="icon" src={email} />
             </a>
             <span>tran.andrew@outlook.com</span>
+          </div>
+          <div className="contact-card">
+            <img className="icon" src={phone} />
+            <span>613-316-0250</span>
+            <br />
           </div>
           <div className="contact-btns">
             <a href="https://github.com/andrewtran28">
