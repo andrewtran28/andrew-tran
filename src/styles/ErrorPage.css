@@ -1,0 +1,10 @@
+.error-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-dark);
+}
+
+.error-img {
+  width: 500px;
+}

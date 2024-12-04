@@ -1,122 +1,170 @@
 [
-    {
-        "name": "Thrift City",
-        "img": "/projects/thrift-city.png",
-        "desc": "A single-page application for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
-        "gh_url": "https://github.com/andrewtran28/shopping-cart",
-        "ext_url": "https://thriftcity.netlify.app/home",
-        "tags": ["React", "JavaScript", "API", "Router", "States", "Side-Effects", "Carousel", "SPA"]
-    },
-    {
-        "name": "Memory-Card Game",
-        "img": "/projects/memory-card-game.png",
-        "desc": "Webapp game that tests your memory by. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
-        "gh_url": "https://github.com/andrewtran28/memory-card-game",
-        "ext_url": "https://acnh-memory-game.netlify.app/",
-        "tags": ["React", "JavaScript", "API", "States"]
-    },
-    {
-        "name": "CV-Application Maker",
-        "img": "/projects/cv-application.png",
-        "desc": "A React application concept where users can input their inFormsation and generate a live preview of their CV/Résumé.",
-        "gh_url": "https://github.com/andrewtran28/cv-application",
-        "ext_url": "https://andrewtran28-cv-application.netlify.app/",
-        "tags": ["React", "JavaScript", "States", "Forms"]
-    },
-    {
-        "name": "Homepage",
-        "img": "/projects/homepage.png",
-        "desc": "A homepage that displays my GitHub projects and overview about myself. The site is Responsive and adjusts to various device screen sizes.",
-        "gh_url": "https://github.com/andrewtran28/homepage",
-        "ext_url": "https://andrewtran28.github.io/homepage/",
-        "tags": ["React", "JavaScript", "CSS", "Responsive", "HTML" ]            
-    },
-    {
-        "name": "Battleship",
-        "img": "/projects/battleship.png",
-        "desc": "Webapp of the classic Battleship game. Play against a computer player and try to destroy all of their ships before they destroy yours.",
-        "gh_url": "https://github.com/andrewtran28/battleship",
-        "ext_url": "https://andrewtran28.github.io/battleship/",
-        "tags": ["JavaScript", "Test", "Jest", "JS Classes"]
-    },
-    {
-        "name": "myWeather App",
-        "img": "/projects/weather-app.png",
-        "desc": "Webapp that takes a given location and retrieves weather data from Visual Crossing API. The data is shown, as well as a related GIF from GIPHY",
-        "gh_url": "https://github.com/andrewtran28/weather-app",
-        "ext_url": "https://andrewtran28.github.io/weather-app/",
-        "tags": ["JavaScript", "API", "Forms", "Responsive"]
-    },
-    {
-        "name": "Tic-Tac-Toe",
-        "img": "/projects/tictactoe.png",
-        "desc": "Play a game of Tic-Tac-Toe against another player.",
-        "gh_url": "https://github.com/andrewtran28/tic-tac-toe",
-        "ext_url": "https://andrewtran28.github.io/tic-tac-toe/",
-        "tags": ["JavaScript"]
-    },
-    {
-        "name": "Admin Dashboard",
-        "img": "/projects/admin-dashboard.png",
-        "desc": "A webpage layout design for a general dashboard on the admin page.",
-        "gh_url": "https://github.com/andrewtran28/admin-dashboard",
-        "ext_url": "https://andrewtran28.github.io/admin-dashboard/",
-        "tags": ["CSS", "Grid"]
-    },
-    {
-        "name": "myLibrary App",
-        "img": "/projects/library.png",
-        "desc": "My Library is a simple library webapp concept that displays user-inputted book entries and keeping track of which books are read.",
-        "gh_url": "https://github.com/andrewtran28/library",
-        "ext_url": "https://andrewtran28.github.io/library/",
-        "tags": ["JavaScript", "Grid", "Forms"]
-    },
-    {
-        "name": "Etch-Pad",
-        "img": "/projects/etch-pad.png",
-        "desc": "The magic Etch-Pad is a webapp that allows you to paint on a customizable board. Features include random colour mode, erase mode, and resizing the resolution of the canvas.",
-        "gh_url": "https://github.com/andrewtran28/etch-pad",
-        "ext_url": "https://andrewtran28.github.io/etch-pad/",
-        "tags": ["CSS", "Flex", "JavaScript"]
-    },
-    {
-        "name": "Simple Calculator",
-        "img": "/projects/calculator.png",
-        "desc": "As the project name implies, this is a basic webapp that contains a functional, no-frills calculator.",
-        "gh_url": "https://github.com/andrewtran28/calculator",
-        "ext_url": "https://andrewtran28.github.io/calculator/",
-        "tags": ["JavaScript"]
-    },
-    {
-        "name": "Sign-up Form",
-        "img": "/projects/signup-form.png",
-        "desc": "A webpage layout design for a sign-up form. A small concept project that demonstrates form filling and different types of input field requirements.",
-        "gh_url": "https://github.com/andrewtran28/signup-Forms",
-        "ext_url": "https://andrewtran28.github.io/signup-Forms/",
-        "tags": [ "CSS", "Forms" ]
-    },
-    {
-        "name": "Rock-Paper-Scissors",
-        "img": "/projects/rock-paper-scissors.png",
-        "desc": "Play Rock-Paper-Scissors against a computer player. Includes features such as changing the win condition and toggling cheats.",
-        "gh_url": "https://github.com/andrewtran28/rock-paper-scissors.git",
-        "ext_url": "https://andrewtran28.github.io/rock-paper-scissors",
-        "tags": ["JavaScript"]
-    },
-    {
-        "name": "Landing Page",
-        "img": "/projects/landing-page.png",
-        "desc": "A common webpage design of a landing page for a website. This project was my introduction to CSS and Flex design.",
-        "gh_url": "https://github.com/andrewtran28/landing-page",
-        "ext_url": "https://andrewtran28.github.io/landing-page",
-        "tags": ["CSS", "Flex", "HTML"]
-    },
-    {
-        "name": "HTML Recipes Website",
-        "img": "/projects/recipes.png",
-        "desc": "My VERY first project and website. My introduction to HTML, CSS (as well as getting carried away with border-radius and background-color).",
-        "gh_url": "https://github.com/andrewtran28/recipes",
-        "ext_url": "https://andrewtran28.github.io/recipes",
-        "tags": ["HTML", "CSS"]
-    }
+  {
+    "name": "Thrift City",
+    "img": "/projects/thrift-city.png",
+    "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
+    "gh_url": "https://github.com/andrewtran28/shopping-cart",
+    "ext_url": "https://thriftcity.netlify.app/home",
+    "tags": [
+      "React",
+      "JavaScript",
+      "API",
+      "Router",
+      "Netlify",
+      "Carousel",
+      "SPA"
+    ]
+  },
+  {
+    "name": "Memory-Card Game",
+    "img": "/projects/memory-card-game.png",
+    "desc": "Webapp game that tests your memory by. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
+    "gh_url": "https://github.com/andrewtran28/memory-card-game",
+    "ext_url": "https://acnh-memory-game.netlify.app/",
+    "tags": ["React", "JavaScript", "API", "Netlify"]
+  },
+  {
+    "name": "CV-Application Maker",
+    "img": "/projects/cv-application.png",
+    "desc": "A React application concept where users can input their information and generate a live preview of their CV/Résumé.",
+    "gh_url": "https://github.com/andrewtran28/cv-application",
+    "ext_url": "https://andrewtran28-cv-application.netlify.app/",
+    "tags": ["React", "JavaScript", "Netlify", "Forms"]
+  },
+  {
+    "name": "Homepage",
+    "img": "/projects/homepage.png",
+    "desc": "A homepage that displays my GitHub projects and overview about myself. The site is responsive and adjusts to various device screen sizes.",
+    "gh_url": "https://github.com/andrewtran28/homepage",
+    "ext_url": "https://andrewtran28.github.io/homepage/",
+    "tags": ["React", "CSS", "Responsive", "HTML"]
+  },
+  {
+    "name": "Battleship",
+    "img": "/projects/battleship.png",
+    "desc": "Webapp of the classic Battleship game. Play against a computer player and try to destroy all of their ships before they destroy yours.",
+    "gh_url": "https://github.com/andrewtran28/battleship",
+    "ext_url": "https://andrewtran28.github.io/battleship/",
+    "tags": ["JavaScript", "Test", "Jest", "JS Classes"]
+  },
+  {
+    "name": "JS Exercise: Testing Practice",
+    "img": "/projects/default-js.png",
+    "desc": "Testing exercises that comprise of creating a Caesar Cipher, Array Analyzer, and calculator modules. Babel was used to recognize ES6 import statements.",
+    "gh_url": "https://github.com/andrewtran28/testing-practice",
+    "ext_url": "",
+    "tags": ["JavaScript", "Test", "Jest", "Babel"]
+  },
+  {
+    "name": "myWeather App",
+    "img": "/projects/weather-app.png",
+    "desc": "Webapp that takes a given location and retrieves weather data from Visual Crossing API. The data is shown, as well as a related GIF from GIPHY",
+    "gh_url": "https://github.com/andrewtran28/weather-app",
+    "ext_url": "https://andrewtran28.github.io/weather-app/",
+    "tags": ["JavaScript", "API", "Forms", "Responsive"]
+  },
+  {
+    "name": "Tic-Tac-Toe",
+    "img": "/projects/tictactoe.png",
+    "desc": "A simple webapp that allows you to play a game of Tic-Tac-Toe against another (human) player.",
+    "gh_url": "https://github.com/andrewtran28/tic-tac-toe",
+    "ext_url": "https://andrewtran28.github.io/tic-tac-toe/",
+    "tags": ["JavaScript", "Forms"]
+  },
+  {
+    "name": "JS Exercise: Knights Travails",
+    "img": "/projects/knights-travails.png",
+    "desc": "Graph data structure exercise which finds the shortest way for a Chess Knight piece to get from one square to another.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Data Structure", "Algorithms", "Algorithms"]
+  },
+  {
+    "name": "JS Exercise: Binary Search Tree",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that introduced data structures and algorithms. Created a module for BST related functions.",
+    "gh_url": "https://github.com/andrewtran28/binary-search-tree",
+    "ext_url": "",
+    "tags": ["JavaScript", "BST", "Algorithms", "Data Structure", "JS Classes"]
+  },
+  {
+    "name": "JS Exercise: Hash Maps",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that required creating a module containing hash map manipulation functions.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Hash Map", "JS Classes"]
+  },
+  {
+    "name": "JS Exercise: Linked Lists",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that required creating a module containing linked list manipulation functions.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Linked Lists, JS Classes"]
+  },
+  {
+    "name": "Admin Dashboard",
+    "img": "/projects/admin-dashboard.png",
+    "desc": "A webpage layout design for a general dashboard on the admin page.",
+    "gh_url": "https://github.com/andrewtran28/admin-dashboard",
+    "ext_url": "https://andrewtran28.github.io/admin-dashboard/",
+    "tags": ["CSS", "Grid"]
+  },
+  {
+    "name": "myLibrary App",
+    "img": "/projects/library.png",
+    "desc": "My Library is a simple library webapp concept that displays user-inputted book entries and keeping track of which books are read.",
+    "gh_url": "https://github.com/andrewtran28/library",
+    "ext_url": "https://andrewtran28.github.io/library/",
+    "tags": ["JavaScript", "Grid", "Forms"]
+  },
+  {
+    "name": "Etch-Pad",
+    "img": "/projects/etch-pad.png",
+    "desc": "The magic Etch-Pad is a webapp that allows you to paint on a customizable board. Features include random colour mode, erase mode, and resizing the resolution of the canvas.",
+    "gh_url": "https://github.com/andrewtran28/etch-pad",
+    "ext_url": "https://andrewtran28.github.io/etch-pad/",
+    "tags": ["CSS", "Flex", "JavaScript"]
+  },
+  {
+    "name": "Simple Calculator",
+    "img": "/projects/calculator.png",
+    "desc": "As the project name implies, this is a basic webapp that contains a functional, no-frills calculator.",
+    "gh_url": "https://github.com/andrewtran28/calculator",
+    "ext_url": "https://andrewtran28.github.io/calculator/",
+    "tags": ["JavaScript"]
+  },
+  {
+    "name": "Sign-up Form",
+    "img": "/projects/signup-form.png",
+    "desc": "A webpage layout design for a sign-up form. A small concept project that demonstrates form filling and different types of input field requirements.",
+    "gh_url": "https://github.com/andrewtran28/signup-form",
+    "ext_url": "https://andrewtran28.github.io/signup-form/",
+    "tags": ["CSS", "Forms"]
+  },
+  {
+    "name": "Rock-Paper-Scissors",
+    "img": "/projects/rock-paper-scissors.png",
+    "desc": "Play Rock-Paper-Scissors against a computer player. Includes features such as changing the win condition and toggling cheats.",
+    "gh_url": "https://github.com/andrewtran28/rock-paper-scissors.git",
+    "ext_url": "https://andrewtran28.github.io/rock-paper-scissors",
+    "tags": ["JavaScript"]
+  },
+  {
+    "name": "Landing Page",
+    "img": "/projects/landing-page.png",
+    "desc": "A common webpage design of a landing page for a website. This project was my introduction to CSS and Flex design.",
+    "gh_url": "https://github.com/andrewtran28/landing-page",
+    "ext_url": "https://andrewtran28.github.io/landing-page",
+    "tags": ["CSS", "Flex", "HTML"]
+  },
+  {
+    "name": "HTML Recipes Website",
+    "img": "/projects/recipes.png",
+    "desc": "My VERY first project and website. My introduction to HTML, CSS (as well as getting carried away with border-radius and background-color).",
+    "gh_url": "https://github.com/andrewtran28/recipes",
+    "ext_url": "https://andrewtran28.github.io/recipes",
+    "tags": ["HTML", "CSS"]
+  }
 ]

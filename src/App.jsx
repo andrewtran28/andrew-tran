@@ -1,41 +1,35 @@
-import './App.css';
+import "./App.css";
 
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
-import { Link, useParams } from 'react-router-dom';
+import { useParams, Navigate } from "react-router-dom";
 
 function App() {
   const { name } = useParams();
 
   return (
     <>
-      <h1 id="top-header">Andrew Tran</h1>
-        <nav>
-          <ul>
-            <li><Link to="../home">Home</Link></li>
-            <li><Link to="../portfolio">Portfolio</Link></li>
-            <li><Link to="../about">About</Link></li>
-          </ul>
-        </nav>
+      <Header />
 
-        <main>
-          {name === "home" ? (
-            <Home />
-          ) : name === "portfolio" ? (
-            <Portfolio />
-          ) : name === "about" ? (
-            <About />
-          ) : (
-            <Home />
-          )}
-        </main>
+      <main>
+        {name === "home" ? (
+          <Home />
+        ) : name === "portfolio" ? (
+          <Portfolio />
+        ) : name === "about" ? (
+          <About />
+        ) : (
+          <Navigate to="/home" />
+        )}
+      </main>
 
-        <Footer />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
