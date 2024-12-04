@@ -29,6 +29,7 @@
   padding: 0 50px;
   width: 100%;
   max-width: 500px;
+  transition-duration: 0.1s;
 }
 .search-bar:focus {
   outline: 3px solid var(--slate);
@@ -58,6 +59,10 @@
   color: var(--font-silver);
   box-shadow: 5px 5px 5px var(--beige-shadow);
   min-height: 525px;
+  transition-duration: 0.2s;
+}
+.project:hover {
+  transform: scale(1.02);
 }
 
 .project-img {

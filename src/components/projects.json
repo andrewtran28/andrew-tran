@@ -2,7 +2,7 @@
   {
     "name": "Thrift City",
     "img": "/projects/thrift-city.png",
-    "desc": "A single-page application for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
+    "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
     "gh_url": "https://github.com/andrewtran28/shopping-cart",
     "ext_url": "https://thriftcity.netlify.app/home",
     "tags": [
@@ -48,6 +48,14 @@
     "tags": ["JavaScript", "Test", "Jest", "JS Classes"]
   },
   {
+    "name": "JS Exercise: Testing Practice",
+    "img": "/projects/default-js.png",
+    "desc": "Testing exercises that comprise of creating a Caesar Cipher, Array Analyzer, and calculator modules. Babel was used to recognize ES6 import statements.",
+    "gh_url": "https://github.com/andrewtran28/testing-practice",
+    "ext_url": "",
+    "tags": ["JavaScript", "Test", "Jest", "Babel"]
+  },
+  {
     "name": "myWeather App",
     "img": "/projects/weather-app.png",
     "desc": "Webapp that takes a given location and retrieves weather data from Visual Crossing API. The data is shown, as well as a related GIF from GIPHY",
@@ -58,10 +66,42 @@
   {
     "name": "Tic-Tac-Toe",
     "img": "/projects/tictactoe.png",
-    "desc": "Play a game of Tic-Tac-Toe against another player.",
+    "desc": "A simple webapp that allows you to play a game of Tic-Tac-Toe against another (human) player.",
     "gh_url": "https://github.com/andrewtran28/tic-tac-toe",
     "ext_url": "https://andrewtran28.github.io/tic-tac-toe/",
-    "tags": ["JavaScript"]
+    "tags": ["JavaScript", "Forms"]
+  },
+  {
+    "name": "JS Exercise: Knights Travails",
+    "img": "/projects/knights-travails.png",
+    "desc": "Graph data structure exercise which finds the shortest way for a Chess Knight piece to get from one square to another.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Data Structure", "Algorithms", "Algorithms"]
+  },
+  {
+    "name": "JS Exercise: Binary Search Tree",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that introduced data structures and algorithms. Created a module for BST related functions.",
+    "gh_url": "https://github.com/andrewtran28/binary-search-tree",
+    "ext_url": "",
+    "tags": ["JavaScript", "BST", "Algorithms", "Data Structure", "JS Classes"]
+  },
+  {
+    "name": "JS Exercise: Hash Maps",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that required creating a module containing hash map manipulation functions.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Hash Map", "JS Classes"]
+  },
+  {
+    "name": "JS Exercise: Linked Lists",
+    "img": "/projects/default-js.png",
+    "desc": "JavaScript exercise that required creating a module containing linked list manipulation functions.",
+    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "ext_url": "",
+    "tags": ["JavaScript", "Linked Lists, JS Classes"]
   },
   {
     "name": "Admin Dashboard",
@@ -99,8 +139,8 @@
     "name": "Sign-up Form",
     "img": "/projects/signup-form.png",
     "desc": "A webpage layout design for a sign-up form. A small concept project that demonstrates form filling and different types of input field requirements.",
-    "gh_url": "https://github.com/andrewtran28/signup-Forms",
-    "ext_url": "https://andrewtran28.github.io/signup-Forms/",
+    "gh_url": "https://github.com/andrewtran28/signup-form",
+    "ext_url": "https://andrewtran28.github.io/signup-form/",
     "tags": ["CSS", "Forms"]
   },
   {

@@ -1,0 +1,145 @@
+.home-cont {
+  margin: 40px;
+}
+
+.intro-card {
+  background-color: var(--slate);
+  box-shadow: 0 2px 6px var(--beige-shadow);
+  color: var(--font-silver);
+  padding: 10px 40px;
+  text-align: justify;
+}
+
+.skills-cont {
+  background-color: var(--accent-gray);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.skills-title {
+  color: var(--font-dark);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.skills-row {
+  display: flex;
+}
+
+.skill-box {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  float: left;
+  top: 8px;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.skill-icon {
+  background-color: white;
+  border: 3px solid var(--font-dark);
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px var(--slate);
+  padding: 10px;
+  object-fit: contain;
+  width: 75px;
+  height: 75px;
+  margin: 0 10px;
+  transition-duration: 0.2s;
+}
+.skill-icon:hover {
+  margin-top: 5px;
+}
+
+.hover-connection {
+  background-color: white;
+  border-left: 3px solid var(--font-dark);
+  border-right: 3px solid var(--font-dark);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30px;
+  min-height: 27px;
+  transform: translateX(-50%);
+}
+
+.skill-info {
+  margin: 5px 10px;
+  border: 3px solid var(--font-dark);
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px var(--slate);
+  font-size: 1.1rem;
+  display: none;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--sharp-orange);
+}
+
+@media (max-width: 950px) {
+  .skill-icon {
+    margin: 0 8px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .hover-connection {
+    width: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-cont {
+    margin: 20px;
+  }
+
+  .skills-cont {
+    padding: 10px;
+  }
+
+  .skill-icon {
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 2px var(--slate);
+  }
+
+  .skill-info {
+    font-size: 1rem;
+  }
+
+  .hover-connection {
+    width: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cont {
+    margin: 10px;
+  }
+
+  .skills-cont {
+    padding: 3px;
+  }
+
+  .skill-icon {
+    margin: 0 5px;
+    width: 30px;
+    height: 40px;
+    border-left: 2px solid var(--font-dark);
+    border-right: 2px solid var(--font-dark);
+    box-shadow: 2px 2px var(--slate);
+  }
+
+  .hover-connection {
+    width: 15px;
+  }
+}

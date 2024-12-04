@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 function App() {
   const { name } = useParams();
@@ -23,7 +23,7 @@ function App() {
         ) : name === "about" ? (
           <About />
         ) : (
-          <Home />
+          <Navigate to="/home" />
         )}
       </main>
 

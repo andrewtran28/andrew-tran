@@ -13,7 +13,8 @@ function Footer() {
           <h2>Contact me</h2>
           <p>
             Please reach out to me if there are any inquiries or opportunities.
-            Your time viewing this website is greatly appreciated. Thank you!
+            Your time viewing this website is already greatly appreciated. Thank
+            you!
           </p>
           <div className="contact-card">
             <a
@@ -27,15 +28,15 @@ function Footer() {
             <br />
           </div>
           <div className="contact-card">
-            <img className="icon" src={phone} />
-            <span>613-316-0250</span>
-            <br />
-          </div>
-          <div className="contact-card">
             <a href="mailto:tran.andrew@outlook.com">
               <img className="icon" src={email} />
             </a>
             <span>tran.andrew@outlook.com</span>
+          </div>
+          <div className="contact-card">
+            <img className="icon" src={phone} />
+            <span>613-316-0250</span>
+            <br />
           </div>
           <div className="contact-btns">
             <a href="https://github.com/andrewtran28">
@@ -52,7 +53,12 @@ function Footer() {
             media="(max-width: 1000px)"
             srcSet="/profile_mountain2.jpg"
           />
-          <img id="contact-img" src="/profile_mountain.jpg" alt="" />
+          <img
+            id="contact-img"
+            src="/profile_mountain.jpg"
+            alt=""
+            loading="lazy"
+          />
         </picture>
       </footer>
     </>

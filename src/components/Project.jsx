@@ -7,8 +7,10 @@ function Project({ name, img, desc, gh_url, ext_url, tags }) {
       <div className="project">
         <img className="project-img" src={img} />
         <div className="project-sub">
-          <div className="project-name">{name}</div>
-          <div className="project-text">{desc}</div>
+          <div>
+            <div className="project-name">{name}</div>
+            <div className="project-text">{desc}</div>
+          </div>
           <div className="project-tags">
             {tags.map((tag, i) => {
               return (
@@ -22,9 +24,11 @@ function Project({ name, img, desc, gh_url, ext_url, tags }) {
             <a href={gh_url}>
               <img className="icon" src={github} />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href={ext_url}>
-              <img className="icon" src={externalLink} />
-            </a>
+            {ext_url !== "" && (
+              <a target="_blank" rel="noopener noreferrer" href={ext_url}>
+                <img className="icon" src={externalLink} />
+              </a>
+            )}
           </div>
         </div>
       </div>
