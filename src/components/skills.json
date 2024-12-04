@@ -13,11 +13,7 @@
     {
       "skill": "JavaScript",
       "icon": "/logos/javascript.svg",
-<<<<<<< HEAD
       "info": "Learned almost entirely ES6. About 90% of my coding time is spent on developing JS and it's derivatives."
-=======
-      "info": "[Description goes here]."
->>>>>>> eea2c4117dc2704b2ae39b8a6ec2f02a91d01b99
     },
     {
       "skill": "React",
@@ -54,20 +50,12 @@
     {
       "skill": "Webpack",
       "icon": "/logos/webpack.svg",
-<<<<<<< HEAD
       "info": "Used Webpack for bundling vanilla JavaScript modules and webpack-dev-server for live-previewing during production."
-=======
-      "info": "[Description goes here]"
->>>>>>> eea2c4117dc2704b2ae39b8a6ec2f02a91d01b99
     },
     {
       "skill": "Vite",
       "icon": "/logos/vite.svg",
-<<<<<<< HEAD
       "info": "All my React projects have started out from a template using Vite. Great as a local development server for local rendering."
-=======
-      "info": "All my React projects have started out from a template using Vite. Great as a local development server for local rendering"
->>>>>>> eea2c4117dc2704b2ae39b8a6ec2f02a91d01b99
     }
   ],
   [
@@ -79,11 +67,7 @@
     {
       "skill": "SQL",
       "icon": "/logos/sql.svg",
-<<<<<<< HEAD
       "info": "Used SQL to pull structured data from power system analysis modelling tool (ETAP) to generate PDF reports."
-=======
-      "info": "[Description goes here]"
->>>>>>> eea2c4117dc2704b2ae39b8a6ec2f02a91d01b99
     },
     {
       "skill": "UNIX/Linux",
