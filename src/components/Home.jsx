@@ -6,12 +6,6 @@ import skillData from "./skills.json";
 function Home() {
   const [showGIF, setShowGIF] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  // const [skills, setSkills] = useState([]);
-  const [frontSkills, setFrontSkills] = useState([]);
-
-  // useEffect(() => {
-  //   setFrontSkills(skillData[0]);
-  // }, []);
 
   const handleMouseMove = (e) => {
     setCursorPosition({ x: e.clientX, y: e.clientY });
@@ -51,7 +45,6 @@ function Home() {
               <img
                 id="joker"
                 src="/joker-six.gif"
-                alt="Hover GIF"
                 style={{
                   position: "fixed",
                   top: `${cursorPosition.y + 110}px`,
@@ -65,18 +58,16 @@ function Home() {
             )}
           </span>
           in consulting engineering, I have worked with teams and clients alike,
-          and have become highly specialized in designing, managing, and
-          creating electrical systems for buildings. I believe that{" "}
-          <em>these</em> same skills are what makes me a great engineer and is
-          what will make me a great developer.
+          and have become proficient in designing, managing, and creating
+          electrical systems for buildings. I believe that these same skills are
+          what makes me a great engineer and is what will make me a great
+          developer.
         </p>
         <p>
           I am passionate about creating something out of my own design
           conceptions whether it be electrical systems or functional web
           applications. In other words, I've always been a problem-solver and
-          love to take on challenging projects. If you or your company share my
-          interest in work, please reach out to me. I look forward to hearing
-          from you!
+          love to take on challenging projects.
         </p>
       </div>
       <br />
@@ -84,7 +75,7 @@ function Home() {
       <h2>Related Skills</h2>
       <p>
         Below are my skills that are applicable to web development. If there is
-        something you think is missing, fear not! I don't plan to stop learning
+        something you think is missing: fear not! I don't plan to stop learning
         and I intend to continue my growth. Hover over the icons below to know
         more.
       </p>
@@ -110,9 +101,6 @@ function Home() {
         <li>Bachelors of Engineering, Electrical, Co-op Option</li>
       </ul>
       <p>Download the printable resume below.</p>
-      <span>
-        HTML for markup, CSS for presentation, and JavaScript for scripting
-      </span>
       {/* <button onClick={handleDownload}>Download Resume</button> */}
     </div>
   );

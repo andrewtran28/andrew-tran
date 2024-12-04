@@ -54,8 +54,7 @@
   transition-duration: 0.2s;
 }
 .skill-icon:hover {
-  margin-top: 3px;
-  transform-origin: bottom;
+  margin-top: 5px;
 }
 
 .hover-connection {

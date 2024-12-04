@@ -3,12 +3,12 @@
     {
       "skill": "HTML5",
       "icon": "/logos/html5.svg",
-      "info": "The standard markup language every web developer must know."
+      "info": "The standard markup language every web developer must know to create the base of a webpage."
     },
     {
       "skill": "CSS3",
       "icon": "/logos/css3.svg",
-      "info": "Flex, grid, margin, padding, borders; These are some properties that I always use to layout and design webpages."
+      "info": "Flex, grid, margin, padding, and borders; These are properties that I always use to design, layout, and present webpages."
     },
     {
       "skill": "JavaScript",
