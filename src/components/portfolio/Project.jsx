@@ -1,5 +1,5 @@
-import github from "../assets/icons/github.png";
-import externalLink from "../assets/icons/external-link.png";
+import github from "../../assets/icons/github.png";
+import externalLink from "../../assets/icons/external-link.png";
 
 function Project({ name, img, desc, gh_url, ext_url, tags }) {
   return (

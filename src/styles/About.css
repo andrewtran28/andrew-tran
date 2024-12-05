@@ -41,12 +41,13 @@
   background-color: var(--slate);
   color: var(--font-silver);
   min-height: 250px;
-  padding: 20px;
+  padding: 10px 20px;
   position: relative;
-  box-shadow: 0 2px 6px var(--beige-shadow);
+  box-shadow: 0 2px 4px var(--beige-shadow);
 }
 
 .greetings {
+  min-width: 150px;
   width: fit-content;
   display: flex;
   cursor: pointer;
@@ -67,7 +68,7 @@
 
 .about-btns {
   margin: 10px;
-  bottom: 0;
+  top: 10px;
   right: 0;
   position: absolute;
 }

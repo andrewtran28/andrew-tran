@@ -31,12 +31,20 @@ h2 {
   margin: 10px 0;
 }
 
+hr {
+  margin: 2.5rem;
+}
+
 #top-header,
 nav,
 main,
 footer {
   max-width: 1200px;
   box-shadow: 12px 10px 20px -2px var(--slate), -12px 10px 20px 0px var(--slate);
+}
+
+footer {
+  z-index: 0;
 }
 
 a {
@@ -74,6 +82,7 @@ main {
   background-color: var(--beige);
   width: 100%;
   padding-bottom: 30px;
+  position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -89,6 +98,10 @@ main {
 
   #root {
     margin: 0;
+  }
+
+  hr {
+    margin: 2rem;
   }
 
   main {

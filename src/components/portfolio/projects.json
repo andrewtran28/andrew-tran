@@ -91,7 +91,7 @@
     "name": "JS Exercise: Hash Maps",
     "img": "/projects/default-js.png",
     "desc": "JavaScript exercise that required creating a module containing hash map manipulation functions.",
-    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "gh_url": "https://github.com/andrewtran28/hash-map",
     "ext_url": "",
     "tags": ["JavaScript", "Hash Map", "JS Classes"]
   },
@@ -99,9 +99,9 @@
     "name": "JS Exercise: Linked Lists",
     "img": "/projects/default-js.png",
     "desc": "JavaScript exercise that required creating a module containing linked list manipulation functions.",
-    "gh_url": "https://github.com/andrewtran28/knight-travails",
+    "gh_url": "https://github.com/andrewtran28/linked-list",
     "ext_url": "",
-    "tags": ["JavaScript", "Linked Lists, JS Classes"]
+    "tags": ["JavaScript", "Linked Lists", "JS Classes"]
   },
   {
     "name": "Admin Dashboard",

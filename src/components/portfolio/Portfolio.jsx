@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Project from "./Project";
 import projectData from "./projects.json";
-import "../styles/Portfolio.css";
+import "../../styles/Portfolio.css";
 
 function Portfolio() {
   const [projects, setProjects] = useState([]);
@@ -46,6 +46,7 @@ function Portfolio() {
     <div id="portfolio">
       <div id="portfolio-accent">
         <input
+          name="search-bar"
           className="search-bar"
           placeholder="Search by project name or tags"
           value={searchInput}
