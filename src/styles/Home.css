@@ -6,6 +6,7 @@
   background-color: var(--sharp-orange);
   padding: 0 10px;
   width: fit-content;
+  color: var(--font-silver);
 }
 
 .intro-card {
@@ -107,11 +108,12 @@
 
 .exp-card {
   background-color: var(--navy-accent);
+  box-shadow: 2px 2px 3px var(--navy-shadow);
+  border-radius: 5px;
   color: inherit;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 5px;
   width: 750px;
-  border-radius: 5px;
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.75fr;
   grid-column-gap: 0px;
@@ -133,8 +135,6 @@
   font-weight: 500;
   grid-area: 1 / 2 / 2 / 3;
   align-self: flex-end;
-  margin: 0;
-  padding: 0;
 }
 
 .exp-subtitle {
@@ -165,6 +165,34 @@
   margin: 0 10px;
 }
 
+.resume-cont {
+  background-color: var(--accent-gray);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px var(--slate);
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+#resume-btn {
+  background-color: var(--sharp-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: inherit;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: var(--font-silver);
+  transition-duration: 0.2s;
+}
+#resume-btn:hover {
+  background-color: var(--navy-accent);
+  transform: scale(1.05);
+}
+#resume-btn:active {
+  background-color: var(--navy-shadow);
+}
+
 @media (max-width: 900px) {
   .skill-icon {
     margin: 0 8px;
@@ -187,6 +215,16 @@
 
   .exp-card {
     width: 600px;
+  }
+
+  .resume-cont {
+    font-size: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resume-btn {
+    margin-top: 20px;
   }
 }
 

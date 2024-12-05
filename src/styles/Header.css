@@ -51,6 +51,9 @@ nav ul {
   background-color: var(--navy-accent);
   box-shadow: 2px 2px 4px var(--font-dark);
 }
+.nav-link:active {
+  background-color: var(--navy-shadow);
+}
 
 @media (max-width: 1000px) {
   #top-header {

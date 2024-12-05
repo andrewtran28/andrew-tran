@@ -10,7 +10,7 @@ import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
 
 function Home() {
-  const [greeting, setGreeting] = useState("‎");
+  const [greeting, setGreeting] = useState("Hey there!");
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
@@ -48,15 +48,15 @@ function Home() {
     }, 300);
   };
 
-  // const handleDownload = () => {
-  //   const pdfUrl = "Andrew-Tran_Resume.pdf";
-  //   const link = document.elementFromPoint("a");
-  //   link.href = pdfUrl;
-  //   link.download = "document.pdf";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const handleDownload = () => {
+    const pdfUrl = "../../assets/AndrewTran_Resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "AndrewTran_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -103,34 +103,36 @@ function Home() {
 
       <div className="home-cont">
         <hr />
-        <h2>Related Skills</h2>
+        <h2>Relevant Skills</h2>
         <p>
           Below are my skills that are applicable to web development. I don't
-          plan to stop learning and I intend to continue expanding my skill set.{" "}
-          <br />
+          plan to stop learning and I intend to continue refining my current
+          skill set. <br />
           <strong>Hover over the icons below to know more.</strong>
         </p>
-
         <SkillBox data={skillData[0]} title={"Front-end Development"} />
         <SkillBox data={skillData[1]} title={"Tools & Platforms"} />
         <SkillBox data={skillData[2]} title={"Additional Skills"} />
-
         <hr />
-
         <div className="exp-cont">
           <h2>Education & Certifications</h2>
           <ExperienceBox data={experienceData[0]} />
         </div>
-
         <div className="exp-cont right">
           <h2>Professional Experience</h2>
           <ExperienceBox data={experienceData[1]} />
         </div>
-
         <hr />
-
-        <p>Download the printable resume below.</p>
-        {/* <button onClick={handleDownload}>Download Resume</button> */}
+        <div className="resume-cont">
+          <div>
+            Need a summary of my resume?
+            <br />
+            <strong>Click the button to download the printable version.</strong>
+          </div>
+          <button id="resume-btn" onClick={handleDownload}>
+            Download PDF
+          </button>
+        </div>
       </div>
     </>
   );
