@@ -1,3 +1,4 @@
+import jokerGIF from "../../assets/joker-six.gif";
 import { useState, useEffect } from "react";
 
 function HoverGIF({ text }) {
@@ -24,7 +25,7 @@ function HoverGIF({ text }) {
 
       {showGIF && (
         <img
-          src="/joker-six.gif"
+          src={jokerGIF}
           style={{
             position: "fixed",
             top: `${cursorPosition.y + 110}px`,

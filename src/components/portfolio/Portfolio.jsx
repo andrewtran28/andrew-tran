@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useIsMount } from "./useIsMount";
 import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
@@ -9,8 +10,9 @@ function Portfolio() {
   const PER_PAGE = 4;
   const startIndex = page * PER_PAGE;
   const endIndex = startIndex + PER_PAGE;
-
   const [searchInput, setSearchInput] = useState("");
+  const scrollRef = useRef(null);
+  const isMount = useIsMount();
 
   const filteredProjects = projects.filter(
     (item) =>
@@ -29,17 +31,30 @@ function Portfolio() {
     setProjects(projectData);
   }, []);
 
+  //Prevents handleScroll on initial render.
+  useEffect(() => {
+    if (isMount === false) {
+      handleScroll();
+    }
+  }, [page]);
+
   const handleSearch = (e) => {
     setSearchInput(e.target.value);
     setPage(0);
   };
 
   const handleNext = () => {
+    handleScroll();
     if (!isNextDisabled) setPage((page) => page + 1);
   };
 
   const handlePrevious = () => {
+    handleScroll();
     if (!isPreviousDisabled) setPage((page) => page - 1);
+  };
+
+  const handleScroll = () => {
+    scrollRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -51,6 +66,7 @@ function Portfolio() {
           placeholder="Search by project name or tags"
           value={searchInput}
           onChange={handleSearch}
+          ref={scrollRef}
         />
       </div>
 

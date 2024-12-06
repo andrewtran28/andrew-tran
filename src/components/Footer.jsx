@@ -35,14 +35,14 @@ function Footer() {
           </div>
           <div className="contact-card">
             <img className="icon" src={phone} />
-            <span>613-316-0250</span>
+            <span>(613) 316-0250</span>
             <br />
           </div>
           <div className="contact-btns">
             <a href="https://github.com/andrewtran28">
               <img className="contact-icon" src={githubLight} />
             </a>
-            <a href="https://www.linkedin.com/in/andrew-tran-canada">
+            <a href="https://www.linkedin.com/in/andrewtran-developer">
               <img className="contact-icon" src={linkedinLight} />
             </a>
           </div>

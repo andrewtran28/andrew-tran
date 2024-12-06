@@ -13,7 +13,7 @@
     {
       "skill": "JavaScript",
       "icon": "/logos/javascript.svg",
-      "info": "Learned almost entirely ES6. About 90% of my coding time is spent on developing JS and it's derivatives."
+      "info": "Learned Javascript ES6. A majority of my coding time is spent on developing JS to create dynamic web applications."
     },
     {
       "skill": "React",
@@ -67,7 +67,7 @@
     {
       "skill": "SQL",
       "icon": "/logos/sql.svg",
-      "info": "Used SQL to pull structured data from power system analysis modelling tool (ETAP) to generate PDF reports."
+      "info": "Used SQL to pull structured data from ETAP (an electrical system analysis/modelling tool) to generate PDF reports."
     },
     {
       "skill": "UNIX/Linux",

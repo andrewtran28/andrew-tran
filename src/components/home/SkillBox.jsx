@@ -18,28 +18,28 @@ function SkillBox({ data, title }) {
 
   return (
     <>
-      <div className="skills-cont">
-        <h3 className="skills-title">{title}</h3>
-        <div className="skills-row">
-          {data.map((item, i) => (
-            <div className="skill-box" key={i}>
-              <Skill
-                key={i}
-                name={item.skill}
-                icon={item.icon}
-                info={item.info}
-                index={i}
-                hoverSkill={handleIconHover}
-              />
-              {hoveredIndex === i && <div className="hover-connection"></div>}
-            </div>
-          ))}
-        </div>
-        <span className="skill-info" ref={iconRef}>
-          <div className="skill-name">{name}</div>
-          {description}
-        </span>
+      {/* <div className="skills-cont"> */}
+      <h3 className="skills-title">{title}</h3>
+      <div className="skills-row">
+        {data.map((item, i) => (
+          <div className="skill-box" key={i}>
+            <Skill
+              key={i}
+              name={item.skill}
+              icon={item.icon}
+              info={item.info}
+              index={i}
+              hoverSkill={handleIconHover}
+            />
+            {hoveredIndex === i && <div className="hover-connection"></div>}
+          </div>
+        ))}
       </div>
+      <span className="skill-info" ref={iconRef}>
+        <div className="skill-name">{name}</div>
+        {description}
+      </span>
+      {/* </div> */}
     </>
   );
 }

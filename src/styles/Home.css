@@ -3,18 +3,15 @@
 }
 
 .home-cont h2 {
-  background-color: var(--sharp-orange);
   padding: 0 10px;
   width: fit-content;
-  color: var(--font-silver);
 }
 
-.intro-card {
-  background-color: var(--slate);
-  box-shadow: 0 2px 6px var(--beige-shadow);
-  color: var(--font-silver);
-  padding: 10px 40px;
-  text-align: justify;
+.skill-icon,
+.skill-info,
+.exp-cont,
+.resume-cont {
+  box-shadow: 2px 2px 2px var(--slate);
 }
 
 .skills-cont {
@@ -23,7 +20,7 @@
   flex-direction: column;
   padding: 10px;
   margin: 15px 0;
-  box-shadow: 3px 3px 3px var(--beige-shadow);
+  box-shadow: 2px 2px 2px var(--beige-shadow);
 }
 
 .skills-title {
@@ -50,9 +47,7 @@
 
 .skill-icon {
   background-color: white;
-  border: 3px solid var(--font-dark);
   border-radius: 5px;
-  box-shadow: 3px 3px 3px var(--slate);
   padding: 10px;
   object-fit: contain;
   width: 75px;
@@ -66,21 +61,17 @@
 
 .hover-connection {
   background-color: white;
-  border-left: 3px solid var(--font-dark);
-  border-right: 3px solid var(--font-dark);
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 50%;
   width: 30px;
-  min-height: 27px;
+  min-height: 22px;
   transform: translateX(-50%);
 }
 
 .skill-info {
   margin: 5px 10px;
-  border: 3px solid var(--font-dark);
   border-radius: 5px;
-  box-shadow: 3px 3px 3px var(--slate);
   font-size: 1.1rem;
   display: none;
 }
@@ -93,7 +84,7 @@
 
 .exp-cont {
   background-color: var(--slate);
-  box-shadow: 3px 3px 3px var(--beige-shadow);
+  box-shadow: 2px 2px 2px var(--beige-shadow);
   padding: 20px;
   color: var(--font-silver);
   margin: 20px 0;
@@ -108,7 +99,7 @@
 
 .exp-card {
   background-color: var(--navy-accent);
-  box-shadow: 2px 2px 3px var(--navy-shadow);
+  box-shadow: 2px 2px 2px var(--navy-shadow);
   border-radius: 5px;
   color: inherit;
   margin: 15px 0;
@@ -169,7 +160,6 @@
   background-color: var(--accent-gray);
   display: flex;
   justify-content: space-between;
-  box-shadow: 3px 3px 3px var(--slate);
   padding: 20px;
   font-size: 1.5rem;
 }
@@ -231,6 +221,10 @@
 @media (max-width: 700px) {
   .home-cont {
     margin: 20px;
+  }
+
+  .home-cont h2 {
+    font-size: 1.8rem;
   }
 
   .skills-cont {
