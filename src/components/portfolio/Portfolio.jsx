@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useIsMount } from "./useIsMount";
+import Header from "../Header";
 import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
@@ -54,11 +55,16 @@ function Portfolio() {
   };
 
   const handleScroll = () => {
-    scrollRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
   };
 
   return (
-    <div id="portfolio">
+    <>
+      <Header />
+
       <div id="portfolio-accent">
         <input
           name="search-bar"
@@ -66,13 +72,12 @@ function Portfolio() {
           placeholder="Search by project name or tags"
           value={searchInput}
           onChange={handleSearch}
-          ref={scrollRef}
         />
       </div>
 
-      <div className="projects-cont">
-        {currentPage.map((project, i) => {
-          return (
+      <div id="portfolio" ref={scrollRef}>
+        <div className="projects-cont">
+          {currentPage.map((project, i) => (
             <Project
               key={i}
               name={project.name}
@@ -82,22 +87,24 @@ function Portfolio() {
               ext_url={project.ext_url}
               tags={project.tags}
             />
-          );
-        })}
-      </div>
-
-      <div className="projects-nav">
-        <button onClick={handlePrevious} disabled={isPreviousDisabled}>
-          Previous
-        </button>
-        <div className="projects-page-num">
-          {page + 1} of {TOTAL_PAGES}
+          ))}
         </div>
-        <button onClick={handleNext} disabled={isNextDisabled}>
-          Next
-        </button>
+
+        <div className="projects-nav">
+          <button onClick={handlePrevious} disabled={isPreviousDisabled}>
+            Previous
+          </button>
+          <div className="projects-page-num">
+            Page
+            <br />
+            {page + 1} of {TOTAL_PAGES}
+          </div>
+          <button onClick={handleNext} disabled={isNextDisabled}>
+            Next
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

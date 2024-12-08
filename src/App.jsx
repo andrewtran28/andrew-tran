@@ -13,19 +13,15 @@ function App() {
 
   return (
     <>
-      <Header />
-
-      <main>
-        {name === "home" ? (
-          <Home />
-        ) : name === "portfolio" ? (
-          <Portfolio />
-        ) : name === "about" ? (
-          <About />
-        ) : (
-          <Navigate to="/home" />
-        )}
-      </main>
+      {name === "home" ? (
+        <Home />
+      ) : name === "portfolio" ? (
+        <Portfolio />
+      ) : name === "about" ? (
+        <About />
+      ) : (
+        <Navigate to="/home" />
+      )}
 
       <Footer />
     </>

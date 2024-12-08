@@ -1,20 +1,21 @@
-#intro {
+.intro-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #intro-accent {
-  position: relative;
-  padding: 2.5vh 4vw;
+  background-color: var(--slate);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#intro {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    172.5deg,
-    var(--navy-accent) 65.5%,
-    var(--beige-shadow) 66%,
-    var(--beige) 67%
-  );
+  max-width: 1000px;
 }
 
 .intro-img-cont {
@@ -24,7 +25,7 @@
 }
 
 .intro-img {
-  width: 350px;
+  width: 450px;
 }
 
 .intro-img-name {
@@ -38,31 +39,54 @@
 }
 
 .intro-card {
-  background-color: var(--slate);
+  /* background-color: var(--slate); */
   color: var(--font-silver);
   min-height: 250px;
   padding: 10px 20px;
   position: relative;
-  box-shadow: 0 2px 4px var(--beige-shadow);
-  text-align: justify;
+  /* box-shadow: 0 2px 4px var(--beige-shadow); */
+  /* text-align: justify; */
 }
 
 .greetings {
+  font-size: 3rem;
   min-width: 150px;
   width: fit-content;
   display: flex;
   cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .greetings.fade {
+  opacity: 0;
+}
+.greetings:hover {
+  color: white;
+}
+
+.intro-text {
+  transition: opacity 1s ease-in-out;
+}
+.intro-text.textFade {
   opacity: 0;
 }
 
 .intro-btns {
   margin: 10px;
-  top: 10px;
+  top: 30px;
   right: 0;
   position: absolute;
+}
+
+.intro-chevron {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: var(--font-silver);
+  font-size: 2rem;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 @media (max-width: 1000px) {

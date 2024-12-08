@@ -1,13 +1,16 @@
 import { useState, useRef } from "react";
 
-function Skill({ name, icon, info, index, hoverSkill }) {
+function Skill({ name, icon, info, index, hoverSkill, hoverLeave }) {
   const [currentIndex, setCurrentIndex] = useState(null);
   const iconRef = useRef(null);
 
   const handleHover = () => {
     hoverSkill(name, info, index);
-    iconRef.current.style.backgroundColor = "white";
     setCurrentIndex(index);
+  };
+
+  const handleLeave = () => {
+    hoverLeave();
   };
 
   return (
@@ -17,6 +20,7 @@ function Skill({ name, icon, info, index, hoverSkill }) {
         src={icon}
         ref={iconRef}
         onMouseEnter={handleHover}
+        onMouseLeave={handleLeave}
       />
     </>
   );

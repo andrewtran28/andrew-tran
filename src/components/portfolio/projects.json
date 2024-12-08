@@ -18,7 +18,7 @@
   {
     "name": "Memory-Card Game",
     "img": "/projects/memory-card-game.png",
-    "desc": "Webapp game that tests your memory by. To play, only select the cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
+    "desc": "Webapp game that tests your memory. Only select cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
     "gh_url": "https://github.com/andrewtran28/memory-card-game",
     "ext_url": "https://acnh-memory-game.netlify.app/",
     "tags": ["React", "JavaScript", "API", "Netlify"]

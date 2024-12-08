@@ -1,9 +1,3 @@
-#portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #portfolio-accent {
   background-color: var(--navy-accent);
   display: flex;
@@ -12,7 +6,17 @@
   padding: 10px 0;
   width: 100%;
   box-shadow: 0px 5px 10px var(--beige-shadow);
-  margin-bottom: 20px;
+}
+
+#portfolio {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  max-width: 1000px;
+  width: 100%;
+  place-self: center;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
 }
 
 .search-bar {
@@ -40,9 +44,9 @@
   grid-template-columns: repeat(auto-fill, 450px);
   justify-content: center;
   justify-items: center;
-  gap: 40px 20px;
-  margin: 20px 0;
+  gap: 60px 30px;
   width: 100%;
+  margin: 30px 0;
 }
 
 .project,
@@ -116,21 +120,25 @@
 .projects-nav {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  font-size: 1.15rem;
 }
 
 .projects-page-num {
   margin: 10px;
-  width: 50px;
+  width: 80px;
   text-align: center;
 }
 
 .projects-nav button {
-  border: 2px solid var(--slate);
   border-radius: 5px;
+  border: 2px solid var(--slate);
   background-color: var(--font-silver);
-  font-family: "outfit";
-  width: 80px;
+  color: var(--font-dark);
+  font-family: inherit;
+  font-size: 1.15rem;
+  width: 100px;
+  height: 3rem;
+  align-self: center;
   transition-duration: 0.2s;
 }
 .projects-nav button:hover {

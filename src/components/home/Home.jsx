@@ -1,4 +1,6 @@
 import "../../styles/Home.css";
+import { useRef } from "react";
+import Header from "../Header";
 import Intro from "./Intro";
 import SkillBox from "./SkillBox";
 import skillData from "./skills.json";
@@ -6,6 +8,15 @@ import ExperienceBox from "./ExperienceBox";
 import experienceData from "./experiences.json";
 
 function Home() {
+  const scrollRef = useRef(null);
+
+  const handleScroll = () => {
+    scrollRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+  };
+
   const handleDownload = () => {
     const pdfUrl = "../../assets/AndrewTran_Resume.pdf";
     const link = document.createElement("a");
@@ -18,22 +29,21 @@ function Home() {
 
   return (
     <>
-      <Intro />
-
-      <div className="home-cont">
+      <div className="intro-wrapper">
+        <Header />
+        <Intro scroll={handleScroll} />
+      </div>
+      <div className="home-cont" ref={scrollRef}>
         <hr />
         <h2>Relevant Skills</h2>
         <p>
           Below are my skills that are applicable to web development. I don't
           plan to stop learning and I intend to continue refining my current
-          skill set. <br />
-          <strong>Hover over the icons below to know more.</strong>
+          skill set. <strong>Hover over the icons below to know more.</strong>
         </p>
-        <div className="skills-cont">
-          <SkillBox data={skillData[0]} title={"Front-end Development"} />
-          <SkillBox data={skillData[1]} title={"Tools & Platforms"} />
-          <SkillBox data={skillData[2]} title={"Additional Skills"} />
-        </div>
+        <SkillBox data={skillData[0]} title={"Front-end Development"} />
+        <SkillBox data={skillData[1]} title={"Tools & Platforms"} />
+        <SkillBox data={skillData[2]} title={"Additional Skills"} />
         <hr />
         <div className="exp-cont">
           <h2>Education & Certifications</h2>
