@@ -16,7 +16,7 @@ function Intro({ scroll }) {
     setTimeout(() => {
       setGreeting("Hey there!");
       setFade(false);
-    }, 750);
+    }, 500);
   }, []);
 
   const handleGreetings = (old) => {
@@ -52,7 +52,7 @@ function Intro({ scroll }) {
     setTextFade(true);
     setTimeout(() => {
       setTextFade(false);
-    }, 2500);
+    }, 2000);
   };
 
   const handleScroll = () => {
@@ -77,14 +77,12 @@ function Intro({ scroll }) {
             <p>
               I'm an electrical engineer from Ottawa, ON who wants to pursue a
               career in web development as a{" "}
-              <strong>full-stack developer</strong>
-              . During my
-              <HoverGIF text="6 years" />
-              in the power-distribution industry, I have become proficient in
-              designing, managing, and creating electrical systems for buildings
-              with teams and clients alike. I believe that these same skills are
-              what makes me a great engineer and is what will make me a great
-              developer.
+              <strong>full-stack developer</strong>. During my{" "}
+              <HoverGIF text="6 years" /> in the power-distribution industry, I
+              have become proficient in designing, managing, and creating
+              electrical systems for buildings with teams and clients alike. I
+              believe that these same skills are what makes me a great engineer
+              and is what will make me a great developer.
             </p>
             <p>
               I am passionate about creating something out of my own design

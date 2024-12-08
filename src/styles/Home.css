@@ -1,15 +1,22 @@
 .home-cont {
-  /* border: 1px solid red; */
   margin-bottom: 40px;
   place-self: center;
-  /* display: flex; */
-  /* flex-direction: column; */
-  max-width: 1000px;
+  max-width: 1200px;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skill-icon,
 .skill-info,
-.exp-cont,
+/* .exp-cont, */
 .resume-cont {
   box-shadow: 2px 2px 2px var(--slate);
 }
@@ -84,23 +91,23 @@
 }
 
 .exp-cont {
-  background-color: var(--slate);
-  box-shadow: 2px 2px 2px var(--beige-shadow);
   padding: 20px;
-  color: var(--font-silver);
-  margin: 20px 0;
+  margin: 50px 0;
   place-self: start;
   place-items: start;
   width: fit-content;
+  border-left: 8px solid var(--sharp-orange);
 }
 .right {
   place-self: end;
   place-items: end;
+  border-left: none;
+  border-right: 8px solid var(--sharp-orange);
 }
 
 .exp-card {
-  background-color: var(--navy-accent);
-  box-shadow: 2px 2px 2px var(--navy-shadow);
+  /* background-color: var(--navy-accent); */
+  /* box-shadow: 2px 2px 2px var(--navy-shadow); */
   /* border-radius: 5px; */
   color: inherit;
   /* margin: 15px 0; */
@@ -134,7 +141,7 @@
   grid-area: 2 / 2 / 2 / 3;
   font-style: italic;
   vertical-align: top;
-  color: var(--accent-gray);
+  color: var(--sharp-orange);
 }
 
 .exp-date {
@@ -146,7 +153,7 @@
 
 .exp-location {
   grid-area: 2 / 3 / 3 / 4;
-  color: var(--accent-gray);
+  color: var(--slate);
   text-align: right;
   margin-right: 10px;
 }
@@ -154,7 +161,7 @@
 .exp-note {
   grid-area: 3 / 1 / 4 / 4;
   font-style: italic;
-  color: var(--accent-gray);
+  color: var(--slate);
   margin: 0 10px;
 }
 
