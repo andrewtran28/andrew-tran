@@ -16,7 +16,6 @@
 
 .skill-icon,
 .skill-info,
-/* .exp-cont, */
 .resume-cont {
   box-shadow: 2px 2px 2px var(--slate);
 }
@@ -96,6 +95,7 @@
   place-self: start;
   place-items: start;
   width: fit-content;
+  border-radius: 8px;
   border-left: 8px solid var(--sharp-orange);
 }
 .right {
@@ -106,63 +106,64 @@
 }
 
 .exp-card {
-  /* background-color: var(--navy-accent); */
-  /* box-shadow: 2px 2px 2px var(--navy-shadow); */
-  /* border-radius: 5px; */
   color: inherit;
-  /* margin: 15px 0; */
-  /* padding: 5px; */
-  padding: 20px;
+  margin: 40px 20px;
   width: 750px;
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 0.75fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exp-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
 }
 
 .exp-img {
-  grid-area: 1 / 1 / 3 / 2;
   object-fit: contain;
   background-color: white;
   width: 75px;
   height: 75px;
   border-radius: 5px;
-  margin: 10px;
+  overflow: hidden;
 }
 
 .exp-title {
   font-size: 1.5rem;
   font-weight: 500;
-  grid-area: 1 / 2 / 2 / 3;
-  align-self: flex-end;
 }
 
 .exp-subtitle {
-  grid-area: 2 / 2 / 2 / 3;
   font-style: italic;
   vertical-align: top;
   color: var(--sharp-orange);
 }
 
 .exp-date {
-  grid-area: 1 / 3 / 2 / 4;
   text-align: right;
-  align-self: flex-end;
-  margin-right: 10px;
 }
 
 .exp-location {
-  grid-area: 2 / 3 / 3 / 4;
   color: var(--slate);
   text-align: right;
-  margin-right: 10px;
 }
 
 .exp-note {
-  grid-area: 3 / 1 / 4 / 4;
   font-style: italic;
   color: var(--slate);
-  margin: 0 10px;
+  margin: 5px 0;
 }
 
 .resume-cont {
@@ -193,17 +194,13 @@
   background-color: var(--navy-shadow);
 }
 
-@media (max-width: 900px) {
-  .skill-icon {
-    margin: 0 8px;
-    width: 50px;
-    height: 50px;
+@media (max-width: 1250px) {
+  .home-cont {
+    margin: 0 40px;
   }
+}
 
-  .hover-connection {
-    width: 20px;
-  }
-
+@media (max-width: 1000px) {
   .exp-cont {
     place-self: center;
     width: fit-content;
@@ -211,10 +208,13 @@
   .right {
     place-self: center;
     place-items: unset;
+    border-left: 8px solid var(--sharp-orange);
+    border-right: none;
   }
 
   .exp-card {
     width: 600px;
+    margin: 30px 20px;
   }
 
   .resume-cont {
@@ -228,9 +228,9 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .home-cont {
-    margin: 20px;
+    margin: 0 20px;
   }
 
   .home-cont h2 {
@@ -242,10 +242,8 @@
   }
 
   .skill-icon {
-    margin: 0 5px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 2px 2px 2px var(--slate);
+    width: 50px;
+    height: 50px;
   }
 
   .skill-info {
@@ -253,17 +251,31 @@
   }
 
   .hover-connection {
-    width: 15px;
+    width: 20px;
   }
 
   .exp-card {
-    width: 475px;
+    width: 500px;
+    margin: 30px 20px;
+  }
+
+  .exp-title {
+    font-size: 1.25rem;
+  }
+
+  .exp-info,
+  .exp-note {
+    font-size: 1rem;
+  }
+
+  .exp-note {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .home-cont {
-    margin: 3px;
+    margin: 10px;
   }
 
   .skills-cont {
@@ -271,12 +283,9 @@
   }
 
   .skill-icon {
-    margin: 0 3px;
+    margin: 0 5px;
     width: 30px;
     height: 40px;
-    border-left: 2px solid var(--font-dark);
-    border-right: 2px solid var(--font-dark);
-    box-shadow: 2px 2px var(--slate);
   }
 
   .hover-connection {
@@ -284,11 +293,26 @@
   }
 
   .exp-cont {
-    padding: 5px;
+    padding: 0 5px;
+    width: 100%;
+    border: none;
   }
 
   .exp-card {
-    width: auto;
+    margin: 30px 0px;
+    width: 100%;
+  }
+
+  .exp-top {
+    align-items: start;
+  }
+
+  .exp-img {
+    object-fit: contain;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
   }
 
   .exp-title {

@@ -1,7 +1,8 @@
 .intro-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* Height = Screen height - (nav + header) */
+  height: calc(100vh - ((1.5rem + 20px) + (4rem + 20px)));
 }
 
 #intro-accent {
@@ -28,23 +29,11 @@
   width: 450px;
 }
 
-.intro-img-name {
-  position: absolute;
-  bottom: 0;
-  padding: 5px 0;
-  font-size: max(1vw, 3rem);
-  font-weight: 300;
-  color: var(--font-dark);
-  text-shadow: 2px 2px var(--font-silver);
-}
-
 .intro-card {
-  /* background-color: var(--slate); */
   color: var(--font-silver);
-  min-height: 250px;
   padding: 10px 20px;
+  margin: 20px 0;
   position: relative;
-  /* box-shadow: 0 2px 4px var(--beige-shadow); */
   /* text-align: justify; */
 }
 
@@ -80,7 +69,7 @@
 .intro-chevron {
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: var(--font-silver);
   font-size: 2rem;
   cursor: pointer;
@@ -89,76 +78,54 @@
   user-select: none; /* Standard syntax */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #intro {
-    display: block;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intro-wrapper {
+    height: auto;
   }
 
-  /* .intro-img-cont {
-    float: left;
-    margin-right: -50px;
-    width: 450px;
-    z-index: 2;
-  } */
+  #intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
 
-  /* .intro-img {
-    margin-bottom: 5px;
-    margin-right: -200px;
-  } */
-
-  /* .intro-img-name {
-    height: fit-content;
-    text-wrap: nowrap;
-    position: relative;
-    left: 7rem;
-    top: -0.5rem;
-    font-weight: 300;
-    color: var(--font-silver);
-    text-shadow: 2px 3px var(--font-dark);
-  } */
+  .intro-img {
+    width: 400px;
+    margin-top: 10px;
+  }
 
   .intro-card {
-    padding: 40px;
-    margin: 60px 20px 30px 60px;
+    margin: 0 0 50px 0;
+    padding: 0 20px;
+  }
+
+  .greetings {
+    place-self: center;
+    place-content: center;
+  }
+
+  .intro-btns {
+    position: unset;
+    place-self: end;
   }
 }
 
 @media (max-width: 800px) {
   #intro {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     max-width: 600px;
   }
+}
 
-  .intro-img-cont {
-    width: auto;
-    margin: 0;
-    left: 0;
-  }
-
+@media (max-width: 600px) {
   .intro-img {
-    margin-bottom: -10px;
-    margin-right: unset;
-  }
-
-  .intro-img-name {
-    left: unset;
-    top: unset;
-    position: absolute;
-    bottom: 0;
-    color: var(--font-dark);
-    text-shadow: 2px 2px var(--font-silver);
-  }
-
-  .intro-card {
-    box-shadow: none;
-    margin: 0;
-    padding: 10px 20px 40px 20px;
-  }
-
-  .intro-img-cont picture {
-    height: 340px;
+    width: 350px;
   }
 }

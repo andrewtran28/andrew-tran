@@ -36,7 +36,7 @@ function Home() {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the item is visible
+      { threshold: 0.4 } // Trigger when 40% of the item is visible
     );
 
     sectionRefs.current.forEach((ref) => ref && observer.observe(ref));
@@ -56,8 +56,8 @@ function Home() {
 
   return (
     <>
+      <Header />
       <div className="intro-wrapper">
-        <Header />
         <Intro scroll={handleScrollTo} />
       </div>
       <div className="home-cont" ref={scrollRef}>

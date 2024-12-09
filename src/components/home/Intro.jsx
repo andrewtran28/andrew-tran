@@ -64,7 +64,6 @@ function Intro({ scroll }) {
       <section id="intro">
         <div className="intro-img-cont">
           <img className="intro-img" src={profile} />
-          <div className="intro-img-name">Andrew Tran</div>
         </div>
         <div className="intro-card">
           <h2
