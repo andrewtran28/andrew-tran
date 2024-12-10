@@ -8,7 +8,7 @@ import "../../styles/Portfolio.css";
 function Portfolio() {
   const [projects, setProjects] = useState([]);
   const [page, setPage] = useState(0);
-  const PER_PAGE = 4;
+  const PER_PAGE = 6;
   const startIndex = page * PER_PAGE;
   const endIndex = startIndex + PER_PAGE;
   const [searchInput, setSearchInput] = useState("");
@@ -57,15 +57,14 @@ function Portfolio() {
   const handleScroll = () => {
     scrollRef.current.scrollIntoView({
       behavior: "smooth",
-      block: "nearest",
+      block: "start",
     });
   };
 
   return (
-    <>
+    <div ref={scrollRef}>
       <Header />
-
-      <div id="portfolio-accent">
+      <div className="portfolio-accent">
         <input
           name="search-bar"
           className="search-bar"
@@ -75,7 +74,7 @@ function Portfolio() {
         />
       </div>
 
-      <div id="portfolio" ref={scrollRef}>
+      <div id="portfolio">
         <div className="projects-cont">
           {currentPage.map((project, i) => (
             <Project
@@ -90,21 +89,25 @@ function Portfolio() {
           ))}
         </div>
 
-        <div className="projects-nav">
-          <button onClick={handlePrevious} disabled={isPreviousDisabled}>
-            Previous
-          </button>
-          <div className="projects-page-num">
-            Page
-            <br />
-            {page + 1} of {TOTAL_PAGES}
+        {TOTAL_PAGES > 0 ? (
+          <div className="projects-nav">
+            <button onClick={handlePrevious} disabled={isPreviousDisabled}>
+              Previous
+            </button>
+            <div className="projects-page-num">
+              Page {page + 1} of {TOTAL_PAGES}
+            </div>
+            <button onClick={handleNext} disabled={isNextDisabled}>
+              Next
+            </button>
           </div>
-          <button onClick={handleNext} disabled={isNextDisabled}>
-            Next
-          </button>
-        </div>
+        ) : (
+          <div className="projects-nav">
+            No project name or tags match the search criteria...
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 

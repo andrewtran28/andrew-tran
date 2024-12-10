@@ -1,0 +1,75 @@
+.menu-carousel {
+  /* Adjust these values for size of carousel; Width must match "Carousel.jsx"*/
+  --carouselImgW: 500px;
+  --carouselImgH: 500px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 20px 20px 20px;
+  width: fit-content;
+}
+
+.carousel-top {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-frame {
+  width: var(--carouselImgW);
+  height: calc(var(--carouselImgH));
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  border-radius: 8px;
+  border: 1px solid var(--accent-gray);
+  background-color: var(--accent-gray);
+}
+
+.carousel-cont {
+  display: flex;
+  width: calc(5 * var(--carouselImgW));
+}
+
+.carousel-img {
+  width: var(--carouselImgW);
+  height: var(--carouselImgH);
+  object-fit: contain;
+}
+
+.carousel-name {
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.carousel-left,
+.carousel-right {
+  border: none;
+  padding: 10px;
+  background-color: var(--navy-accent);
+  color: var(--font-silver);
+  font-weight: 900;
+  border-radius: 5px;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background-color: var(--navy-shadow);
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.circle-nav {
+  --circle-size: 20px;
+
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border: none;
+  border-radius: 50%;
+  margin: 3px;
+  padding: 0;
+}

@@ -1,28 +1,32 @@
 #top-header {
+  background-image: url("sunset.png");
+  background-size: cover;
+  background-position: 50% 30%;
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   color: var(--font-dark);
   text-align: center;
-  padding: 10px 0;
-  background-image: url("sunset.png");
-  background-size: cover;
-  background-position: 50% 30%;
   margin: 0;
+  padding: 10px 0;
   transition-duration: 0.2s;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
 
+#top-header a {
+  color: inherit;
+}
+
 nav {
   background-color: var(--sharp-orange);
-  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent-gray);
   color: var(--font-silver);
+  font-size: 1.5rem;
   width: 100%;
   padding: 10px 0;
   position: sticky;
   top: 0;
-  align-self: flex-start;
   z-index: 2;
 }
 

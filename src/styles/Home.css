@@ -1,4 +1,4 @@
-.home-cont {
+#home-cont {
   margin-bottom: 40px;
   place-self: center;
   max-width: 1200px;
@@ -195,7 +195,7 @@
 }
 
 @media (max-width: 1250px) {
-  .home-cont {
+  #home-cont {
     margin: 0 40px;
   }
 }
@@ -229,11 +229,11 @@
 }
 
 @media (max-width: 800px) {
-  .home-cont {
+  #home-cont {
     margin: 0 20px;
   }
 
-  .home-cont h2 {
+  #home-cont h2 {
     font-size: 1.8rem;
   }
 
@@ -274,7 +274,7 @@
 }
 
 @media (max-width: 600px) {
-  .home-cont {
+  #home-cont {
     margin: 10px;
   }
 

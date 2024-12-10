@@ -1,4 +1,16 @@
-.about-cont {
+#about-cont {
+  place-self: center;
   margin: 40px;
   text-align: justify;
+  max-width: 1000px;
+}
+
+#about-cont img {
+  border-radius: 8px;
+}
+
+.about-img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
 }

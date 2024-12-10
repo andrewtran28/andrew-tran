@@ -30,7 +30,7 @@ function Intro({ scroll }) {
       "*Waves*",
       "Bonjour.",
       "What's up?",
-      "Gidday bud!",
+      "G'day bud!",
     ];
 
     const randomNum = (max) => {
@@ -80,8 +80,8 @@ function Intro({ scroll }) {
               <HoverGIF text="6 years" /> in the power-distribution industry, I
               have become proficient in designing, managing, and creating
               electrical systems for buildings with teams and clients alike. I
-              believe that these same skills are what makes me a great engineer
-              and is what will make me a great developer.
+              believe that these same skills are what makes me a <em>great</em>{" "}
+              engineer and is what will make me a <em>great</em> developer.
             </p>
             <p>
               I am passionate about creating something out of my own design

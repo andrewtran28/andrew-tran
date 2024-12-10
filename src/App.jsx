@@ -1,6 +1,4 @@
 import "./App.css";
-
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -12,7 +10,7 @@ function App() {
   const { name } = useParams();
 
   return (
-    <>
+    <div id="root">
       {name === "home" ? (
         <Home />
       ) : name === "portfolio" ? (
@@ -24,7 +22,7 @@ function App() {
       )}
 
       <Footer />
-    </>
+    </div>
   );
 }
 
