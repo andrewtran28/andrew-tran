@@ -73,12 +73,6 @@ button {
   transform: scale(1.25);
   transition-duration: 0.2s;
 }
-/* 
-@media (max-width: 1000px) {
-  #root {
-    margin: 0 15px;
-  }
-} */
 
 @media (max-width: 800px) {
   hr {

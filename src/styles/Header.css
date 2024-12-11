@@ -2,20 +2,30 @@
   background-image: url("/sunset.png");
   background-size: cover;
   background-position: 50% 30%;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
-  color: var(--font-dark);
-  text-align: center;
-  margin: 0;
-  padding: 10px 0;
   transition-duration: 0.2s;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
 }
 
 #top-header a {
   color: inherit;
+}
+
+#top-header h1 {
+  border-left: 8px solid var(--sharp-orange);
+  border-right: 8px solid var(--slate);
+  border-radius: 6px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: var(--font-dark);
+  margin: 0;
+  padding: 0 5px;
+  place-self: center;
+  height: 3rem;
 }
 
 nav {
@@ -28,6 +38,26 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  position: absolute;
+  left: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  border-radius: 4px;
+  border-left: 6px solid var(--font-silver);
+  border-right: 6px solid var(--slate);
+  height: 2.1rem;
+  padding: 0 3px;
+  color: var(--font-dark);
+  display: none;
+}
+#logo a {
+  color: inherit;
 }
 
 nav ul {
@@ -79,5 +109,14 @@ nav ul {
 
   .nav-list {
     margin: 0 10px;
+  }
+
+  #logo {
+    position: unset;
+    margin: 0 10px;
+  }
+
+  .home {
+    display: none;
   }
 }

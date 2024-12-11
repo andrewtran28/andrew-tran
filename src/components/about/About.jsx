@@ -62,8 +62,8 @@ function About() {
           </div>
         </div>
         <hr />
+        <h2>Interests Beyond Web Development</h2>
         <div className="interests-cont">
-          <h2>Interests Beyond Web Development</h2>
           <div className="interest">
             <p>
               I spend most of my day at the computer whether it's work, watching

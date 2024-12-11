@@ -59,6 +59,7 @@ function Footer() {
           loading="lazy"
         />
       </picture>
+      <div id="copyright">© Andrew Tran. All Rights Reserved.</div>
     </footer>
   );
 }

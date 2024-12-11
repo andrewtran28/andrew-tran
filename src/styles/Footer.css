@@ -6,6 +6,7 @@ footer {
   color: var(--font-silver);
   width: 100%;
   padding: 20px 0;
+  position: relative;
 }
 
 .contact-cont {
@@ -32,6 +33,12 @@ picture {
 
 #contact-img {
   max-width: 600px;
+}
+
+#copyright {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 10px;
 }
 
 @media (max-width: 1000px) {

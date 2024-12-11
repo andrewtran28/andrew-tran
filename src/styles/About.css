@@ -6,6 +6,7 @@
 
 #about-cont h2 {
   font-weight: 300;
+  margin-bottom: 40px;
 }
 
 #about-cont img {
@@ -47,11 +48,11 @@
 .interests-cont {
   place-self: center;
   text-align: justify;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .interests-cont p {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .interest {
@@ -106,6 +107,11 @@
 }
 
 @media (max-width: 800px) {
+  #about-cont h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
   .values-cont {
     flex-direction: column;
   }
