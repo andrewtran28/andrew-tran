@@ -19,10 +19,7 @@ function About() {
       </p>
       <p>
         When I am not around my computer, I enjoy all things DIY and creating
-        projects that either serve a purpose to me or support my hobbies. It's
-        one of the reasons why I wanted to go into web-development because I
-        wanted to show my friends and family another way of going, "Hey —check
-        this out!".
+        projects that either serve a purpose to me or support my hobbies.
       </p>
 
       <h3>Interests Beyond Web Development</h3>
