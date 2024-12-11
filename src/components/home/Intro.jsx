@@ -2,7 +2,6 @@ import "../../styles/Intro.css";
 import profile from "../../assets/profile.jpg";
 import github from "../../assets/icons/github_light.png";
 import linkedin from "../../assets/icons/linkedin_light.png";
-import HoverGIF from "./HoverGIF";
 import { useState, useEffect, useRef } from "react";
 
 function Intro({ scroll }) {
@@ -76,12 +75,12 @@ function Intro({ scroll }) {
             <p>
               I'm an electrical engineer from Ottawa, ON who wants to pursue a
               career in web development as a{" "}
-              <strong>full-stack developer</strong>. During my{" "}
-              <HoverGIF text="6 years" /> in the power-distribution industry, I
-              have become proficient in designing, managing, and creating
-              electrical systems for buildings with teams and clients alike. I
-              believe that these same skills are what makes me a <em>great</em>{" "}
-              engineer and is what will make me a <em>great</em> developer.
+              <strong>full-stack developer</strong>. During my time in the
+              consulting engineering industry, I have become proficient in
+              designing, managing, and creating electrical systems for buildings
+              with teams and clients alike. I believe that these same skills are
+              what makes me a <em>great</em> engineer and is what will make me a{" "}
+              <em>great</em> developer.
             </p>
             <p>
               I am passionate about creating something out of my own design

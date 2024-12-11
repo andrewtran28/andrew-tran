@@ -28,6 +28,8 @@
 
 .intro-img {
   width: 450px;
+  border-right: 8px solid var(--sharp-orange);
+  /* border-radius: 8px; */
 }
 
 .intro-card {
@@ -81,7 +83,7 @@
 
 @media (max-width: 1200px) {
   #intro {
-    max-width: 1000px;
+    max-width: 1050px;
   }
 }
 
@@ -99,6 +101,8 @@
   .intro-img {
     width: 400px;
     margin-top: 10px;
+    border-right: none;
+    border-bottom: 8px solid var(--sharp-orange);
   }
 
   .intro-card {

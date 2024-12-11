@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from "react";
 import "../../styles/Carousel.css";
+import { useState, useEffect, useRef } from "react";
 
 function Carousel() {
   const IMG_NUM = 6;
-  const IMG_WIDTH = 500; //pixels; Value must match "Carousel.css".
+  const IMG_WIDTH = 350; //pixels; Value must match "Carousel.css".
   const AUTO_TIME = 10000; //ms
 
   let imgIndex = [];
@@ -17,17 +17,18 @@ function Carousel() {
 
   const images = [
     "/about/workbench.jpg",
-    "/about/sketchup.png",
+    "/about/moonboard.jpg",
+    "/about/sketchup.jpg",
     "/about/boardgame.jpg",
-    "/about/3dprint_1.jpg",
-    "/about/3dprint_2.jpg",
-    "/about/3dprint_3.jpg",
+    "/about/dicebox.jpg",
+    "/about/joycon.jpg",
   ];
 
   useEffect(() => {
     scroll();
   }, [index]);
 
+  //Resets scroll timer upon manually scrolling.
   useEffect(() => {
     startInterval();
     return () => {
@@ -73,9 +74,6 @@ function Carousel() {
   return (
     <div className="menu-carousel">
       <div className="carousel-top">
-        <button className="scroll carousel-left" onClick={scrollLeft}>
-          &#60;
-        </button>
         <div className="carousel-frame" ref={carousel}>
           <div className="carousel-cont">
             {images.map((item, i) => {
@@ -87,22 +85,25 @@ function Carousel() {
             })}
           </div>
         </div>
-        <button className="scroll carousel-right" onClick={scrollRight}>
-          &#62;
-        </button>
       </div>
 
       <div className="carousel-nav">
+        <button className="scroll carousel-left" onClick={scrollLeft}>
+          &#60;
+        </button>
         {imgIndex.map((_, i) => (
           <button
             key={i}
             className="circle-nav"
             style={{
-              backgroundColor: index === i ? "#ff6054" : "#223552",
+              backgroundColor: index === i ? "#ff6054" : "#6a6e76",
             }}
             onClick={() => circleNavigation(i)}
           ></button>
         ))}
+        <button className="scroll carousel-right" onClick={scrollRight}>
+          &#62;
+        </button>
       </div>
     </div>
   );

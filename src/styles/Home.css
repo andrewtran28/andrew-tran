@@ -4,6 +4,10 @@
   max-width: 1200px;
 }
 
+#home-cont h2 {
+  font-weight: 300;
+}
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
@@ -95,7 +99,7 @@
   place-self: start;
   place-items: start;
   width: fit-content;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border-left: 8px solid var(--sharp-orange);
 }
 .right {
