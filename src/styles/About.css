@@ -1,4 +1,141 @@
-.about-cont {
+#about-cont {
   margin: 40px;
+  place-self: center;
+  max-width: 1200px;
+}
+
+#about-cont h2 {
+  font-weight: 300;
+}
+
+#about-cont img {
+  border-radius: 8px;
+}
+
+.about-intro {
+  display: flex;
   text-align: justify;
+}
+
+#about-profile {
+  object-fit: cover;
+  max-width: 450px;
+  margin-right: 20px;
+  border: none;
+}
+
+.values-cont {
+  display: flex;
+  padding: 0;
+}
+
+.values-cont h3 {
+  font-size: 1.5rem;
+  margin: 0 0 5px 0;
+  text-align: start;
+}
+
+.value {
+  flex: 1;
+  font-size: 1rem;
+  border-left: 6px solid var(--sharp-orange);
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.interests-cont {
+  place-self: center;
+  text-align: justify;
+  max-width: 900px;
+}
+
+.interests-cont p {
+  margin: 0 20px;
+}
+
+.interest {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.interest-img {
+  object-fit: cover;
+  max-width: 500px;
+  max-height: 450px;
+}
+
+/*CSS Trick where carousel is actually 350px but scaled up to 450px*/
+.menu-carousel {
+  margin: 50px;
+  transform: scale(calc(450 / 350));
+}
+
+.carousel-nav {
+  transform: scale(calc(350 / 450));
+}
+
+@media (max-width: 1000px) {
+  .about-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #about-cont {
+    margin: 40px 20px;
+  }
+
+  .interest {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .interests-cont p {
+    margin: 20px 0;
+  }
+
+  .interest {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .values-cont {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-cont {
+    margin: 40px 10px;
+  }
+
+  #about-profile {
+    object-fit: cover;
+    max-width: 350px;
+    margin-right: 0;
+    border: none;
+  }
+
+  .interest-img {
+    object-fit: contain;
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  /*CSS Trick: Carousel is actually 350px and is now reverted.*/
+  .menu-carousel {
+    margin: 0px;
+    transform: unset;
+  }
+
+  .carousel-nav {
+    transform: unset;
+  }
 }

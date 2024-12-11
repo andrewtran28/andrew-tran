@@ -1,27 +1,33 @@
 #top-header {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 6rem;
-  color: var(--font-dark);
-  width: 100%;
-  text-align: center;
-  padding: 70px 0;
-  background-image: url("/sunset.png");
+  background-image: url("sunset.png");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 30%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: var(--font-dark);
+  text-align: center;
   margin: 0;
+  padding: 10px 0;
   transition-duration: 0.2s;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
 
+#top-header a {
+  color: inherit;
+}
+
 nav {
   background-color: var(--sharp-orange);
-  font-size: 2rem;
-  font-weight: 400;
+  border-bottom: 2px solid var(--accent-gray);
   color: var(--font-silver);
+  font-size: 1.5rem;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 nav ul {
@@ -33,7 +39,7 @@ nav ul {
 }
 
 .nav-list {
-  margin: 0 20px;
+  margin: 0 30px;
   transition-duration: 0.2s;
 }
 .nav-list:hover {
@@ -42,45 +48,36 @@ nav ul {
 
 .nav-link {
   color: var(--font-silver);
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 5px;
   color: inherit;
   transition-duration: 0.2s;
 }
 .nav-link:hover {
   background-color: var(--navy-accent);
-  box-shadow: 2px 2px 4px var(--font-dark);
+  box-shadow: 1px 1px 3px var(--navy-shadow);
 }
 .nav-link:active {
   background-color: var(--navy-shadow);
 }
 
 @media (max-width: 1000px) {
+  .nav-list {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 600px) {
   #top-header {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   nav {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
+    /* padding: 10px 0; */
   }
 
   .nav-list {
     margin: 0 10px;
-  }
-}
-
-@media (max-width: 700px) {
-  #top-header {
-    font-size: 3.5rem;
-  }
-
-  nav {
-    font-size: 1.5rem;
-    padding: 10px 0;
-  }
-
-  .nav-list {
-    margin: 10px;
-    padding: 0 10px;
   }
 }

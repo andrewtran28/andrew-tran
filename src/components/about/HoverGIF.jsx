@@ -17,10 +17,7 @@ function HoverGIF({ text }) {
         onMouseLeave={() => setShowGIF(false)}
         onMouseMove={handleMouseMove}
       >
-        {" "}
-        <strong>
-          <u>{text}</u>
-        </strong>{" "}
+        <u>{text}</u>
       </span>
 
       {showGIF && (
