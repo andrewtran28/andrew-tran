@@ -1,5 +1,13 @@
 [
   {
+    "name": "myMessageBoard",
+    "img": "/projects/message-board.png",
+    "desc": "A mini-message board web application that allows you to view and create new posts.",
+    "gh_url": "https://github.com/andrewtran28/message-board",
+    "ext_url": "",
+    "tags": ["JavaScript", "Router", "Node.js", "Express", "ejs", "Forms"]
+  },
+  {
     "name": "Thrift City",
     "img": "/projects/thrift-city.png",
     "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
