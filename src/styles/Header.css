@@ -13,6 +13,7 @@
 
 #top-header a {
   color: inherit;
+  text-decoration: none;
 }
 
 #top-header h1 {
@@ -58,6 +59,7 @@ nav {
 }
 #logo a {
   color: inherit;
+  text-decoration: none;
 }
 
 nav ul {
@@ -82,6 +84,7 @@ nav ul {
   border-radius: 5px;
   color: inherit;
   transition-duration: 0.2s;
+  text-decoration: none;
 }
 .nav-link:hover {
   background-color: var(--navy-accent);

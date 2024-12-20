@@ -1,10 +1,38 @@
-.error-cont {
+#error-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: var(--font-dark);
+  margin: 0 40px;
 }
 
 .error-img {
-  width: 500px;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+  #error-cont {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #error-cont {
+    margin: 0 10px;
+  }
+  .error-img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  #error-cont {
+    font-size: 0.75rem;
+  }
+
+  .error-img {
+    max-width: 350px;
+  }
 }

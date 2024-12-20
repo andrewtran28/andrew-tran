@@ -68,10 +68,16 @@ function About() {
             <p>
               I spend most of my day at the computer whether it's work, watching
               videos, or gaming. I run a dual-boot PC of Windows 10 for general
-              use and Ubuntu for web-development. I have also tried coding on
-              the Steam Deck handheld device which runs a distribution of Linux
-              for the curiosity —it's possible! Besides sitting at my desk, I
+              use and Ubuntu for web-development. Besides sitting at my desk, I
               also have other interests as well.
+              <br />
+              <br />
+              <strong>Fun fact:</strong> The colour and theme of my website was
+              based on the{" "}
+              <a href="https://epomaker.com/products/cidoo-v87">
+                mechanical keyboard
+              </a>{" "}
+              you see in this image.
             </p>
             <img className="interest-img" src="/about/desk.jpg" />
           </div>
@@ -79,9 +85,10 @@ function About() {
             <img className="interest-img" src="/about/climbing.jpg" />
             <p>
               Contrary to the outdoor image you see, I'm actually terrified of
-              heights. I primarily do bouldering or belay in an indoor gym where
-              I typically hover around the <em>"V4-V6"</em> grade range. I'm no
-              pro, but at least it's better than a beginner.
+              heights. I primarily do bouldering and sometimes belay in an
+              indoor gym. If you were curios, I'm by no means a <em>pro</em>,
+              but I consider myself pretty average where I hover around the{" "}
+              <em>"V4-V6"</em> grade range.
             </p>
           </div>
           <div className="interest">
