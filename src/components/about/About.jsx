@@ -74,7 +74,11 @@ function About() {
               <br />
               <strong>Fun fact:</strong> The colour and theme of my website was
               based on the{" "}
-              <a href="https://epomaker.com/products/cidoo-v87">
+              <a
+                href="https://epomaker.com/products/cidoo-v87"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 mechanical keyboard
               </a>{" "}
               you see in this image.
