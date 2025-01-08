@@ -1,5 +1,24 @@
 [
   {
+    "name": "mingleeDB Game Library",
+    "img": "/projects/game-library.png",
+    "desc": "A video-game library that allows you to create, view, update, and delete games from a PSQL database. Game images provided by GameBomb API",
+    "gh_url": "https://github.com/andrewtran28/inventory-app",
+    "ext_url": "https://inventory-app-d1y4.onrender.com/",
+    "tags": [
+      "JavaScript",
+      "Router",
+      "Node.js",
+      "Express",
+      "ejs",
+      "Forms",
+      "Render",
+      "PaaS",
+      "Databse",
+      "PSQL"
+    ]
+  },
+  {
     "name": "myMessageBoard",
     "img": "/projects/message-board.png",
     "desc": "A mini-message board web application that allows you to view and create new posts.",
