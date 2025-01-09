@@ -8,7 +8,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       //Set to height of Header (px)
-      if (window.scrollY > 68) {
+      if (window.scrollY > 95) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

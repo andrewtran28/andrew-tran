@@ -18,15 +18,16 @@
 }
 
 #top-header h1 {
-  --logo-size: 50px;
+  /* Adjust value for header size */
+  --logo-size: 75px;
 
-  border-left: 8px solid var(--sharp-orange);
-  border-right: 8px solid var(--slate);
+  border-left: 12px solid var(--sharp-orange);
+  border-right: 12px solid var(--slate);
   border-radius: 6px;
   place-self: center;
   align-content: center;
   margin: 0;
-  padding: 0 5px;
+  padding: 0 10px;
   font-family: "Bebas Neue", sans-serif;
   color: var(--font-dark);
   font-size: var(--logo-size);
