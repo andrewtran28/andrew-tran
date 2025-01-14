@@ -1,7 +1,18 @@
+.about-accent {
+  background-color: var(--slate);
+  color: var(--font-silver);
+  padding: 20px 0 40px 0;
+}
+
 #about-cont {
-  margin: 40px;
+  margin: 0 20px 40px 20px;
   place-self: center;
   max-width: 1200px;
+}
+
+#about-cont h1 {
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 #about-cont h2 {
@@ -85,9 +96,6 @@
 }
 
 @media (max-width: 900px) {
-  #about-cont {
-    margin: 40px 20px;
-  }
 
   .interest {
     flex-direction: column;
@@ -119,7 +127,7 @@
 
 @media (max-width: 600px) {
   #about-cont {
-    margin: 40px 10px;
+    margin: 0 10px 20px 10px;
   }
 
   #about-profile {

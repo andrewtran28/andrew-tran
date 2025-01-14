@@ -37,8 +37,9 @@ function About() {
   return (
     <div>
       <Header />
-      <div id="about-cont">
-        <h2>About me</h2>
+      <div class="about-accent">
+        <div id="about-cont">
+        <h1>About me</h1>
         <div className="about-intro">
           <img id="about-profile" src="/about/about.jpg" />
           <div>
@@ -50,17 +51,19 @@ function About() {
               I am an electrical engineer who has worked{" "}
               <HoverGIF text="6 years" /> in the consulting engineering industry
               where I have done services such as upgrading power distribution
-              systems and designing architectural lighting. In recent years, I
+              systems and designing architectural lighting. There are only so many ways
+              you can change a lightbulb <em>(quite literally)...</em> So in recent years, I
               wanted to explore new avenues that would allow me to display my
-              problem-solving skills and creativity. There are only so many ways
-              you can change a lightbulb <em>(quite literally)...</em> This has
+              problem-solving skills and creativity. This has
               lead me to web-development as I liked the logical approach
               associated with programming and the rapid expansion of innovation
               behind web-design.
             </p>
           </div>
         </div>
-
+        </div>
+      </div>
+      <div id="about-cont">
         <hr />
         <div
           data-id="item0"

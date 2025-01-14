@@ -1,5 +1,23 @@
 [
   {
+    "name": "Super Messages",
+    "img": "/projects/super-messages.png",
+    "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
+    "gh_url": "https://github.com/andrewtran28/members-forum",
+    "ext_url": "https://members-forum.onrender.com/",
+    "tags": [
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "ejs",
+      "Forms",
+      "PaaS",
+      "PSQL",
+      "Authentication",
+      "Session"
+    ]
+  },
+  {
     "name": "mingleeDB Game Library",
     "img": "/projects/game-library.png",
     "desc": "A video-game library that allows you to create, read, update, and delete games from a PSQL database. Game images provided by GameBomb API.",
