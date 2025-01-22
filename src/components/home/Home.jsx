@@ -69,13 +69,15 @@ function Home() {
         >
           <h2>Relevant Skills</h2>
           <p>
-            Below are my skills that are applicable to web development. I don't
-            plan to stop learning and I intend to continue refining my current
-            skill set. <strong>Hover over the icons below to know more.</strong>
+            Below are my skills that are applicable to web development. Please
+            note that I am not limited to the skills and tools below, and intend
+            to continue my growth.{" "}
+            <strong>Hover over the icons below to know more.</strong>
           </p>
           <SkillBox data={skillData[0]} title={"Front-end Development"} />
-          <SkillBox data={skillData[1]} title={"Tools & Platforms"} />
-          <SkillBox data={skillData[2]} title={"Additional Skills"} />
+          <SkillBox data={skillData[1]} title={"Back-end Development"} />
+          <SkillBox data={skillData[2]} title={"Tools & Platforms"} />
+          <SkillBox data={skillData[3]} title={"Additional Skills"} />
           <hr />
         </div>
 

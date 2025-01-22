@@ -122,7 +122,7 @@
 .exp-flex {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  width: 100%;
 }
 
 .exp-img {
@@ -132,6 +132,7 @@
   height: 75px;
   border-radius: 5px;
   overflow: hidden;
+  margin-right: 10px;
 }
 
 .exp-title {

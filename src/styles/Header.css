@@ -96,12 +96,17 @@ nav ul {
 }
 
 @media (max-width: 600px) {
-  #top-header {
-    font-size: 2.5rem;
+  
+  #top-header h1 a{
+    font-size: 3.5rem;
   }
 
   nav {
     font-size: 1.35rem;
+  }
+
+  .nav-list {
+    margin: 0 25px;
   }
 
   #logo {

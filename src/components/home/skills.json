@@ -28,6 +28,38 @@
   ],
   [
     {
+      "skill": "Node.js",
+      "icon": "/logos/nodejs.svg",
+      "info": "As JavaScript is my programming language of choice, I chose Node.js to continue my back-end web-development outside the browser."
+    },
+    {
+      "skill": "Express.js",
+      "icon": "/logos/express.svg",
+      "info": "Express is a lightweight back-end web-applicaiton framework which handles all my web application HTTP requests and responses."
+    },
+    {
+      "skill": "PostgreSQL",
+      "icon": "/logos/postgresql.svg",
+      "info": "A fairly simple relational database management system (RDBMS) that efficiently organizes my databases as necessary."
+    },
+    {
+      "skill": "Prisma ORM",
+      "icon": "/logos/prisma.svg",
+      "info": "Prisma allows my PSQL database to be scaled and developed along side my web applications with an OOP approach. "
+    },
+    {
+      "skill": "EJS",
+      "icon": "/logos/ejs.svg",
+      "info": "Used in junction with Node.js and Express, EJS operates on the server to dynamically create HTML pages."
+    },
+    {
+      "skill": "Passport",
+      "icon": "/logos/passport.svg",
+      "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies in my web applications."
+    }
+  ],
+  [
+    {
       "skill": "Git",
       "icon": "/logos/git.svg",
       "info": "Typical project control manager that works in tandem with GitHub."
@@ -40,7 +72,7 @@
     {
       "skill": "Visual Studio Code",
       "icon": "/logos/vs-code.svg",
-      "info": "My go-to IDE for all web-dev coding. I try to keep extensions to a minimal for a lightweight, clean experience."
+      "info": "My go-to IDE for all web-development programmign. I try to keep extensions to a minimal for a lightweight, clean experience."
     },
     {
       "skill": "npm",

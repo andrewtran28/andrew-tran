@@ -4,15 +4,15 @@
       "title": "The Odin Project",
       "subtitle": "Full-Stack - JavaScript",
       "image": "/logos/odin.svg",
-      "date": "Sept 2024 - Dec 2024",
+      "date": "Sept 2024 - Jan 2025",
       "location": "",
-      "note": "Currently finishing the back-end development portion of courses."
+      "note": ""
     },
     {
       "title": "Carleton University",
       "subtitle": "B.Eng - Electrical, Co-op",
       "image": "/logos/carleton.png",
-      "date": "Sept 2015 - April 2020",
+      "date": "Sept 2015 - Apr 2020",
       "location": "Ottawa, ON",
       "note": ""
     },
@@ -30,14 +30,14 @@
       "title": "Morrison Hershfield",
       "subtitle": "Electrical Designer, EIT",
       "image": "/logos/mh.png",
-      "date": "April 2023 - Sept 2024",
+      "date": "Apr 2023 - Sept 2024",
       "location": "Toronto, ON"
     },
     {
       "title": "Stantec",
       "subtitle": "Electrical Engineering Intern",
       "image": "/logos/stantec.png",
-      "date": "May 2020 - March 2023",
+      "date": "May 2020 - Mar 2023",
       "location": "Toronto, ON",
       "note": "+2 yrs. as a co-op student; May 2017 - Sept 2019."
     }
