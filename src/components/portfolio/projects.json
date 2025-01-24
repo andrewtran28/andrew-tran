@@ -1,5 +1,27 @@
 [
   {
+    "name": "Upside Downloader",
+    "img": "/projects/upside-downloader.png",
+    "desc": "A files management app that allows for users to manage, upload, view, and download files. File cloud storage service provided by Cloudinary.",
+    "gh_url": "https://github.com/andrewtran28/file-uploader",
+    "ext_url": "https://upsidedownloader.onrender.com/",
+    "tags": [
+      "JavaScript",
+      "Node",
+      "Express",
+      "ejs",
+      "Forms",
+      "PaaS",
+      "PSQL",
+      "Prisma ORM",
+      "Authentication",
+      "Session",
+      "File Management",
+      "Cloudinary",
+      "CRUD"
+    ]
+  },
+  {
     "name": "Super Messages",
     "img": "/projects/super-messages.png",
     "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
@@ -7,14 +29,15 @@
     "ext_url": "https://members-forum.onrender.com/",
     "tags": [
       "JavaScript",
-      "Node.js",
+      "Node",
       "Express",
       "ejs",
       "Forms",
       "PaaS",
       "PSQL",
       "Authentication",
-      "Session"
+      "Session",
+      "CRUD"
     ]
   },
   {
@@ -26,7 +49,7 @@
     "tags": [
       "JavaScript",
       "Router",
-      "Node.js",
+      "Node",
       "Express",
       "ejs",
       "Forms",
@@ -44,7 +67,7 @@
     "tags": [
       "JavaScript",
       "Router",
-      "Node.js",
+      "Node",
       "Express",
       "ejs",
       "Forms",
