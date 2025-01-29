@@ -45,10 +45,10 @@ function Home() {
   };
 
   const handleDownload = () => {
-    const pdfUrl = "../../assets/AndrewTran_Resume.pdf";
+    const pdfUrl = "/AndrewTran_Resume_2025.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "AndrewTran_Resume.pdf";
+    link.download = "AndrewTran_Resume_2025.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -48,14 +48,14 @@
       "info": "Prisma allows my PSQL database to be scaled and developed along side my web applications with an OOP approach. "
     },
     {
-      "skill": "EJS",
-      "icon": "/logos/ejs.svg",
-      "info": "Used in junction with Node.js and Express, EJS operates on the server to dynamically create HTML pages."
-    },
-    {
       "skill": "Passport",
       "icon": "/logos/passport.svg",
       "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies in my web applications."
+    },
+    {
+      "skill": "Postman",
+      "icon": "/logos/postman.svg",
+      "info": "Postman is a simple, intuitive tool that allows me to quickly develop and test APIs without the need for HTML forms."
     }
   ],
   [
@@ -80,36 +80,46 @@
       "info": "Used to install packages in virtually all my projects including some tools you see here."
     },
     {
-      "skill": "Webpack",
-      "icon": "/logos/webpack.svg",
-      "info": "Used Webpack for bundling vanilla JavaScript modules and webpack-dev-server for live-previewing during production."
-    },
-    {
       "skill": "Vite",
       "icon": "/logos/vite.svg",
       "info": "All my React projects have started out from a template using Vite. Great as a local development server for local rendering."
+    },
+    {
+      "skill": "Webpack",
+      "icon": "/logos/webpack.svg",
+      "info": "Used Webpack for bundling vanilla JavaScript modules and webpack-dev-server for live-previewing during production."
     }
   ],
   [
+    {
+      "skill": "UNIX/Linux CLI (Bash)",
+      "icon": "/logos/linux.svg",
+      "info": "I am familiar the basics of UNIX/Linux CLI commands. I currently use Ubuntu as my main OS for web-development."
+    },
+    {
+      "skill": "SQL",
+      "icon": "/logos/sql.svg",
+      "info": "Before using an ORM, I would write many RESTful SQL database queries typically for CRUD instructions."
+    },
     {
       "skill": "Jest",
       "icon": "/logos/jest.svg",
       "info": "Implemented test-driven development for some web-applications by setting up unit tests with Jest before producing code."
     },
     {
-      "skill": "SQL",
-      "icon": "/logos/sql.svg",
-      "info": "Used SQL to pull structured data from ETAP (an electrical system analysis/modelling tool) to generate PDF reports."
+      "skill": "EJS",
+      "icon": "/logos/ejs.svg",
+      "info": "EJS rendering engine that operates on the server to dynamically create HTML pages. Typically used for back-end templating."
     },
     {
-      "skill": "UNIX/Linux",
-      "icon": "/logos/linux.svg",
-      "info": "I am familiar the basics of UNIX/Linux OS commands. I currently use Ubuntu as my main OS for web-development."
+      "skill": "Microsoft Office Suite",
+      "icon": "/logos/microsoft-office.svg",
+      "info": "Proficient with typical Microsoft Office software applications (i.e., Word, Excel, Powerpoint, Teams, Sharepoint, Access, etc.)."
     },
     {
       "skill": "Responsive design",
       "icon": "/logos/responsive.svg",
-      "info": "I typically use CSS media queries to accommodate webpages for different screen sizes and also try to be mindful of web accessibility."
+      "info": "When designing webpages, I aim to accommodate for different forms of media sizes and to be mindful of web accessibility."
     }
   ]
 ]
