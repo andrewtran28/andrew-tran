@@ -183,7 +183,6 @@
 }
 #resume-btn:hover {
   background-color: var(--navy-accent);
-  transform: scale(1.05);
 }
 #resume-btn:active {
   background-color: var(--navy-shadow);

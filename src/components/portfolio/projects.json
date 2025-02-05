@@ -1,5 +1,28 @@
 [
   {
+    "name": "Buhlog",
+    "img": "/projects/buhlog.png",
+    "desc": "A blog website complete with back-end blog API, user authentication, and PSQL database. Front-end blog UI capable of rich text reading and editing.",
+    "gh_url": "https://github.com/andrewtran28/blog-api",
+    "ext_url": "https://buhlog.netlify.app/",
+    "tags": [
+      "Full-Stack",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "API",
+      "Forms",
+      "PaaS",
+      "PSQL",
+      "Prisma ORM",
+      "Authentication",
+      "Session",
+      "CRUD",
+      "Quill"
+    ]
+  },
+  {
     "name": "Upside Downloader",
     "img": "/projects/upside-downloader.png",
     "desc": "A files management app that allows for users to manage, upload, view, and download files. File cloud storage service provided by Cloudinary.",
@@ -27,18 +50,7 @@
     "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
     "gh_url": "https://github.com/andrewtran28/members-forum",
     "ext_url": "https://members-forum.onrender.com/",
-    "tags": [
-      "JavaScript",
-      "Node",
-      "Express",
-      "ejs",
-      "Forms",
-      "PaaS",
-      "PSQL",
-      "Authentication",
-      "Session",
-      "CRUD"
-    ]
+    "tags": ["JavaScript", "Node", "Express", "ejs", "Forms", "PaaS", "PSQL", "Authentication", "Session", "CRUD"]
   },
   {
     "name": "mingleeDB Game Library",
@@ -46,17 +58,7 @@
     "desc": "A video-game library that allows you to create, read, update, and delete games from a PSQL database. Game images provided by GameBomb API.",
     "gh_url": "https://github.com/andrewtran28/inventory-app",
     "ext_url": "https://inventory-app-d1y4.onrender.com/",
-    "tags": [
-      "JavaScript",
-      "Router",
-      "Node",
-      "Express",
-      "ejs",
-      "Forms",
-      "PaaS",
-      "PSQL",
-      "CRUD"
-    ]
+    "tags": ["JavaScript", "Router", "Node", "Express", "ejs", "Forms", "PaaS", "PSQL", "CRUD"]
   },
   {
     "name": "myMessageBoard",
@@ -64,15 +66,7 @@
     "desc": "A mini-message board web application that allows you to view and create new posts.",
     "gh_url": "https://github.com/andrewtran28/message-board",
     "ext_url": "https://message-board-4stu.onrender.com/",
-    "tags": [
-      "JavaScript",
-      "Router",
-      "Node",
-      "Express",
-      "ejs",
-      "Forms",
-      "PaaS"
-    ]
+    "tags": ["JavaScript", "Router", "Node", "Express", "ejs", "Forms", "PaaS"]
   },
   {
     "name": "Thrift City",
@@ -80,15 +74,7 @@
     "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
     "gh_url": "https://github.com/andrewtran28/shopping-cart",
     "ext_url": "https://thriftcity.netlify.app/home",
-    "tags": [
-      "React",
-      "JavaScript",
-      "API",
-      "Router",
-      "Netlify",
-      "Carousel",
-      "SPA"
-    ]
+    "tags": ["React", "JavaScript", "API", "Router", "Netlify", "Carousel", "SPA"]
   },
   {
     "name": "Memory-Card Game",
