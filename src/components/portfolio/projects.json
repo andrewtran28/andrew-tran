@@ -1,5 +1,27 @@
 [
   {
+    "name": "Penguin Watching Game",
+    "img": "/projects/penguin-watching.png",
+    "desc": "An object spotting game that has you put up against a timer and an increasing amount of penguins. Reach a high score and enter it on a live online leaderboard.",
+    "gh_url": "https://github.com/andrewtran28/wanted-game",
+    "ext_url": "https://penguin-watching.netlify.app/",
+    "tags": [
+      "Full-Stack",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "API",
+      "PaaS",
+      "PSQL",
+      "Photo Tag",
+      "Prisma ORM",
+      "Leaderboard",
+      "Responsive",
+      "Fullscreen"
+    ]
+  },
+  {
     "name": "Buhlog",
     "img": "/projects/buhlog.png",
     "desc": "A blog website complete with back-end blog API, user authentication, and PSQL database. Front-end blog UI capable of rich text reading and editing.",
