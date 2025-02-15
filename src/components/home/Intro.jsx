@@ -2,13 +2,12 @@ import "../../styles/Intro.css";
 import profile from "../../assets/profile.jpg";
 import github from "../../assets/icons/github_light.png";
 import linkedin from "../../assets/icons/linkedin_light.png";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 function Intro({ scroll }) {
   const [greeting, setGreeting] = useState("Hey There!");
   const [fade, setFade] = useState(true);
   const [textFade, setTextFade] = useState(true);
-  const scrollRef = useRef(null);
 
   useEffect(() => {
     handleText();

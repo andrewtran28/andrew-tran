@@ -5,7 +5,9 @@ function Project({ name, img, desc, gh_url, ext_url, tags }) {
   return (
     <>
       <div className="project">
-        <img className="project-img" src={img} />
+        <a target="_blank" rel="noopener noreferrer" href={ext_url}>
+          <img className="project-img" src={img} />
+        </a>
         <div className="project-sub">
           <div>
             <div className="project-name">{name}</div>
@@ -21,11 +23,11 @@ function Project({ name, img, desc, gh_url, ext_url, tags }) {
             })}
           </div>
           <div className="project-btns">
-            <a href={gh_url}>
+            <a href={gh_url} target="_blank" rel="noopener noreferrer">
               <img className="icon" src={github} />
             </a>
             {ext_url !== "" && (
-              <a target="_blank" rel="noopener noreferrer" href={ext_url}>
+              <a href={ext_url} target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={externalLink} />
               </a>
             )}
