@@ -61,6 +61,7 @@
   box-shadow: 5px 5px 5px var(--beige-shadow);
   min-height: 525px;
   transition-duration: 0.2s;
+  position: relative;
 }
 .project:hover {
   transform: scale(1.02);
@@ -71,6 +72,7 @@
   height: 350px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  transition-duration: 0.2s;
 }
 
 .project-sub {
@@ -78,6 +80,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 160px;
+  height: calc(100% - 360px);
   position: relative;
 }
 
@@ -89,7 +92,7 @@
 }
 
 .project-text {
-  margin: 5px 10px;
+  margin: 0 10px;
   font-size: 1rem;
   background: var(--silver);
 }
@@ -109,7 +112,7 @@
   display: inline-block;
   background-color: var(--navy-accent);
   border-radius: 5px;
-  padding: 2px;
+  padding: 2px 4px;
   margin: 0 2px;
   font-size: 0.75rem;
 }
