@@ -1,5 +1,29 @@
 [
   {
+    "name": "Babble-On",
+    "img": "/projects/babble-on.png",
+    "desc": "A web-messaging app that allows users to chat with others. Message features include group chats, profile icons, read reciepts, and message timestamps.",
+    "gh_url": "https://github.com/andrewtran28/messaging-app",
+    "ext_url": "https://babble-on.netlify.app/",
+    "tags": [
+      "Full-Stack",
+      "React",
+      "Node",
+      "Express",
+      "API",
+      "PSQL",
+      "Prisma ORM",
+      "PaaS",
+      "JS",
+      "monorepo",
+      "Passport",
+      "CRUD",
+      "Render",
+      "Netlify",
+      "chat"
+    ]
+  },
+  {
     "name": "Penguin Watching Game",
     "img": "/projects/penguin-watching.png",
     "desc": "An object spotting game that has you put up against a timer and an increasing amount of penguins. Reach a high score and enter it on a live online leaderboard.",
@@ -14,11 +38,11 @@
       "PSQL",
       "Prisma ORM",
       "PaaS",
-      "Render",
       "JS",
       "monorepo",
       "responsive",
-      "fullscreen"
+      "Render",
+      "Netlify"
     ]
   },
   {
@@ -33,7 +57,7 @@
       "Node",
       "Express",
       "API",
-      "authentication",
+      "Passport",
       "session",
       "PSQL",
       "Prisma ORM",
@@ -56,7 +80,7 @@
       "Express",
       "API",
       "ejs",
-      "authentication",
+      "Passport",
       "session",
       "Prisma ORM",
       "PSQL",
@@ -74,7 +98,7 @@
     "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
     "gh_url": "https://github.com/andrewtran28/members-forum",
     "ext_url": "https://members-forum.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "PaaS", "PSQL", "authentication", "session", "CRUD", "forms", "JS", "Render"]
+    "tags": ["Node", "Express", "ejs", "PaaS", "PSQL", "Passport", "session", "CRUD", "forms", "JS", "Render"]
   },
   {
     "name": "mingleeDB Game Library",
