@@ -2,7 +2,7 @@
   {
     "name": "Babble-On",
     "img": "/projects/babble-on.png",
-    "desc": "A web-messaging app that allows users to chat with others. Message features include group chats, profile icons, read reciepts, and message timestamps.",
+    "desc": "A web-messaging app that allows users to chat with others in real-time. Message features include group chats, profile icons, read reciepts, and message timestamps.",
     "gh_url": "https://github.com/andrewtran28/messaging-app",
     "ext_url": "https://babble-on.netlify.app/",
     "tags": [
@@ -15,12 +15,12 @@
       "Prisma ORM",
       "PaaS",
       "JS",
+      "Socket.IO",
       "monorepo",
       "Passport",
       "CRUD",
       "Render",
-      "Netlify",
-      "chat"
+      "Netlify"
     ]
   },
   {
@@ -41,6 +41,7 @@
       "JS",
       "monorepo",
       "responsive",
+      "fullscreen",
       "Render",
       "Netlify"
     ]

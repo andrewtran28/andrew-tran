@@ -112,7 +112,7 @@
   display: inline-block;
   background-color: var(--navy-accent);
   border-radius: 5px;
-  padding: 2px 4px;
+  padding: 2px 3px;
   margin: 0 2px;
   font-size: 0.75rem;
 }
