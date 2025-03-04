@@ -67,11 +67,10 @@ function Home() {
           className={`fade-in-section ${visibleItems.item0 ? "visible" : ""}`}
           ref={(el) => (sectionRefs.current[0] = el)}
         >
-          <h2>Relevant Skills</h2>
+          <h2>Relevant Skills & Technologies</h2>
           <p>
-            Below are my skills that are applicable to web development. Please
-            note that I am not limited to the skills and tools below, and intend
-            to continue my growth.{" "}
+            Below are my skills and tools that are applicable to web development. Please note that I am not limited to
+            these technologies, and intend to continue my growth.{" "}
             <strong>Hover over the icons below to know more.</strong>
           </p>
           <SkillBox data={skillData[0]} title={"Front-end Development"} />
@@ -83,9 +82,7 @@ function Home() {
 
         <div
           data-id="item1"
-          className={`exp-cont fade-in-section ${
-            visibleItems.item1 ? "visible" : ""
-          }`}
+          className={`exp-cont fade-in-section ${visibleItems.item1 ? "visible" : ""}`}
           ref={(el) => (sectionRefs.current[1] = el)}
         >
           <h2>Education & Certifications</h2>
@@ -93,9 +90,7 @@ function Home() {
         </div>
         <div
           data-id="item2"
-          className={`exp-cont right fade-in-section ${
-            visibleItems.item2 ? "visible" : ""
-          }`}
+          className={`exp-cont right fade-in-section ${visibleItems.item2 ? "visible" : ""}`}
           ref={(el) => (sectionRefs.current[2] = el)}
         >
           <h2>Professional Experience</h2>
@@ -104,9 +99,7 @@ function Home() {
         <hr />
         <div
           data-id="item3"
-          className={`resume-cont fade-in-section ${
-            visibleItems.item3 ? "visible" : ""
-          }`}
+          className={`resume-cont fade-in-section ${visibleItems.item3 ? "visible" : ""}`}
           ref={(el) => (sectionRefs.current[3] = el)}
         >
           <div>

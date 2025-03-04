@@ -21,6 +21,11 @@
       "info": "Front-end JavaScript library that I use to create functional, reusable components. This website itself was created with React."
     },
     {
+      "skill": "TypeScript",
+      "icon": "/logos/typescript.svg",
+      "info": "Newer to my technologies and mainly used with React. TypeScript helps me enforce types on my JavaScript and reduce runtime errors."
+    },
+    {
       "skill": "Tailwind CSS",
       "icon": "/logos/tailwind.svg",
       "info": " I've tried Tailwind before and typically choose to stylize without it. However, I can see it being more useful on larger-scale projects."
@@ -50,7 +55,7 @@
     {
       "skill": "Passport",
       "icon": "/logos/passport.svg",
-      "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies in my web applications."
+      "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies such as JWTs."
     },
     {
       "skill": "Postman",
@@ -72,7 +77,7 @@
     {
       "skill": "Visual Studio Code",
       "icon": "/logos/vs-code.svg",
-      "info": "My go-to IDE for all web-development programmign. I try to keep extensions to a minimal for a lightweight, clean experience."
+      "info": "My go-to IDE for all web-development programming. I try to keep extensions to a minimal for a lightweight, clean experience."
     },
     {
       "skill": "npm",
