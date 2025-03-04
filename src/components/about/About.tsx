@@ -5,64 +5,58 @@ import HoverGIF from "../about/HoverGIF";
 import Carousel from "./Carousel";
 
 function About() {
-  const [visibleItems, setVisibleItems] = useState({});
-  const scrollRef = useRef(null);
-  const sectionRefs = useRef([]);
+  const [visibleItems, setVisibleItems] = useState<{ [key: string]: boolean }>({});
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     handleScrollView();
   }, []);
 
   const handleScrollView = () => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleItems((prev) => ({
-              ...prev,
-              [entry.target.dataset.id]: true,
-            }));
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.25 } // Trigger when 30% of the item is visible
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const targetElement = entry.target as HTMLElement;
+          setVisibleItems((prev) => ({
+            ...prev,
+            [targetElement.dataset.id!]: true, 
+          }));
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25 });
 
     sectionRefs.current.forEach((ref) => ref && observer.observe(ref));
-
     return () => observer.disconnect();
   };
 
   return (
     <div>
       <Header />
-      <div class="about-accent">
+      <div className="about-accent">
         <div id="about-cont">
-        <h1>About me</h1>
-        <div className="about-intro">
-          <img id="about-profile" src="/about/about.jpg" />
-          <div>
-            <p>
-              If you've come this far, I assume you've spent more than 30
-              seconds on my website. And for that —thank you!
-            </p>
-            <p>
-              I am an electrical engineer who has worked{" "}
-              <HoverGIF text="6 years" /> in the consulting engineering industry
-              where I have done services such as upgrading power distribution
-              systems and designing architectural lighting. There are only so many ways
-              you can change a lightbulb <em>(quite literally)...</em> So in recent years, I
-              wanted to explore new avenues that would allow me to display my
-              problem-solving skills and creativity. This has
-              lead me to web-development as I liked the logical approach
-              associated with programming and the rapid expansion of innovation
-              behind web-design.
-            </p>
+          <h1>About me</h1>
+          <div className="about-intro">
+            <img id="about-profile" src="/about/about.jpg" />
+            <div>
+              <p>If you've come this far, I assume you've spent more than 30 seconds on my website. And for that —thank you!</p>
+              <p>
+                I am an electrical engineer who has worked{" "}
+                <HoverGIF text="6 years" /> in the consulting engineering industry
+                where I have done services such as upgrading power distribution
+                systems and designing architectural lighting. There are only so many ways
+                you can change a lightbulb <em>(quite literally)...</em> So in recent years, I
+                wanted to explore new avenues that would allow me to display my
+                problem-solving skills and creativity. This has
+                lead me to web-development as I liked the logical approach
+                associated with programming and the rapid expansion of innovation
+                behind web-design.
+              </p>
+            </div>
           </div>
         </div>
-        </div>
       </div>
+
       <div id="about-cont">
         <hr />
         <div
@@ -76,7 +70,7 @@ function About() {
               <h3>Form Follows Function</h3>
               <span>
                 I believe what makes a good design is when the design reflects
-                it's practicality over aesthetics; emphasizing function,
+                its practicality over aesthetics; emphasizing function,
                 simplicity, and efficiency. This is a more utilitarian stylistic
                 approach.
               </span>

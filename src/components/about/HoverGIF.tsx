@@ -1,11 +1,15 @@
 import jokerGIF from "../../assets/joker-six.gif";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-function HoverGIF({ text }) {
+interface HoverGIFProps {
+  text: string;
+}
+
+function HoverGIF({ text }: HoverGIFProps) {
   const [showGIF, setShowGIF] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     setCursorPosition({ x: e.clientX, y: e.clientY });
   };
 

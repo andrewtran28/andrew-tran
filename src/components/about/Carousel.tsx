@@ -11,8 +11,8 @@ function Carousel() {
     imgIndex[i] = IMG_WIDTH * i;
   }
 
-  const carousel = useRef(null);
-  const intervalRef = useRef(null);
+  const carousel = useRef<HTMLDivElement | null>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const [index, setIndex] = useState(0);
 
   const images = [
@@ -39,11 +39,13 @@ function Carousel() {
   }, [index]);
 
   const scroll = () => {
-    carousel.current.scrollTo({
-      left: imgIndex[index],
-      behavior: "smooth",
-    });
-    startInterval();
+    if (carousel.current) {
+      carousel.current.scrollTo({
+        left: imgIndex[index],
+        behavior: "smooth",
+      });
+      startInterval();
+    }
   };
 
   const scrollLeft = () => {
@@ -56,7 +58,7 @@ function Carousel() {
     scroll();
   };
 
-  const circleNavigation = (i) => {
+  const circleNavigation = (i: number) => {
     setIndex(i);
     scroll();
   };

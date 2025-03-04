@@ -4,10 +4,14 @@ import github from "../../assets/icons/github_light.png";
 import linkedin from "../../assets/icons/linkedin_light.png";
 import { useState, useEffect } from "react";
 
-function Intro({ scroll }) {
-  const [greeting, setGreeting] = useState("Hey There!");
-  const [fade, setFade] = useState(true);
-  const [textFade, setTextFade] = useState(true);
+interface IntroProps {
+  scroll: () => void; // Define the scroll prop type
+}
+
+function Intro({ scroll }: IntroProps) {
+  const [greeting, setGreeting] = useState<string>("Hey There!");
+  const [fade, setFade] = useState<boolean>(true);
+  const [textFade, setTextFade] = useState<boolean>(true);
 
   useEffect(() => {
     handleText();
@@ -17,7 +21,7 @@ function Intro({ scroll }) {
     }, 500);
   }, []);
 
-  const handleGreetings = (old) => {
+  const handleGreetings = (old: string) => { // Explicit type for old parameter
     const list = [
       "Hey there!",
       "Hello.",
@@ -31,7 +35,7 @@ function Intro({ scroll }) {
       "G'day bud!",
     ];
 
-    const randomNum = (max) => {
+    const randomNum = (max: number): number => { // Explicit type for max parameter
       return Math.floor(Math.random() * max);
     };
 

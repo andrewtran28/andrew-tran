@@ -5,14 +5,23 @@ import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
 
+type ProjectType = {
+  name: string;
+  img: string;
+  desc: string;
+  gh_url: string;
+  ext_url: string;
+  tags: string[];
+};
+
 function Portfolio() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<ProjectType[]>([]);
   const [page, setPage] = useState(0);
   const PER_PAGE = 6;
   const startIndex = page * PER_PAGE;
   const endIndex = startIndex + PER_PAGE;
   const [searchInput, setSearchInput] = useState("");
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const isMount = useIsMount();
 
   const filteredProjects = projects.filter(
@@ -32,14 +41,13 @@ function Portfolio() {
     setProjects(projectData);
   }, []);
 
-  //Prevents handleScroll on initial render.
   useEffect(() => {
     if (isMount === false) {
       handleScroll();
     }
   }, [page]);
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value);
     setPage(0);
   };
@@ -55,10 +63,12 @@ function Portfolio() {
   };
 
   const handleScroll = () => {
-    scrollRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (

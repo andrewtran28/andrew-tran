@@ -7,17 +7,26 @@ import skillData from "./skills.json";
 import ExperienceBox from "./ExperienceBox";
 import experienceData from "./experiences.json";
 
+type ExperienceItem = {
+  title: string;
+  subtitle: string;
+  image: string;
+  date: string;
+  location: string;
+  note?: string;
+};
+
 function Home() {
-  const [visibleItems, setVisibleItems] = useState({});
-  const scrollRef = useRef(null);
-  const sectionRefs = useRef([]);
+  const [visibleItems, setVisibleItems] = useState<{ [key: string]: boolean }>({});
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     handleScrollView();
   }, []);
 
   const handleScrollTo = () => {
-    scrollRef.current.scrollIntoView({
+    scrollRef.current?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
     });
@@ -28,15 +37,17 @@ function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleItems((prev) => ({
-              ...prev,
-              [entry.target.dataset.id]: true,
-            }));
+            if ((entry.target as HTMLElement).dataset.id) {
+              setVisibleItems((prev) => ({
+                ...prev,
+                [(entry.target as HTMLElement).dataset.id as string]: true,
+              }));
+            }
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.45 } // Trigger when 45% of the item is visible
+      { threshold: 0.45 }
     );
 
     sectionRefs.current.forEach((ref) => ref && observer.observe(ref));

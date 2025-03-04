@@ -1,15 +1,27 @@
+import React, { useState, useRef } from "react";
 import Skill from "./Skill";
-import { useState, useRef } from "react";
 
-function SkillBox({ data, title }) {
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [clicked, setClicked] = useState(false);
-  const iconRef = useRef(null);
+type SkillData = {
+  skill: string;
+  icon: string;
+  info: string;
+};
 
-  const handleIconHover = (skillName, skillDesc, index) => {
-    if (clicked) return; // Prevent hovering effects if a skill has been clicked
+type SkillBoxProps = {
+  data: SkillData[];
+  title: string;
+};
+
+function SkillBox({ data, title }: SkillBoxProps) {
+  const [name, setName] = useState<string>("");
+  const [description, setDescription] = useState<string>("");
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [clicked, setClicked] = useState<boolean>(false);
+
+  const iconRef = useRef<HTMLDivElement | null>(null);
+
+  const handleIconHover = (skillName: string, skillDesc: string, index: number) => {
+    if (clicked) return;
 
     setName(skillName);
     setDescription(skillDesc);
