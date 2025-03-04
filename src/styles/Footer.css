@@ -33,6 +33,7 @@ picture {
 
 #contact-img {
   max-width: 600px;
+  border-radius: 3px;
 }
 
 #copyright {

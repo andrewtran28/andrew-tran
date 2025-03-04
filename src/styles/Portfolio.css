@@ -111,10 +111,10 @@
 .project-tag {
   display: inline-block;
   background-color: var(--navy-accent);
-  border-radius: 5px;
-  padding: 2px 3px;
-  margin: 0 2px;
-  font-size: 0.75rem;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 0 1px;
+  font-size: 0.7rem;
 }
 
 .projects-nav {

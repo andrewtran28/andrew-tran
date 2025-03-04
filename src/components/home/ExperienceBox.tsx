@@ -1,4 +1,19 @@
-function ExperienceBox({ data }) {
+import React from 'react';
+
+type ExperienceItem = {
+  image: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  location: string;
+  note?: string;
+};
+
+type ExperienceBoxProps = {
+  data: ExperienceItem[];
+};
+
+function ExperienceBox({ data }: ExperienceBoxProps) {
   return (
     <>
       {data.map((item, i) => (

@@ -5,22 +5,30 @@ import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
 
+type ProjectType = {
+  name: string;
+  img: string;
+  desc: string;
+  gh_url: string;
+  ext_url: string;
+  tags: string[];
+};
+
 function Portfolio() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<ProjectType[]>([]);
   const [page, setPage] = useState(0);
   const PER_PAGE = 6;
   const startIndex = page * PER_PAGE;
   const endIndex = startIndex + PER_PAGE;
   const [searchInput, setSearchInput] = useState("");
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
   const isMount = useIsMount();
 
   const filteredProjects = projects.filter(
     (item) =>
       item.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-      item.tags.some((tag) =>
-        tag.toLowerCase().includes(searchInput.toLowerCase())
-      )
+      item.desc.toLowerCase().includes(searchInput.toLowerCase()) ||
+      item.tags.some((tag) => tag.toLowerCase().includes(searchInput.toLowerCase()))
   );
 
   const TOTAL_PAGES = Math.ceil(filteredProjects.length / PER_PAGE);
@@ -32,14 +40,13 @@ function Portfolio() {
     setProjects(projectData);
   }, []);
 
-  //Prevents handleScroll on initial render.
   useEffect(() => {
     if (isMount === false) {
       handleScroll();
     }
   }, [page]);
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value);
     setPage(0);
   };
@@ -55,10 +62,12 @@ function Portfolio() {
   };
 
   const handleScroll = () => {
-    scrollRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
@@ -68,7 +77,7 @@ function Portfolio() {
         <input
           name="search-bar"
           className="search-bar"
-          placeholder="Search by project name or tags"
+          placeholder="Search by project name, description, or tags"
           value={searchInput}
           onChange={handleSearch}
         />
@@ -102,9 +111,7 @@ function Portfolio() {
             </button>
           </div>
         ) : (
-          <div className="projects-nav">
-            No project name or tags match the search criteria...
-          </div>
+          <div className="projects-nav">No project matches the search criteria...</div>
         )}
       </div>
     </div>

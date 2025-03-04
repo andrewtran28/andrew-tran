@@ -13,44 +13,34 @@
     {
       "skill": "JavaScript",
       "icon": "/logos/javascript.svg",
-      "info": "Learned Javascript ES6. A majority of my coding time is spent on developing JS to create dynamic web applications."
+      "info": "Experienced with ES6+ features. I spend most of my coding time developing dynamic web applications using JavaScript."
     },
     {
       "skill": "React",
       "icon": "/logos/react.svg",
-      "info": "Front-end JavaScript library that I use to create functional, reusable components. This website itself was created with React."
+      "info": "A powerful front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
     },
     {
       "skill": "TypeScript",
       "icon": "/logos/typescript.svg",
-      "info": "Newer to my technologies and mainly used with React. TypeScript helps me enforce types on my JavaScript and reduce runtime errors."
+      "info": "Used primarily with React, TypeScript helps enforce static typing, reducing runtime errors and improving code maintainability."
     },
     {
       "skill": "Tailwind CSS",
       "icon": "/logos/tailwind.svg",
-      "info": " I've tried Tailwind before and typically choose to stylize without it. However, I can see it being more useful on larger-scale projects."
+      "info": "A utility-first framework that speeds up styling. While I often prefer vanilla CSS, I recognize Tailwind's advantages for large-scale projects."
     }
   ],
   [
     {
       "skill": "Node.js",
       "icon": "/logos/nodejs.svg",
-      "info": "As JavaScript is my programming language of choice, I chose Node.js to continue my back-end web-development outside the browser."
+      "info": "As JavaScript is my programming language of choice, I use Node.js for building back-end applications with JavaScript outside the browser."
     },
     {
       "skill": "Express.js",
       "icon": "/logos/express.svg",
-      "info": "Express is a lightweight back-end web-applicaiton framework which handles all my web application HTTP requests and responses."
-    },
-    {
-      "skill": "PostgreSQL",
-      "icon": "/logos/postgresql.svg",
-      "info": "A fairly simple relational database management system (RDBMS) that efficiently organizes my databases as necessary."
-    },
-    {
-      "skill": "Prisma ORM",
-      "icon": "/logos/prisma.svg",
-      "info": "Prisma allows my PSQL database to be scaled and developed along side my web applications with an OOP approach. "
+      "info": "A minimalist Node.js framework I use to handle routing, middleware, and API endpoints in web applications."
     },
     {
       "skill": "Passport",
@@ -60,19 +50,41 @@
     {
       "skill": "Postman",
       "icon": "/logos/postman.svg",
-      "info": "Postman is a simple, intuitive tool that allows me to quickly develop and test APIs without the need for HTML forms."
+      "info": "A powerful API testing tool that allows me to send and debug HTTP requests efficiently."
+    },
+    {
+      "skill": "EJS",
+      "icon": "/logos/ejs.svg",
+      "info": "A templating engine for dynamically generating HTML on the server-side, often used in full-stack applications."
+    }
+  ],
+  [
+    {
+      "skill": "PostgreSQL",
+      "icon": "/logos/postgresql.svg",
+      "info": "A robust, open-source relational database that I use to structure and manage data efficiently."
+    },
+    {
+      "skill": "Prisma ORM",
+      "icon": "/logos/prisma.svg",
+      "info": "A type-safe ORM that integrates well with PostgreSQL, allowing me to manage databases using an OOP approach."
+    },
+    {
+      "skill": "SQL",
+      "icon": "/logos/sql.svg",
+      "info": "Proficient in writing SQL queries for CRUD operations before transitioning to using ORMs like Prisma."
     }
   ],
   [
     {
       "skill": "Git",
       "icon": "/logos/git.svg",
-      "info": "Typical project control manager that works in tandem with GitHub."
+      "info": "Version control system for tracking changes in my projects, working seamlessly with GitHub."
     },
     {
       "skill": "GitHub",
       "icon": "/logos/github.svg",
-      "info": "Developer platform I use to manage, host, and share all my projects."
+      "info": "A platform I use to manage repositories, collaborate with others, and deploy projects."
     },
     {
       "skill": "Visual Studio Code",
@@ -87,44 +99,34 @@
     {
       "skill": "Vite",
       "icon": "/logos/vite.svg",
-      "info": "All my React projects have started out from a template using Vite. Great as a local development server for local rendering."
+      "info": "My go-to build tool for React projects, offering fast local development and optimized production builds."
     },
     {
       "skill": "Webpack",
       "icon": "/logos/webpack.svg",
-      "info": "Used Webpack for bundling vanilla JavaScript modules and webpack-dev-server for live-previewing during production."
+      "info": "Primarily used for bundling JavaScript modules and setting up efficient development workflows."
     }
   ],
   [
     {
       "skill": "UNIX/Linux CLI (Bash)",
       "icon": "/logos/linux.svg",
-      "info": "I am familiar the basics of UNIX/Linux CLI commands. I currently use Ubuntu as my main OS for web-development."
-    },
-    {
-      "skill": "SQL",
-      "icon": "/logos/sql.svg",
-      "info": "Before using an ORM, I would write many RESTful SQL database queries typically for CRUD instructions."
+      "info": "Comfortable with basic CLI commands and currently use Ubuntu as my main OS for development."
     },
     {
       "skill": "Jest",
       "icon": "/logos/jest.svg",
-      "info": "Implemented test-driven development for some web-applications by setting up unit tests with Jest before producing code."
+      "info": "Implemented test-driven development in some projects by writing unit tests before writing production code."
     },
     {
-      "skill": "EJS",
-      "icon": "/logos/ejs.svg",
-      "info": "EJS rendering engine that operates on the server to dynamically create HTML pages. Typically used for back-end templating."
+      "skill": "Responsive design",
+      "icon": "/logos/responsive.svg",
+      "info": "Ensuring web applications work seamlessly across various screen sizes while considering web accessibility."
     },
     {
       "skill": "Microsoft Office Suite",
       "icon": "/logos/microsoft-office.svg",
       "info": "Proficient with typical Microsoft Office software applications (i.e., Word, Excel, Powerpoint, Teams, Sharepoint, Access, etc.)."
-    },
-    {
-      "skill": "Responsive design",
-      "icon": "/logos/responsive.svg",
-      "info": "When designing webpages, I aim to accommodate for different forms of media sizes and to be mindful of web accessibility."
     }
   ]
 ]

@@ -19,7 +19,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
 
-  border-radius: 8px;
+  border-radius: 3px;
   border: 1px solid var(--accent-gray);
   background-color: var(--accent-gray);
 }

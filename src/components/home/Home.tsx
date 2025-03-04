@@ -7,17 +7,26 @@ import skillData from "./skills.json";
 import ExperienceBox from "./ExperienceBox";
 import experienceData from "./experiences.json";
 
+type ExperienceItem = {
+  title: string;
+  subtitle: string;
+  image: string;
+  date: string;
+  location: string;
+  note?: string;
+};
+
 function Home() {
-  const [visibleItems, setVisibleItems] = useState({});
-  const scrollRef = useRef(null);
-  const sectionRefs = useRef([]);
+  const [visibleItems, setVisibleItems] = useState<{ [key: string]: boolean }>({});
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     handleScrollView();
   }, []);
 
   const handleScrollTo = () => {
-    scrollRef.current.scrollIntoView({
+    scrollRef.current?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
     });
@@ -28,15 +37,17 @@ function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleItems((prev) => ({
-              ...prev,
-              [entry.target.dataset.id]: true,
-            }));
+            if ((entry.target as HTMLElement).dataset.id) {
+              setVisibleItems((prev) => ({
+                ...prev,
+                [(entry.target as HTMLElement).dataset.id as string]: true,
+              }));
+            }
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.45 } // Trigger when 45% of the item is visible
+      { threshold: 0.45 }
     );
 
     sectionRefs.current.forEach((ref) => ref && observer.observe(ref));
@@ -69,14 +80,15 @@ function Home() {
         >
           <h2>Relevant Skills & Technologies</h2>
           <p>
-            Below are my skills and tools that are applicable to web development. Please note that I am not limited to
-            these technologies, and intend to continue my growth.{" "}
-            <strong>Hover over the icons below to know more.</strong>
+            Below are the skills and tools relevant to my web development journey. While these represent my current
+            expertise, I am always eager to learn and expand my knowledge.{" "}
+            <strong>Hover over the icons to learn more.</strong>
           </p>
           <SkillBox data={skillData[0]} title={"Front-end Development"} />
           <SkillBox data={skillData[1]} title={"Back-end Development"} />
-          <SkillBox data={skillData[2]} title={"Tools & Platforms"} />
-          <SkillBox data={skillData[3]} title={"Additional Skills"} />
+          <SkillBox data={skillData[2]} title={"Database"} />
+          <SkillBox data={skillData[3]} title={"Tools & Platforms"} />
+          <SkillBox data={skillData[4]} title={"Additional Skills"} />
           <hr />
         </div>
 
