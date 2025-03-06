@@ -21,7 +21,7 @@
 }
 
 #about-cont img {
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 .about-intro {
@@ -51,7 +51,6 @@
   flex: 1;
   font-size: 1rem;
   border-left: 6px solid var(--sharp-orange);
-  /* border-radius: 6px; */
   margin: 10px 0;
   padding: 5px 15px 5px 10px;
 }

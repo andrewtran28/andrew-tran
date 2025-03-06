@@ -27,9 +27,8 @@ function Portfolio() {
   const filteredProjects = projects.filter(
     (item) =>
       item.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-      item.tags.some((tag) =>
-        tag.toLowerCase().includes(searchInput.toLowerCase())
-      )
+      item.desc.toLowerCase().includes(searchInput.toLowerCase()) ||
+      item.tags.some((tag) => tag.toLowerCase().includes(searchInput.toLowerCase()))
   );
 
   const TOTAL_PAGES = Math.ceil(filteredProjects.length / PER_PAGE);
@@ -78,7 +77,7 @@ function Portfolio() {
         <input
           name="search-bar"
           className="search-bar"
-          placeholder="Search by project name or tags"
+          placeholder="Search by project name, description, or tags"
           value={searchInput}
           onChange={handleSearch}
         />
@@ -112,9 +111,7 @@ function Portfolio() {
             </button>
           </div>
         ) : (
-          <div className="projects-nav">
-            No project name or tags match the search criteria...
-          </div>
+          <div className="projects-nav">No project matches the search criteria...</div>
         )}
       </div>
     </div>
