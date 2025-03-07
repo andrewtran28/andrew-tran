@@ -21,7 +21,7 @@
       "CRUD",
       "PaaS",
       "Render",
-      "Supabase",
+      "Neon",
       "Netlify"
     ]
   },
@@ -72,6 +72,7 @@
       "monorepo",
       "Quill",
       "Render",
+      "Neon",
       "Netlify"
     ]
   },
