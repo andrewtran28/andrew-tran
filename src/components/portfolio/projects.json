@@ -76,8 +76,8 @@
     ]
   },
   {
-    "name": "Upside Downloader",
-    "img": "/projects/upside-downloader.png",
+    "name": "Upside Download",
+    "img": "/projects/upside-download.png",
     "desc": "A files management app that allows for users to manage, upload, view, and download files. File cloud storage service provided by Cloudinary.",
     "gh_url": "https://github.com/andrewtran28/file-uploader",
     "ext_url": "https://upsidedownloader.onrender.com/",
