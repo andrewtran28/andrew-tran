@@ -1,7 +1,9 @@
 footer {
+  background-color: var(--navy-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='12' height='12' fill-opacity='0.05' fill='%23DADADA'/%3E%3C/svg%3E");
+
   display: flex;
   justify-content: center;
-  background-color: var(--navy-accent);
   font-size: 1rem;
   color: var(--font-silver);
   width: 100%;
@@ -15,6 +17,8 @@ footer {
   position: relative;
   margin-left: 20px;
   max-width: 450px;
+
+  background: radial-gradient(circle, var(--navy-accent) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .contact-card {

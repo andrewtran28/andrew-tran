@@ -13,18 +13,21 @@ function About() {
   }, []);
 
   const handleScrollView = () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const targetElement = entry.target as HTMLElement;
-          setVisibleItems((prev) => ({
-            ...prev,
-            [targetElement.dataset.id!]: true, 
-          }));
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.25 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const targetElement = entry.target as HTMLElement;
+            setVisibleItems((prev) => ({
+              ...prev,
+              [targetElement.dataset.id!]: true,
+            }));
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
 
     sectionRefs.current.forEach((ref) => ref && observer.observe(ref));
     return () => observer.disconnect();
@@ -34,23 +37,22 @@ function About() {
     <div>
       <Header />
       <div className="about-accent">
-        <div id="about-cont">
+        <div className="about-top">
           <h1>About me</h1>
           <div className="about-intro">
             <img id="about-profile" src="/about/about.jpg" />
             <div>
-              <p>If you've come this far, I assume you've spent more than 30 seconds on my website. And for that —thank you!</p>
               <p>
-                I am an electrical engineer who has worked{" "}
-                <HoverGIF text="6 years" /> in the consulting engineering industry
-                where I have done services such as upgrading power distribution
-                systems and designing architectural lighting. There are only so many ways
-                you can change a lightbulb <em>(quite literally)...</em> So in recent years, I
-                wanted to explore new avenues that would allow me to display my
-                problem-solving skills and creativity. This has
-                lead me to web-development as I liked the logical approach
-                associated with programming and the rapid expansion of innovation
-                behind web-design.
+                If you've come this far, I assume you've spent more than 30 seconds on my website. And for that —thank
+                you!
+              </p>
+              <p>
+                I am an electrical engineer who has worked <HoverGIF text="6 years" /> in the consulting engineering
+                industry where I have done services such as upgrading power distribution systems and designing
+                architectural lighting. There are only so many ways you can change a lightbulb{" "}
+                <em>(quite literally)...</em> So in recent years, I wanted to explore new avenues that would allow me to
+                display my problem-solving skills and creativity. This has lead me to web-development as I liked the
+                logical approach associated with programming and the rapid expansion of innovation behind web-design.
               </p>
             </div>
           </div>
@@ -69,27 +71,23 @@ function About() {
             <div className="value">
               <h3>Form Follows Function</h3>
               <span>
-                I believe what makes a good design is when the design reflects
-                its practicality over aesthetics; emphasizing function,
-                simplicity, and efficiency. This is a more utilitarian stylistic
-                approach.
+                I believe what makes a good design is when the design reflects its practicality over aesthetics;
+                emphasizing function, simplicity, and efficiency. This is a more utilitarian stylistic approach.
               </span>
             </div>
             <div className="value">
               <h3>Re-usable & Scalable Code</h3>
               <span>
-                I create code with the assumption that I will always re-use and
-                expand upon it in later projects. This mindset ensures my code
-                will be modular, extensible, and clean.
+                I create code with the assumption that I will always re-use and expand upon it in later projects. This
+                mindset ensures my code will be modular, extensible, and clean.
               </span>
             </div>
             <div className="value">
               <h3>Logical Problem-Solving</h3>
               <span>
-                When faced with challenging problems, I tend to break down
-                complex problems into smaller, more manageable ones. By using
-                reasoning, evidence, and logical thinking, I can arrive at an
-                effective solution.
+                When faced with challenging problems, I tend to break down complex problems into smaller, more
+                manageable ones. By using reasoning, evidence, and logical thinking, I can arrive at an effective
+                solution.
               </span>
             </div>
           </div>
@@ -105,29 +103,25 @@ function About() {
           <div className="interests-cont">
             <div className="interest">
               <p>
-                I spend most of my day at the computer whether it's work,
-                watching videos, or gaming. I run a dual-boot PC of Windows 10
-                for general use and Ubuntu for web-development. Besides sitting
-                at my desk, I also have other interests as well.
+                I spend most of my day at the computer whether it's work, watching videos, or gaming. I run a dual-boot
+                PC of Windows 10 for general use and Ubuntu for web-development. Besides sitting at my desk, I also have
+                other interests as well.
               </p>
               <img className="interest-img" src="/about/desk.jpg" />
             </div>
             <div className="interest reverse">
               <img className="interest-img" src="/about/climbing.jpg" />
               <p>
-                Contrary to the outdoor image you see, I'm actually terrified of
-                heights. I primarily do bouldering and sometimes belay in an
-                indoor gym. I am by no means a <em>pro</em>, but I consider
-                myself pretty average where I hover around the <em>"V4-V6"</em>{" "}
-                grade range.
+                Contrary to the outdoor image you see, I'm actually terrified of heights. I primarily do bouldering and
+                sometimes belay in an indoor gym. I am by no means a <em>pro</em>, but I consider myself pretty average
+                where I hover around the <em>"V4-V6"</em> grade range.
               </p>
             </div>
             <div className="interest">
               <p>
-                I enjoy woodworking, 3D printing, and all things DIY. I love
-                creating projects that either serve a purpose to me or further
-                support my hobbies. For woodworking or 3D printing, I like to
-                model everything in Sketchup to plan out my designs.
+                I enjoy woodworking, 3D printing, and all things DIY. I love creating projects that either serve a
+                purpose to me or further support my hobbies. For woodworking or 3D printing, I like to model everything
+                in Sketchup to plan out my designs.
                 <br />
                 <br />
                 Check out some of the things I've made during my free time!

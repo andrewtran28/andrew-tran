@@ -18,6 +18,7 @@ type ExperienceItem = {
 
 function Home() {
   const [visibleItems, setVisibleItems] = useState<{ [key: string]: boolean }>({});
+  const [loading, setLoading] = useState<boolean>(true);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -56,10 +57,10 @@ function Home() {
   };
 
   const handleDownload = () => {
-    const pdfUrl = "/AndrewTran_Resume_2025.pdf";
+    const pdfUrl = "https://drive.google.com/file/d/1K3CQ4hofIAHyb6WwXePWd2xyAxuNQvVd/view?usp=sharing";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "AndrewTran_Resume_2025.pdf";
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -117,7 +118,7 @@ function Home() {
           <div>
             Need a summary of my resume?
             <br />
-            <strong>Click the button to download the printable version.</strong>
+            <strong>Click the button to view the printable version.</strong>
           </div>
           <button id="resume-btn" onClick={handleDownload}>
             Download PDF

@@ -16,6 +16,10 @@
   color: inherit;
   text-decoration: none;
   vertical-align: middle;
+  transition: color 0.2s ease-in-out;
+}
+#top-header a:hover {
+  color: var(--navy-accent);
 }
 
 #top-header h1 {
@@ -67,6 +71,10 @@ nav {
 #logo a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+#logo a:hover {
+  color: var(--navy-accent);
 }
 
 nav ul {
@@ -85,19 +93,32 @@ nav ul {
 .nav-link {
   color: var(--font-silver);
   padding: 0px 2px;
-  transition-duration: 0.1s;
   text-decoration: none;
+  position: relative;
 }
-.nav-link:hover {
-  border-bottom: 3px solid var(--font-silver);
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--font-silver);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.1s ease-in-out;
 }
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .nav-link:visited {
   color: var(--font-silver);
 }
 
 @media (max-width: 600px) {
-  
-  #top-header h1 a{
+  #top-header h1 a {
     font-size: 3.5rem;
   }
 

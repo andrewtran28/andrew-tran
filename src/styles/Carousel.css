@@ -32,6 +32,9 @@
   width: var(--carouselImg);
   height: var(--carouselImg);
   object-fit: contain;
+
+  user-select: none; /* Prevents text/image selection */
+  pointer-events: none; /* Disables interactions like dragging */
 }
 
 .carousel-name {

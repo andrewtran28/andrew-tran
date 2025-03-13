@@ -5,7 +5,7 @@ import linkedin from "../../assets/icons/linkedin_light.png";
 import { useState, useEffect } from "react";
 
 interface IntroProps {
-  scroll: () => void; // Define the scroll prop type
+  scroll: () => void;
 }
 
 function Intro({ scroll }: IntroProps) {
@@ -22,7 +22,6 @@ function Intro({ scroll }: IntroProps) {
   }, []);
 
   const handleGreetings = (old: string) => {
-    // Explicit type for old parameter
     const list = [
       "Hey there!",
       "Hello.",
@@ -37,7 +36,6 @@ function Intro({ scroll }: IntroProps) {
     ];
 
     const randomNum = (max: number): number => {
-      // Explicit type for max parameter
       return Math.floor(Math.random() * max);
     };
 

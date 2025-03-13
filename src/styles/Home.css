@@ -179,13 +179,14 @@
   font-family: inherit;
   font-size: 1.5rem;
   color: var(--font-silver);
-  transition-duration: 0.2s;
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
 }
 #resume-btn:hover {
-  background-color: var(--navy-accent);
+  background-color: #e5564b;
 }
 #resume-btn:active {
-  background-color: var(--navy-shadow);
+  background-color: #be473e;
 }
 
 @media (max-width: 1250px) {

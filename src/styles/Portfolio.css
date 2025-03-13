@@ -1,5 +1,10 @@
 .portfolio-accent {
   background-color: var(--slate);
+  background-image: var(--background-slate);
+  background-attachment: fixed;
+  background-size: 125%;
+  background-position: center;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,9 +67,6 @@
   min-height: 525px;
   transition-duration: 0.2s;
   position: relative;
-}
-.project:hover {
-  transform: scale(1.02);
 }
 
 .project-img {

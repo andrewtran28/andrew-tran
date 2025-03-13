@@ -76,8 +76,8 @@
     ]
   },
   {
-    "name": "Upside Downloader",
-    "img": "/projects/upside-downloader.png",
+    "name": "Upside Download",
+    "img": "/projects/upside-download.png",
     "desc": "A files management app that allows for users to manage, upload, view, and download files. File cloud storage service provided by Cloudinary.",
     "gh_url": "https://github.com/andrewtran28/file-uploader",
     "ext_url": "https://upsidedownloader.onrender.com/",
@@ -95,6 +95,7 @@
       "PaaS",
       "JS",
       "Render",
+      "Neon",
       "Cloudinary"
     ]
   },
@@ -104,15 +105,28 @@
     "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
     "gh_url": "https://github.com/andrewtran28/members-forum",
     "ext_url": "https://members-forum.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "PaaS", "PSQL", "Passport", "session", "CRUD", "forms", "JS", "Render"]
+    "tags": [
+      "Node",
+      "Express",
+      "ejs",
+      "PaaS",
+      "PSQL",
+      "Passport",
+      "session",
+      "CRUD",
+      "forms",
+      "JS",
+      "Render",
+      "Supabase"
+    ]
   },
   {
     "name": "mingleeDB Game Library",
     "img": "/projects/game-library.png",
     "desc": "A video-game library that allows you to create, read, update, and delete games from a PSQL database. Game images provided by GameBomb API.",
     "gh_url": "https://github.com/andrewtran28/inventory-app",
-    "ext_url": "https://inventory-app-d1y4.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "Router", "forms", "PSQL", "API", "PaaS", "CRUD", "JS", "Render"]
+    "ext_url": "https://mingleedb-game-library.onrender.com/",
+    "tags": ["Node", "Express", "ejs", "Router", "forms", "PSQL", "API", "PaaS", "CRUD", "JS", "Render", "Neon"]
   },
   {
     "name": "myMessageBoard",

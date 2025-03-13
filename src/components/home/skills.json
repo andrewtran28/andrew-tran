@@ -24,11 +24,6 @@
       "skill": "TypeScript",
       "icon": "/logos/typescript.svg",
       "info": "Used primarily with React, TypeScript helps enforce static typing, reducing runtime errors and improving code maintainability."
-    },
-    {
-      "skill": "Tailwind CSS",
-      "icon": "/logos/tailwind.svg",
-      "info": "A utility-first framework that speeds up styling. While I often prefer vanilla CSS, I recognize Tailwind's advantages for large-scale projects."
     }
   ],
   [
@@ -122,6 +117,11 @@
       "skill": "Responsive design",
       "icon": "/logos/responsive.svg",
       "info": "Ensuring web applications work seamlessly across various screen sizes while considering web accessibility."
+    },
+    {
+      "skill": "Go/Golang",
+      "icon": "/logos/go.svg",
+      "info": "Similar to C in how it is statically typed, Go is easily picked up for the purpose of DevOps and microservices."
     },
     {
       "skill": "Microsoft Office Suite",
