@@ -105,7 +105,20 @@
     "desc": "A forums app that allows only members to post and view messages. Super members have some extra features. The app uses (express) sessions, user authentication, and a PSQL database.",
     "gh_url": "https://github.com/andrewtran28/members-forum",
     "ext_url": "https://members-forum.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "PaaS", "PSQL", "Passport", "session", "CRUD", "forms", "JS", "Render"]
+    "tags": [
+      "Node",
+      "Express",
+      "ejs",
+      "PaaS",
+      "PSQL",
+      "Passport",
+      "session",
+      "CRUD",
+      "forms",
+      "JS",
+      "Render",
+      "Supabase"
+    ]
   },
   {
     "name": "mingleeDB Game Library",
