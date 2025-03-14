@@ -112,8 +112,8 @@
     "img": "/projects/game-library.png",
     "desc": "A video-game library that allows you to create, read, update, and delete games from a PSQL database. Game images provided by GameBomb API.",
     "gh_url": "https://github.com/andrewtran28/inventory-app",
-    "ext_url": "https://inventory-app-d1y4.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "Router", "forms", "PSQL", "API", "PaaS", "CRUD", "JS", "Render"]
+    "ext_url": "https://mingleedb-game-library.onrender.com/",
+    "tags": ["Node", "Express", "ejs", "Router", "forms", "PSQL", "API", "PaaS", "CRUD", "JS", "Render", "Neon"]
   },
   {
     "name": "myMessageBoard",
