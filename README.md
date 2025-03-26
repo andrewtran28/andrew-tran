@@ -1,9 +1,10 @@
 # Andrew Tran (Personal Website)
-![preview](https://github.com/user-attachments/assets/b1e7dc4b-ab86-4fd7-a170-41c062f52cec)
+
+![preview](https://github.com/user-attachments/assets/d2103549-d5cb-4317-8749-07a46d1244da)
 
 A personal website that showcases my portfolio, projects, and information about myself. The website is also fully responsive and optimized for different media devices.
 
-Live Preview: https://andrewtran-developer.netlify.app/
+Live Preview: https://andrewtran.ca/
 
 ## Technology Used
 - React + Vite
