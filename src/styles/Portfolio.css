@@ -163,4 +163,12 @@
   .project-img {
     width: 350px;
   }
+
+  .project-img {
+    height: calc(350px / (400 / 350));
+  }
+
+  .project-btns {
+    right: -5px;
+  }
 }
