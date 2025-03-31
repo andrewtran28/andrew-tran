@@ -17,7 +17,7 @@
 .skills-cont {
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .skills-title {
@@ -234,11 +234,13 @@
 
   .skills-cont {
     padding: 10px;
+    margin: 10px 0
   }
 
   .skill-icon {
     width: 50px;
     height: 50px;
+    padding: 5px 10px;
   }
 
   .skill-info {

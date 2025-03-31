@@ -57,7 +57,7 @@ function Home() {
   };
 
   const handleDownload = () => {
-    const pdfUrl = "https://drive.google.com/file/d/1K3CQ4hofIAHyb6WwXePWd2xyAxuNQvVd/view?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/1B3rjWO5EtdheQuA8qTuziK9LOa0D5MYF/view?usp=sharing";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.target = "_blank";

@@ -18,7 +18,7 @@
     {
       "skill": "React",
       "icon": "/logos/react.svg",
-      "info": "A powerful front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
+      "info": "A front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
     },
     {
       "skill": "TypeScript",
@@ -30,12 +30,12 @@
     {
       "skill": "Node.js",
       "icon": "/logos/nodejs.svg",
-      "info": "As JavaScript is my programming language of choice, I use Node.js for building back-end applications with JavaScript outside the browser."
+      "info": "I use Node.js to develop scalable back-end applications, maintaining a unified JavaScript ecosystem across the stack."
     },
     {
       "skill": "Express.js",
       "icon": "/logos/express.svg",
-      "info": "A minimalist Node.js framework I use to handle routing, middleware, and API endpoints in web applications."
+      "info": "A lightweight Node.js framework I use for setting up APIs, handling routes, and managing middleware efficiently."
     },
     {
       "skill": "Passport",
@@ -43,14 +43,19 @@
       "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies such as JWTs."
     },
     {
+      "skill": "Python",
+      "icon": "/logos/python.svg",
+      "info": "I use Python alongside Flask for back-end development, offering an alternative to Node.js."
+    },
+    {
+      "skill": "Flask",
+      "icon": "/logos/flask.svg",
+      "info": "A lightweight and flexible Python framework that allows me to build web applications with minimal overhead."
+    },
+    {
       "skill": "Postman",
       "icon": "/logos/postman.svg",
       "info": "A powerful API testing tool that allows me to send and debug HTTP requests efficiently."
-    },
-    {
-      "skill": "EJS",
-      "icon": "/logos/ejs.svg",
-      "info": "A templating engine for dynamically generating HTML on the server-side, often used in full-stack applications."
     }
   ],
   [
@@ -62,12 +67,12 @@
     {
       "skill": "Prisma ORM",
       "icon": "/logos/prisma.svg",
-      "info": "A type-safe ORM that integrates well with PostgreSQL, allowing me to manage databases using an OOP approach."
+      "info": "A type-safe ORM that simplifies database interactions with an intuitive query API, working seamlessly with PostgreSQL."
     },
     {
       "skill": "SQL",
       "icon": "/logos/sql.svg",
-      "info": "Proficient in writing SQL queries for CRUD operations before transitioning to using ORMs like Prisma."
+      "info": "Profitient in writing raw SQL queries for CRUD operations before transitioning to ORMs like Prisma (Node.js) and SQLAlchemy (Python)."
     }
   ],
   [
@@ -84,22 +89,22 @@
     {
       "skill": "Visual Studio Code",
       "icon": "/logos/vs-code.svg",
-      "info": "My go-to IDE for all web-development programming. I try to keep extensions to a minimal for a lightweight, clean experience."
+      "info": "My preferred IDE for web development, where I maintain a minimal setup for a streamlined workflow."
     },
     {
       "skill": "npm",
       "icon": "/logos/npm.svg",
-      "info": "Used to install packages in virtually all my projects including some tools you see here."
+      "info": "I use npm to manage dependencies and automate tasks across my development projects."
     },
     {
       "skill": "Vite",
       "icon": "/logos/vite.svg",
-      "info": "My go-to build tool for React projects, offering fast local development and optimized production builds."
+      "info": "My go-to build tool for React projects, providing fast development and optimized production builds with minimal setup."
     },
     {
-      "skill": "Webpack",
-      "icon": "/logos/webpack.svg",
-      "info": "Primarily used for bundling JavaScript modules and setting up efficient development workflows."
+      "skill": "EJS (Embedded JavaScript)",
+      "icon": "/logos/ejs.svg",
+      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
     }
   ],
   [
@@ -111,17 +116,17 @@
     {
       "skill": "Jest",
       "icon": "/logos/jest.svg",
-      "info": "Implemented test-driven development in some projects by writing unit tests before writing production code."
+      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
     },
     {
       "skill": "Responsive design",
       "icon": "/logos/responsive.svg",
-      "info": "Ensuring web applications work seamlessly across various screen sizes while considering web accessibility."
+      "info": "I ensure web applications adapt seamlessly to different screen sizes while maintaining accessibility standards."
     },
     {
       "skill": "Go/Golang",
       "icon": "/logos/go.svg",
-      "info": "Similar to C in how it is statically typed, Go is easily picked up for the purpose of DevOps and microservices."
+      "info": "A statically typed language I’ve explored for DevOps and microservices, known for its simplicity and performance."
     },
     {
       "skill": "Microsoft Office Suite",
