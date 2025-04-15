@@ -53,7 +53,7 @@
     "name": "Buhlog",
     "img": "/projects/buhlog.png",
     "desc": "A blog website complete with back-end blog API, user authentication, and PSQL database. Front-end blog UI capable of rich text reading and editing.",
-    "gh_url": "https://github.com/andrewtran28/blog-api",
+    "gh_url": "https://github.com/andrewtran28/buhlog",
     "ext_url": "https://buhlog.netlify.app/",
     "tags": [
       "Full-Stack",
