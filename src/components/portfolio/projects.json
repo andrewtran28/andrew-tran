@@ -31,7 +31,7 @@
     "img": "/projects/buhlog-python.png",
     "desc": "A re-creation of the original Buhlog website using Python-Flask as the back-end framework. Note that this version of the site co-exists with the original and uses the same PSQL database.",
     "gh_url": "https://github.com/andrewtran28/buhlog",
-    "ext_url": "https://buhlog.netlify.app/",
+    "ext_url": "https://buhlog-python.netlify.app/",
     "tags": [
       "Full-Stack",
       "React",
