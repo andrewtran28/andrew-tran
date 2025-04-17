@@ -40,7 +40,7 @@
       "API",
       "JWT",
       "PSQL",
-      "Prisma",
+      "SQLAlchemy",
       "CRUD",
       "PaaS",
       "slug",
