@@ -88,7 +88,7 @@ function Intro({ scroll }: IntroProps) {
             <a href="https://github.com/andrewtran28">
               <img className="contact-icon" src={github} />
             </a>
-            <a href="https://www.linkedin.com/in/andrewtran-developer">
+            <a href="https://www.linkedin.com/in/andrewtran-dev">
               <img className="contact-icon" src={linkedin} />
             </a>
           </div>

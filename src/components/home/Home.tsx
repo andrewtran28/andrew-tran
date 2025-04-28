@@ -1,24 +1,15 @@
 import "../../styles/Home.css";
 import { useState, useEffect, useRef } from "react";
 import Header from "../Header";
+import Footer from "../Footer";
 import Intro from "./Intro";
 import SkillBox from "./SkillBox";
 import skillData from "./skills.json";
 import ExperienceBox from "./ExperienceBox";
 import experienceData from "./experiences.json";
 
-type ExperienceItem = {
-  title: string;
-  subtitle: string;
-  image: string;
-  date: string;
-  location: string;
-  note?: string;
-};
-
 function Home() {
   const [visibleItems, setVisibleItems] = useState<{ [key: string]: boolean }>({});
-  const [loading, setLoading] = useState<boolean>(true);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -125,6 +116,8 @@ function Home() {
           </button>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,6 @@
 import "../styles/Footer.css";
+import footer1 from "../assets/footer1.jpg";
+import footer2 from "../assets/footer2.jpg";
 import location from "../assets/icons/location.png";
 import phone from "../assets/icons/phone.png";
 import email from "../assets/icons/email.png";
@@ -11,16 +13,11 @@ function Footer(): JSX.Element {
       <div className="contact-cont">
         <h2>Contact me</h2>
         <p>
-          Please reach out to me if there are any inquiries or opportunities.
-          Your time viewing this website is already greatly appreciated. Thank
-          you!
+          Please reach out to me if there are any inquiries or opportunities. Your time viewing this website is already
+          greatly appreciated. Thank you!
         </p>
         <div className="contact-card">
-          <a
-            href="https://maps.app.goo.gl/Yq9zvF317Vr6qHgF9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/Yq9zvF317Vr6qHgF9" target="_blank" rel="noopener noreferrer">
             <img className="icon" src={location} alt="Location icon" />
           </a>
           <span>Ottawa, ON, Canada</span>
@@ -41,27 +38,14 @@ function Footer(): JSX.Element {
           <a href="https://github.com/andrewtran28">
             <img className="contact-icon" src={githubLight} alt="GitHub icon" />
           </a>
-          <a href="https://www.linkedin.com/in/andrewtran-developer">
-            <img
-              className="contact-icon"
-              src={linkedinLight}
-              alt="LinkedIn icon"
-            />
+          <a href="https://www.linkedin.com/in/andrewtran-dev">
+            <img className="contact-icon" src={linkedinLight} alt="LinkedIn icon" />
           </a>
         </div>
       </div>
       <picture>
-        <source
-          id="contact-img"
-          media="(max-width: 1000px)"
-          srcSet="/profile_mountain2.jpg"
-        />
-        <img
-          id="contact-img"
-          src="/profile_mountain.jpg"
-          alt=""
-          loading="lazy"
-        />
+        <source id="contact-img" media="(max-width: 1000px)" srcSet={footer2} />
+        <img id="contact-img" src={footer1} alt="" loading="lazy" />
       </picture>
       <div id="copyright">© Andrew Tran. All Rights Reserved.</div>
     </footer>

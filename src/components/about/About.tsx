@@ -1,6 +1,7 @@
 import "../../styles/About.css";
 import { useState, useEffect, useRef } from "react";
 import Header from "../Header";
+import Footer from "../Footer";
 import HoverGIF from "../about/HoverGIF";
 import Carousel from "./Carousel";
 
@@ -34,7 +35,7 @@ function About() {
   };
 
   return (
-    <div>
+    <>
       <Header />
       <div className="about-accent">
         <div className="about-top">
@@ -131,7 +132,9 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+
+      <Footer />
+    </>
   );
 }
 

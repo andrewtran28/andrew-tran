@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useIsMount } from "./useIsMount";
 import Header from "../Header";
+import Footer from "../Footer";
 import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
@@ -71,50 +72,54 @@ function Portfolio() {
   };
 
   return (
-    <div ref={scrollRef}>
-      <Header />
-      <div className="portfolio-accent">
-        <input
-          name="search-bar"
-          className="search-bar"
-          placeholder="Search by project name, description, or tags"
-          value={searchInput}
-          onChange={handleSearch}
-        />
-      </div>
-
-      <div id="portfolio">
-        <div className="projects-cont">
-          {currentPage.map((project, i) => (
-            <Project
-              key={i}
-              name={project.name}
-              img={project.img}
-              desc={project.desc}
-              gh_url={project.gh_url}
-              ext_url={project.ext_url}
-              tags={project.tags}
-            />
-          ))}
+    <>
+      <div ref={scrollRef}>
+        <Header />
+        <div className="portfolio-accent">
+          <input
+            name="search-bar"
+            className="search-bar"
+            placeholder="Search by project name, description, or tags"
+            value={searchInput}
+            onChange={handleSearch}
+          />
         </div>
 
-        {TOTAL_PAGES > 0 ? (
-          <div className="projects-nav">
-            <button onClick={handlePrevious} disabled={isPreviousDisabled}>
-              Previous
-            </button>
-            <div className="projects-page-num">
-              Page {page + 1} of {TOTAL_PAGES}
-            </div>
-            <button onClick={handleNext} disabled={isNextDisabled}>
-              Next
-            </button>
+        <div id="portfolio">
+          <div className="projects-cont">
+            {currentPage.map((project, i) => (
+              <Project
+                key={i}
+                name={project.name}
+                img={project.img}
+                desc={project.desc}
+                gh_url={project.gh_url}
+                ext_url={project.ext_url}
+                tags={project.tags}
+              />
+            ))}
           </div>
-        ) : (
-          <div className="projects-nav">No project matches the search criteria...</div>
-        )}
+
+          {TOTAL_PAGES > 0 ? (
+            <div className="projects-nav">
+              <button onClick={handlePrevious} disabled={isPreviousDisabled}>
+                Previous
+              </button>
+              <div className="projects-page-num">
+                Page {page + 1} of {TOTAL_PAGES}
+              </div>
+              <button onClick={handleNext} disabled={isNextDisabled}>
+                Next
+              </button>
+            </div>
+          ) : (
+            <div className="projects-nav">No project matches the search criteria...</div>
+          )}
+        </div>
       </div>
-    </div>
+
+      <Footer />
+    </>
   );
 }
 

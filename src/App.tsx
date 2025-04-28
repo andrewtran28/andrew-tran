@@ -1,6 +1,5 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Footer from "./components/Footer";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import About from "./components/about/About";
@@ -61,7 +60,6 @@ function App() {
   return (
     <div id="root">
       <RouterProvider router={router} />
-      <Footer />
     </div>
   );
 }
