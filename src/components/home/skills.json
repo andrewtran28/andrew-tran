@@ -8,7 +8,7 @@
     {
       "skill": "CSS3",
       "icon": "/logos/css3.svg",
-      "info": "Flex, grid, margin, padding, borders; These are some properties that I always use to design, layout, and present webpages."
+      "info": "Flex, Grid, margin, padding, and borders — these are some of the properties I frequently use to design, lay out, and present webpages."
     },
     {
       "skill": "JavaScript",
@@ -40,7 +40,7 @@
     {
       "skill": "Passport",
       "icon": "/logos/passport.svg",
-      "info": "A useful middleware for Node.js which allows me to easily implement user authentication strategies such as JWTs."
+      "info": "Middleware for Node.js that allows me to implement authentication strategies like JWTs with ease."
     },
     {
       "skill": "Python",
@@ -72,7 +72,7 @@
     {
       "skill": "SQL",
       "icon": "/logos/sql.svg",
-      "info": "Profitient in writing raw SQL queries for CRUD operations before transitioning to ORMs like Prisma (Node.js) and SQLAlchemy (Python)."
+      "info": "Proficient in writing raw SQL queries for CRUD operations before transitioning to ORMs like Prisma (Node.js) and SQLAlchemy (Python)."
     }
   ],
   [
@@ -116,7 +116,7 @@
     {
       "skill": "Jest",
       "icon": "/logos/jest.svg",
-      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
+      "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
     },
     {
       "skill": "Responsive design",
@@ -131,7 +131,7 @@
     {
       "skill": "Microsoft Office Suite",
       "icon": "/logos/microsoft-office.svg",
-      "info": "Proficient with typical Microsoft Office software applications (i.e., Word, Excel, Powerpoint, Teams, Sharepoint, Access, etc.)."
+      "info": "Proficient with typical Microsoft Office software applications (i.e., Word, Excel, Powerpoint, Teams, SharePoint, Access, etc.)."
     }
   ]
 ]
