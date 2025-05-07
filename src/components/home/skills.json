@@ -8,7 +8,7 @@
     {
       "skill": "CSS3",
       "icon": "/logos/css3.svg",
-      "info": "Flex, Grid, margin, padding, and borders — these are some of the properties I frequently use to design, lay out, and present webpages."
+      "info": "I frequently use Flexbox, Grid, and box model properties like margin and padding to design responsive and visually consistent layouts."
     },
     {
       "skill": "JavaScript",
@@ -16,14 +16,20 @@
       "info": "Experienced with ES6+ features. I spend most of my coding time developing dynamic web applications using JavaScript."
     },
     {
+      "skill": "TypeScript",
+      "icon": "/logos/typescript.svg",
+      "info": "Used primarily with React, TypeScript helps enforce static typing, reducing runtime errors and improving code maintainability."
+    },
+    {
       "skill": "React",
       "icon": "/logos/react.svg",
       "info": "A front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
     },
+
     {
-      "skill": "TypeScript",
-      "icon": "/logos/typescript.svg",
-      "info": "Used primarily with React, TypeScript helps enforce static typing, reducing runtime errors and improving code maintainability."
+      "skill": "Responsive web design",
+      "icon": "/logos/responsive.svg",
+      "info": "I design applications to adapt fluidly across devices while adhering to accessibility and usability best practices."
     }
   ],
   [
@@ -55,7 +61,7 @@
     {
       "skill": "Postman",
       "icon": "/logos/postman.svg",
-      "info": "A powerful API testing tool that allows me to send and debug HTTP requests efficiently."
+      "info": "An API testing tool that allows me to send and debug HTTP requests efficiently during API development."
     }
   ],
   [
@@ -73,6 +79,11 @@
       "skill": "SQL",
       "icon": "/logos/sql.svg",
       "info": "Proficient in writing raw SQL queries for CRUD operations before transitioning to ORMs like Prisma (Node.js) and SQLAlchemy (Python)."
+    },
+    {
+      "skill": "MongoDB",
+      "icon": "/logos/mongodb.svg",
+      "info": "Explored its use in handling unstructured or flexible-schema data in certain application types."
     }
   ],
   [
@@ -87,14 +98,27 @@
       "info": "A platform I use to manage repositories, collaborate with others, and deploy projects."
     },
     {
+      "skill": "Docker",
+      "icon": "/logos/docker.svg",
+      "info": "I use Docker to containerize applications for consistent deployment across different environments."
+    },
+    {
+      "skill": "Linux CLI (Bash)",
+      "icon": "/logos/linux.svg",
+      "info": "Comfortable with standard Bash commands; I use Ubuntu as my primary development environment."
+    },
+
+    {
+      "skill": "Go/Golang",
+      "icon": "/logos/go.svg",
+      "info": "A statically typed language I've explored the basics of for DevOps and microservices, known for its simplicity and performance."
+    }
+  ],
+  [
+    {
       "skill": "Visual Studio Code",
       "icon": "/logos/vs-code.svg",
       "info": "My preferred IDE for web development, where I maintain a minimal setup for a streamlined workflow."
-    },
-    {
-      "skill": "npm",
-      "icon": "/logos/npm.svg",
-      "info": "I use npm to manage dependencies and automate tasks across my development projects."
     },
     {
       "skill": "Vite",
@@ -102,16 +126,9 @@
       "info": "My go-to build tool for React projects, providing fast development and optimized production builds with minimal setup."
     },
     {
-      "skill": "EJS (Embedded JavaScript)",
-      "icon": "/logos/ejs.svg",
-      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
-    }
-  ],
-  [
-    {
-      "skill": "UNIX/Linux CLI (Bash)",
-      "icon": "/logos/linux.svg",
-      "info": "Comfortable with basic CLI commands and currently use Ubuntu as my main OS for development."
+      "skill": "npm",
+      "icon": "/logos/npm.svg",
+      "info": "I use npm to manage dependencies and automate tasks across my development projects."
     },
     {
       "skill": "Jest",
@@ -119,19 +136,14 @@
       "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
     },
     {
-      "skill": "Responsive design",
-      "icon": "/logos/responsive.svg",
-      "info": "I ensure web applications adapt seamlessly to different screen sizes while maintaining accessibility standards."
-    },
-    {
-      "skill": "Go/Golang",
-      "icon": "/logos/go.svg",
-      "info": "A statically typed language I’ve explored for DevOps and microservices, known for its simplicity and performance."
+      "skill": "EJS (Embedded JavaScript)",
+      "icon": "/logos/ejs.svg",
+      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
     },
     {
       "skill": "Microsoft Office Suite",
       "icon": "/logos/microsoft-office.svg",
-      "info": "Proficient with typical Microsoft Office software applications (i.e., Word, Excel, Powerpoint, Teams, SharePoint, Access, etc.)."
+      "info": "Proficient with the Microsoft Office Suite, including Word, Excel, PowerPoint, Teams, SharePoint, and Access."
     }
   ]
 ]

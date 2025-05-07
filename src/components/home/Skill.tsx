@@ -24,14 +24,7 @@ function Skill({ name, icon, info, index, hoverSkill, hoverLeave }: SkillProps) 
 
   return (
     <>
-      <img
-        className="skill-icon"
-        src={icon}
-        ref={iconRef}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleLeave}
-        // onClick={() => clickSkill(name, info, index)}
-      />
+      <img className="skill-icon" src={icon} ref={iconRef} onMouseEnter={handleHover} onMouseLeave={handleLeave} />
     </>
   );
 }

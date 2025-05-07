@@ -79,8 +79,8 @@ function Home() {
           <SkillBox data={skillData[0]} title={"Front-end Development"} />
           <SkillBox data={skillData[1]} title={"Back-end Development"} />
           <SkillBox data={skillData[2]} title={"Database"} />
-          <SkillBox data={skillData[3]} title={"Tools & Platforms"} />
-          <SkillBox data={skillData[4]} title={"Additional Skills"} />
+          <SkillBox data={skillData[3]} title={"DevOps"} />
+          <SkillBox data={skillData[4]} title={"Additional Tools & Skills"} />
           <hr />
         </div>
 
