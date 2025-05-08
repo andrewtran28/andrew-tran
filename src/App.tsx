@@ -1,6 +1,13 @@
 import "./App.css";
-import { useState, useEffect, useRef } from "react";
-import { createBrowserRouter, RouterProvider, Navigate, Outlet, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+  Outlet,
+  useLocation,
+  useNavigationType,
+} from "react-router-dom";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import About from "./components/about/About";
@@ -25,15 +32,14 @@ function App() {
 
   const ScrollToTopLayout = () => {
     const location = useLocation();
-    const previousPathRef = useRef<string | null>(null);
+    const navigationType = useNavigationType(); // PUSH, REPLACE, or POP
 
     useEffect(() => {
-      if (previousPathRef.current !== location.pathname) {
-        // only scroll to top only if pathname actually changed
+      if (navigationType !== "POP") {
+        // Only scroll to top on route changes, not on page reloads
         window.scrollTo({ top: 0, behavior: "instant" });
       }
-      previousPathRef.current = location.pathname;
-    }, [location.pathname]);
+    }, [location.pathname, navigationType]);
 
     return <Outlet />;
   };
