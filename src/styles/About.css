@@ -17,7 +17,7 @@
 }
 
 #about-cont h2 {
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .about-top h1 {
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 3.5rem;
+  font-weight: 500;
 }
 
 .about-top img {

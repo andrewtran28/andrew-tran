@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 interface SkillProps {
   name: string;
@@ -10,12 +10,10 @@ interface SkillProps {
 }
 
 function Skill({ name, icon, info, index, hoverSkill, hoverLeave }: SkillProps) {
-  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const iconRef = useRef<HTMLImageElement | null>(null);
 
   const handleHover = () => {
     hoverSkill(name, info, index);
-    setCurrentIndex(index);
   };
 
   const handleLeave = () => {
