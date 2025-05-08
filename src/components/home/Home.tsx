@@ -76,9 +76,10 @@ function Home() {
             expertise, I am always eager to learn and expand my knowledge.{" "}
             <strong>Hover over the icons to learn more.</strong>
           </p>
+
           <SkillBox data={skillData[0]} title={"Front-end Development"} />
           <SkillBox data={skillData[1]} title={"Back-end Development"} />
-          <SkillBox data={skillData[2]} title={"Database"} />
+          <SkillBox data={skillData[2]} title={"Databases"} />
           <SkillBox data={skillData[3]} title={"DevOps"} />
           <SkillBox data={skillData[4]} title={"Additional Tools & Skills"} />
           <hr />

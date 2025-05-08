@@ -50,13 +50,13 @@
   cursor: pointer;
   width: fit-content;
   display: flex;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 .greetings.fade {
   opacity: 0;
 }
 .greetings:hover {
-  color: white;
+  color: var(--sharp-orange);
 }
 
 .intro-text {

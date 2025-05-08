@@ -1,11 +1,10 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { createBrowserRouter, RouterProvider, Navigate, Outlet, useLocation } from "react-router-dom";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import About from "./components/about/About";
 import ErrorPage from "./components/ErrorPage";
-
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -24,26 +23,47 @@ function App() {
     };
   }, []);
 
+  const ScrollToTopLayout = () => {
+    const location = useLocation();
+    const previousPathRef = useRef<string | null>(null);
+
+    useEffect(() => {
+      if (previousPathRef.current !== location.pathname) {
+        // only scroll to top only if pathname actually changed
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+      previousPathRef.current = location.pathname;
+    }, [location.pathname]);
+
+    return <Outlet />;
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/portfolio",
-      element: <Portfolio />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "/home",
-      element: <Navigate to="/" />,
-    },
-    {
-      path: "*",
-      element: <ErrorPage />,
+      element: <ScrollToTopLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/portfolio",
+          element: <Portfolio />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/home",
+          element: <Navigate to="/" />,
+        },
+        {
+          path: "*",
+          element: <ErrorPage />,
+        },
+      ],
     },
   ]);
 

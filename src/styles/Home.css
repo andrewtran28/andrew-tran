@@ -8,6 +8,10 @@
   font-weight: 500;
 }
 
+#home-cont p {
+  margin-bottom: 50px;
+}
+
 .skill-icon,
 .skill-info,
 .resume-cont {
