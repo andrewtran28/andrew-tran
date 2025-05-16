@@ -44,11 +44,6 @@
       "info": "A lightweight Node.js framework I use for setting up APIs, handling routes, and managing middleware efficiently."
     },
     {
-      "skill": "Passport",
-      "icon": "/logos/passport.svg",
-      "info": "Middleware for Node.js that allows me to implement authentication strategies like JWTs with ease."
-    },
-    {
       "skill": "Python",
       "icon": "/logos/python.svg",
       "info": "I use Python alongside Flask for back-end development, offering an alternative to Node.js."
@@ -57,6 +52,11 @@
       "skill": "Flask",
       "icon": "/logos/flask.svg",
       "info": "A lightweight Python web framework I use to build flexible and efficient back-end services with minimal overhead."
+    },
+    {
+      "skill": "Passport",
+      "icon": "/logos/passport.svg",
+      "info": "Middleware for Node.js that allows me to implement authentication strategies like JWTs with ease."
     },
     {
       "skill": "Postman",
@@ -83,7 +83,7 @@
     {
       "skill": "MongoDB",
       "icon": "/logos/mongodb.svg",
-      "info": "Explored MongoDB for handling unstructured or flexible-schema data, particularly in experimental or prototype applications."
+      "info": "Explored basics of MongoDB for handling unstructured or flexible-schema data, particularly in experimental or prototype applications."
     }
   ],
   [
@@ -98,20 +98,24 @@
       "info": "A platform I use to manage repositories, collaborate with others, and deploy projects."
     },
     {
+      "skill": "Linux CLI (Bash)",
+      "icon": "/logos/linux.svg",
+      "info": "Comfortable with standard Bash commands; I use Ubuntu as my primary development environment."
+    },
+    {
+      "skill": "Vite",
+      "icon": "/logos/vite.svg",
+      "info": "My go-to build tool for React projects, providing fast development and optimized production builds with minimal setup."
+    },
+    {
       "skill": "Docker",
       "icon": "/logos/docker.svg",
       "info": "Explored Docker to containerize applications and ensure consistent deployment across development and production environments."
     },
     {
-      "skill": "Linux CLI (Bash)",
-      "icon": "/logos/linux.svg",
-      "info": "Comfortable with standard Bash commands; I use Ubuntu as my primary development environment."
-    },
-
-    {
-      "skill": "Go/Golang",
-      "icon": "/logos/go.svg",
-      "info": "A statically typed language I've explored for its simplicity and performance in building efficient microservices and DevOps tooling."
+      "skill": "AWS",
+      "icon": "/logos/aws.svg",
+      "info": "Familiar with some essential AWS services such as VPC, EC2, S3, Route53, SES, and RDS."
     }
   ],
   [
@@ -121,9 +125,9 @@
       "info": "My preferred IDE for web development, where I maintain a minimal setup for a streamlined workflow."
     },
     {
-      "skill": "Vite",
-      "icon": "/logos/vite.svg",
-      "info": "My go-to build tool for React projects, providing fast development and optimized production builds with minimal setup."
+      "skill": "Jest",
+      "icon": "/logos/jest.svg",
+      "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
     },
     {
       "skill": "npm",
@@ -131,9 +135,9 @@
       "info": "I use npm to manage dependencies and automate tasks across my development projects."
     },
     {
-      "skill": "Jest",
-      "icon": "/logos/jest.svg",
-      "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
+      "skill": "Go/Golang",
+      "icon": "/logos/go.svg",
+      "info": "A statically typed language I've explored for its simplicity and performance in building efficient microservices and DevOps tooling."
     },
     {
       "skill": "EJS (Embedded JavaScript)",
