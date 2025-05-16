@@ -73,15 +73,14 @@ function Intro({ scroll }: IntroProps) {
           </h2>
           <div className={`intro-text ${textFade ? "textFade" : ""}`}>
             <p>
-              I'm an electrical engineer from Ottawa, ON, transitioning into a career as a{" "}
-              <strong>full-stack web developer</strong>. In the consulting engineering industry, I gained experience
-              designing and managing electrical systems for buildings while working closely with teams and clients. The
-              problem-solving skills that make me a great engineer are the same ones that drive me as a developer.
+              I'm an electrical engineer from Ottawa, ON, transitioning into a career as a full-stack web developer. In
+              the consulting engineering industry, I designed and managed electrical systems for buildings,
+              collaborating closely with cross-disciplinary teams and clients. The same problem-solving mindset that
+              made me a strong engineer now drives my work as a developer.
             </p>
             <p>
-              I'm passionate about creating something out of my own design conceptions whether it be electrical systems
-              or functional web applications. I've always been a problem-solver and love to take on challenging
-              projects.
+              I’m passionate about building things—whether it's a reliable power system or a functional web app. I
+              thrive on solving complex problems and bringing ideas to life through thoughtful design and code.
             </p>
           </div>
           <div className={`intro-text ${textFade ? "textFade" : ""} intro-btns`}>
