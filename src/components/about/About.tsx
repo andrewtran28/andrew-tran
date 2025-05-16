@@ -120,9 +120,12 @@ function About() {
             </div>
             <div className="interest">
               <p>
-                I enjoy woodworking, 3D printing, and all things DIY. I love creating projects that either serve a
-                purpose to me or further support my hobbies. For woodworking or 3D printing, I like to model everything
-                in Sketchup to plan out my designs.
+                I enjoy woodworking,{" "}
+                <a href="https://www.thingiverse.com/minglee28/designs" target="_blank" rel="noopener noreferrer">
+                  3D printing
+                </a>
+                , and all things DIY. I love creating projects that either serve a purpose to me or further support my
+                hobbies. For woodworking or 3D printing, I like to model everything in Sketchup to plan out my designs.
                 <br />
                 <br />
                 Check out some of the things I've made during my free time!
