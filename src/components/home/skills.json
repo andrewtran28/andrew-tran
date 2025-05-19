@@ -8,7 +8,7 @@
     {
       "skill": "CSS3",
       "icon": "/logos/css3.svg",
-      "info": "I frequently use Flexbox, Grid, and box model properties like margin and padding to design responsive and visually consistent layouts."
+      "info": "I design responsive applications that adapt seamlessly across devices, while following accessibility and usability best practices."
     },
     {
       "skill": "JavaScript",
@@ -24,12 +24,6 @@
       "skill": "React",
       "icon": "/logos/react.svg",
       "info": "A front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
-    },
-
-    {
-      "skill": "Responsive web design",
-      "icon": "/logos/responsive.svg",
-      "info": "I design responsive applications that adapt seamlessly across devices, while following accessibility and usability best practices."
     }
   ],
   [
@@ -138,16 +132,6 @@
       "skill": "Go/Golang",
       "icon": "/logos/go.svg",
       "info": "A statically typed language I've explored for its simplicity and performance in building efficient microservices and DevOps tooling."
-    },
-    {
-      "skill": "EJS (Embedded JavaScript)",
-      "icon": "/logos/ejs.svg",
-      "info": "A templating engine I use for server-side rendering, dynamically generating HTML in full-stack applications."
-    },
-    {
-      "skill": "Microsoft Office Suite",
-      "icon": "/logos/microsoft-office.svg",
-      "info": "Proficient with Microsoft Office tools, including Word, Excel, PowerPoint, Teams, SharePoint, and Access."
     }
   ]
 ]
