@@ -55,6 +55,31 @@
     ]
   },
   {
+    "name": "Upside Download",
+    "img": "/projects/upside-download.png",
+    "desc": "A file management app that allows for users to upload, download, view, and share files. Users can also create folders and sub-directories. AWS S3 is used for secure file storage.",
+    "gh_url": "https://github.com/andrewtran28/file-uploader",
+    "ext_url": "https://upsidedownloader.onrender.com/",
+    "tags": [
+      "Node",
+      "Express",
+      "API",
+      "ejs",
+      "Passport",
+      "session",
+      "JWT",
+      "Prisma",
+      "PSQL",
+      "AWS S3",
+      "CRUD",
+      "forms",
+      "PaaS",
+      "JS",
+      "Render",
+      "Neon DB"
+    ]
+  },
+  {
     "name": "Buhlog",
     "img": "/projects/buhlog.png",
     "desc": "A blog website complete with Node-Express back-end blog API, user authentication, and PSQL database. React front-end blog UI capable of rich text reading and editing.",
@@ -105,30 +130,7 @@
       "Netlify"
     ]
   },
-  {
-    "name": "Upside Download",
-    "img": "/projects/upside-download.png",
-    "desc": "A files management app that allows for users to manage, upload, view, and download files. Users can also create folders and sub-directories. File cloud storage service provided by Cloudinary.",
-    "gh_url": "https://github.com/andrewtran28/file-uploader",
-    "ext_url": "https://upsidedownloader.onrender.com/",
-    "tags": [
-      "Node",
-      "Express",
-      "API",
-      "ejs",
-      "Passport",
-      "session",
-      "Prisma",
-      "PSQL",
-      "CRUD",
-      "forms",
-      "PaaS",
-      "JS",
-      "Render",
-      "Neon",
-      "Cloudinary"
-    ]
-  },
+
   {
     "name": "Super Messages",
     "img": "/projects/super-messages.png",
