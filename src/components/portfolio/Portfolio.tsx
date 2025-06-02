@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useIsMount } from "./useIsMount";
 import Header from "../Header";
 import Footer from "../Footer";
+import ScrollToTop from "../ScrollToTop";
 import Project from "./Project";
 import projectData from "./projects.json";
 import "../../styles/Portfolio.css";
@@ -119,6 +120,7 @@ function Portfolio() {
       </div>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

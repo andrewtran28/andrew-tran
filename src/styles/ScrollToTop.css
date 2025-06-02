@@ -1,0 +1,32 @@
+.scroll-to-top {
+  background-color: var(--sharp-orange);
+  color: var(--font-silver);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: font-size 0.15s ease, opacity 0.2s ease;
+}
+.scroll-to-top.visible {
+  opacity: 0.85;
+  pointer-events: auto;
+}
+.scroll-to-top:hover {
+  opacity: 1;
+  font-size: 2.75rem;
+  background-color: #e5564b;
+}
+.scroll-to-top:active {
+  background-color: #be473e;
+}

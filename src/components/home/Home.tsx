@@ -2,6 +2,7 @@ import "../../styles/Home.css";
 import { useState, useEffect, useRef } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import ScrollToTop from "../ScrollToTop";
 import Intro from "./Intro";
 import SkillBox from "./SkillBox";
 import skillData from "./skills.json";
@@ -119,6 +120,7 @@ function Home() {
       </div>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

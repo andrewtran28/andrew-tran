@@ -2,6 +2,7 @@ import "../../styles/About.css";
 import { useState, useEffect, useRef } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import ScrollToTop from "../ScrollToTop";
 import HoverGIF from "../about/HoverGIF";
 import Carousel from "./Carousel";
 
@@ -137,6 +138,7 @@ function About() {
       </div>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
