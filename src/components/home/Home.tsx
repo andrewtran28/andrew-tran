@@ -75,7 +75,7 @@ function Home() {
           <p>
             Below are the skills and tools relevant to my web development journey. While these represent my current
             expertise, I am always eager to learn and expand my knowledge.{" "}
-            <strong>Hover over the icons to learn more.</strong>
+            <strong>Hover over the icons to see additional details.</strong>
           </p>
 
           <SkillBox data={skillData[0]} title={"Front-end Development"} />

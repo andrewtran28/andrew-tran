@@ -1,5 +1,33 @@
 [
   {
+    "name": "Buhlog",
+    "img": "/projects/buhlog.png",
+    "desc": "A blog website complete back-end blog API, user authentication, and PSQL database. The front-end is capable of rich text reading and editing using Quill and AWS S3 for image management.",
+    "gh_url": "https://github.com/andrewtran28/buhlog",
+    "ext_url": "https://buhlog.netlify.app/",
+    "tags": [
+      "Full-Stack",
+      "React",
+      "Node",
+      "Express",
+      "API",
+      "JWT",
+      "Passport",
+      "PSQL",
+      "Prisma",
+      "AWS S3",
+      "PaaS",
+      "slug",
+      "responsive",
+      "TS",
+      "JS",
+      "Quill",
+      "Render",
+      "Neon",
+      "Netlify"
+    ]
+  },
+  {
     "name": "Babble-On",
     "img": "/projects/babble-on.png",
     "desc": "A web-messaging app that allows users to chat with others in real-time. Message features include group chats, profile icons, read reciepts, and message timestamps.",
@@ -77,34 +105,6 @@
       "JS",
       "Render",
       "Neon DB"
-    ]
-  },
-  {
-    "name": "Buhlog",
-    "img": "/projects/buhlog.png",
-    "desc": "A blog website complete with Node-Express back-end blog API, user authentication, and PSQL database. React front-end blog UI capable of rich text reading and editing.",
-    "gh_url": "https://github.com/andrewtran28/buhlog",
-    "ext_url": "https://buhlog.netlify.app/",
-    "tags": [
-      "Full-Stack",
-      "React",
-      "Node",
-      "Express",
-      "API",
-      "JWT",
-      "Passport",
-      "PSQL",
-      "Prisma",
-      "CRUD",
-      "PaaS",
-      "slug",
-      "responsive",
-      "TS",
-      "JS",
-      "Quill",
-      "Render",
-      "Neon",
-      "Netlify"
     ]
   },
   {
