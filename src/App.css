@@ -28,6 +28,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  border-bottom: 10px solid var(--beige);
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -36,10 +40,6 @@ h2 {
 
 hr {
   margin: 4rem;
-}
-
-footer {
-  z-index: 0;
 }
 
 a {
