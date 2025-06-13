@@ -63,10 +63,24 @@ function Portfolio() {
     if (!isPreviousDisabled) setPage((page) => page - 1);
   };
 
+  const handleFirst = () => {
+    if (!isPreviousDisabled) {
+      handleScroll();
+      setPage(0);
+    }
+  };
+
+  const handleLast = () => {
+    if (!isNextDisabled) {
+      handleScroll();
+      setPage(TOTAL_PAGES - 1);
+    }
+  };
+
   const handleScroll = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollIntoView({
-        behavior: "smooth",
+        // behavior: "smooth",
         block: "start",
       });
     }
@@ -103,14 +117,24 @@ function Portfolio() {
 
           {TOTAL_PAGES > 0 ? (
             <div className="projects-nav">
+              <button className="projects-nav-end" onClick={handleFirst} disabled={isPreviousDisabled}>
+                {"<<"}
+              </button>
+
               <button onClick={handlePrevious} disabled={isPreviousDisabled}>
                 Previous
               </button>
+
               <div className="projects-page-num">
                 Page {page + 1} of {TOTAL_PAGES}
               </div>
+
               <button onClick={handleNext} disabled={isNextDisabled}>
                 Next
+              </button>
+
+              <button className="projects-nav-end" onClick={handleLast} disabled={isNextDisabled}>
+                {">>"}
               </button>
             </div>
           ) : (

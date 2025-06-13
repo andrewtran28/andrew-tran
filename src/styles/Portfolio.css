@@ -141,13 +141,19 @@
   width: 100px;
   height: 2.5rem;
   align-self: center;
-  transition-duration: 0.2s;
+  transition: background-color 0.2s;
 }
 .projects-nav button:hover {
   background-color: var(--accent-gray);
 }
-.projects-nav button:disabled {
+.projects-nav button:disabled,
+.projects-nav .projects-nav-end:disabled {
   opacity: 0%;
+}
+
+.projects-nav .projects-nav-end {
+  width: 40px;
+  margin: 0 5px;
 }
 
 @media (max-width: 700px) {
