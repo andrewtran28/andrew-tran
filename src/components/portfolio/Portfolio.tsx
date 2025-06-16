@@ -114,33 +114,32 @@ function Portfolio() {
               />
             ))}
           </div>
-
-          {TOTAL_PAGES > 0 ? (
-            <div className="projects-nav">
-              <button className="projects-nav-end" onClick={handleFirst} disabled={isPreviousDisabled}>
-                {"<<"}
-              </button>
-
-              <button onClick={handlePrevious} disabled={isPreviousDisabled}>
-                Previous
-              </button>
-
-              <div className="projects-page-num">
-                Page {page + 1} of {TOTAL_PAGES}
-              </div>
-
-              <button onClick={handleNext} disabled={isNextDisabled}>
-                Next
-              </button>
-
-              <button className="projects-nav-end" onClick={handleLast} disabled={isNextDisabled}>
-                {">>"}
-              </button>
-            </div>
-          ) : (
-            <div className="projects-nav">No project matches the search criteria...</div>
-          )}
         </div>
+        {TOTAL_PAGES > 0 ? (
+          <div className="projects-nav">
+            <button className="projects-nav-end" onClick={handleFirst} disabled={isPreviousDisabled}>
+              {"<<"}
+            </button>
+
+            <button onClick={handlePrevious} disabled={isPreviousDisabled}>
+              Previous
+            </button>
+
+            <div className="projects-page-num">
+              Page {page + 1} of {TOTAL_PAGES}
+            </div>
+
+            <button onClick={handleNext} disabled={isNextDisabled}>
+              Next
+            </button>
+
+            <button className="projects-nav-end" onClick={handleLast} disabled={isNextDisabled}>
+              {">>"}
+            </button>
+          </div>
+        ) : (
+          <div className="projects-nav">No project matches the search criteria...</div>
+        )}
       </div>
 
       <Footer />

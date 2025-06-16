@@ -14,11 +14,9 @@
 }
 
 #portfolio {
-  min-height: 100%;
-  max-width: 1400px;
-  width: 100%;
   place-self: center;
   margin-bottom: 40px;
+  min-height: 100%;
 }
 
 .search-bar {
@@ -43,12 +41,12 @@
 
 .projects-cont {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 450px);
+  grid-template-columns: repeat(3, 450px);
   justify-content: center;
   justify-items: center;
   gap: 50px 10px;
-  width: 100%;
-  margin: 30px 0;
+  max-width: 1400px;
+  margin: 30px auto;
 }
 
 .project,
