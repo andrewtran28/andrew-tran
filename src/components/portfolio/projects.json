@@ -1,5 +1,30 @@
 [
   {
+    "name": "Auth Boilerplate",
+    "img": "/projects/boilerplate.png",
+    "desc": "A minimalistic and reusable full-stack user authentication boilerplate template for my projects. Features secure login, refresh tokens, password reset via email, and HTTP-only cookies.",
+    "gh_url": "https://github.com/andrewtran28/auth-boilerplate",
+    "ext_url": "https://authboilerplate.netlify.app/",
+    "tags": [
+      "Full-Stack",
+      "React",
+      "Node",
+      "Express",
+      "API",
+      "JWT",
+      "PSQL",
+      "Prisma",
+      "AWS SES",
+      "HTTP-Only Cookies",
+      "PaaS",
+      "TS",
+      "JS",
+      "Render",
+      "Neon",
+      "Netlify"
+    ]
+  },
+  {
     "name": "Buhlog",
     "img": "/projects/buhlog.png",
     "desc": "A blog website complete back-end blog API, user authentication, and PSQL database. The front-end is capable of rich text reading and editing using Quill and AWS S3 for image management.",
@@ -89,6 +114,7 @@
     "gh_url": "https://github.com/andrewtran28/file-uploader",
     "ext_url": "https://upsidedownloader.onrender.com/",
     "tags": [
+      "Back-end",
       "Node",
       "Express",
       "API",
@@ -104,7 +130,7 @@
       "PaaS",
       "JS",
       "Render",
-      "Neon DB"
+      "Neon"
     ]
   },
   {
@@ -138,6 +164,7 @@
     "gh_url": "https://github.com/andrewtran28/members-forum",
     "ext_url": "https://members-forum.onrender.com/",
     "tags": [
+      "Back-end",
       "Node",
       "Express",
       "ejs",
@@ -158,7 +185,21 @@
     "desc": "A video-game library that allows you to create, read, update, and delete games from a PSQL database. Game images provided by GameBomb API.",
     "gh_url": "https://github.com/andrewtran28/inventory-app",
     "ext_url": "https://mingleedb-game-library.onrender.com/",
-    "tags": ["Node", "Express", "ejs", "Router", "forms", "PSQL", "API", "PaaS", "CRUD", "JS", "Render", "Neon"]
+    "tags": [
+      "Back-end",
+      "Node",
+      "Express",
+      "ejs",
+      "Router",
+      "forms",
+      "PSQL",
+      "API",
+      "PaaS",
+      "CRUD",
+      "JS",
+      "Render",
+      "Neon"
+    ]
   },
   {
     "name": "myMessageBoard",
@@ -166,7 +207,7 @@
     "desc": "A mini-message board web application that allows you to view and create new posts. This project is an introduction to back-end development using Node.js.",
     "gh_url": "https://github.com/andrewtran28/message-board",
     "ext_url": "https://message-board-4stu.onrender.com/",
-    "tags": ["JS", "Router", "Node", "Express", "ejs", "forms", "PaaS"]
+    "tags": ["Back-end", "JS", "Router", "Node", "Express", "ejs", "forms", "PaaS"]
   },
   {
     "name": "Thrift City",
@@ -174,7 +215,7 @@
     "desc": "A single-page application (SPA) for a mock online web-store. Features a homepage, store page, and shopping cart to hold and purchase items.",
     "gh_url": "https://github.com/andrewtran28/shopping-cart",
     "ext_url": "https://thriftcity.netlify.app/home",
-    "tags": ["React", "JS", "API", "Router", "Netlify", "Carousel", "SPA"]
+    "tags": ["Front-end", "React", "JS", "API", "Router", "Netlify", "Carousel", "SPA"]
   },
   {
     "name": "Memory-Card Game",
@@ -182,7 +223,7 @@
     "desc": "Webapp game that tests your memory. Only select cards that you have previously not clicked before. Assets were provided by the Nookipedia API.",
     "gh_url": "https://github.com/andrewtran28/memory-card-game",
     "ext_url": "https://acnh-memory-game.netlify.app/",
-    "tags": ["React", "JS", "API", "Netlify"]
+    "tags": ["Front-end", "React", "JS", "API", "Netlify"]
   },
   {
     "name": "CV-Application Maker",
@@ -190,7 +231,7 @@
     "desc": "A React application concept where users can input their information and generate a live preview of their CV/Résumé.",
     "gh_url": "https://github.com/andrewtran28/cv-application",
     "ext_url": "https://andrewtran28-cv-application.netlify.app/",
-    "tags": ["React", "JS", "Netlify", "forms"]
+    "tags": ["Front-end", "React", "JS", "Netlify", "forms"]
   },
   {
     "name": "Homepage",
@@ -198,7 +239,7 @@
     "desc": "A homepage that displays my GitHub projects and overview about myself. The site is responsive and adjusts to various device screen sizes.",
     "gh_url": "https://github.com/andrewtran28/homepage",
     "ext_url": "https://andrewtran28.github.io/homepage/",
-    "tags": ["React", "CSS", "responsive", "Netlify", "HTML"]
+    "tags": ["Front-end", "React", "CSS", "responsive", "Netlify", "HTML"]
   },
   {
     "name": "Battleship",
