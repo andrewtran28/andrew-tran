@@ -17,6 +17,7 @@
   place-self: center;
   margin-bottom: 40px;
   min-height: 100%;
+  width: 100%;
 }
 
 .search-bar {
@@ -41,7 +42,7 @@
 
 .projects-cont {
   display: grid;
-  grid-template-columns: repeat(3, 450px);
+  grid-template-columns: repeat(auto-fill, 450px);
   justify-content: center;
   justify-items: center;
   gap: 50px 10px;
