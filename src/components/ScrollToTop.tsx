@@ -25,7 +25,7 @@ function ScrollToTop() {
       onClick={handleClick}
       aria-label="Scroll to top of page"
     >
-      ↑
+      ⭡
     </button>
   );
 }

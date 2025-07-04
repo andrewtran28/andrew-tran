@@ -8,7 +8,8 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 2rem;
+  font-family: inherit;
+  font-size: 1.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@
 }
 .scroll-to-top:hover {
   opacity: 1;
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   background-color: #e5564b;
 }
 .scroll-to-top:active {
