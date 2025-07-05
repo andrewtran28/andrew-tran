@@ -25,9 +25,20 @@
 }
 .scroll-to-top:hover {
   opacity: 1;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   background-color: #e5564b;
 }
 .scroll-to-top:active {
   background-color: #be473e;
+}
+
+@media (max-width: 600px) {
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  .scroll-to-top:hover {
+    font-size: 2rem;
+  }
 }
