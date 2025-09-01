@@ -105,9 +105,11 @@ function About() {
           <div className="interests-cont">
             <div className="interest">
               <p>
-                I spend most of my day at the computer whether it's work, watching videos, or gaming. I run a dual-boot
-                PC of Windows 10 for general use and Ubuntu for web-development. Besides sitting at my desk, I also have
-                other interests as well.
+                I spend most of my day at the computer whether it's work, watching videos, or gaming. I run a PC of
+                Windows 10 for general use and have a personal laptop that runs Ubuntu for learning web-development.
+                Recently with my new job, I have switched to using a Macbook Pro for development.{" "}
+                <span style={{ color: "gray" }}>To be completely honest, I still prefer Linux over MacOS...</span>{" "}
+                Besides sitting at my desk, I also have other interests as well.
               </p>
               <img className="interest-img" src="/about/desk.jpg" />
             </div>
@@ -116,7 +118,9 @@ function About() {
               <p>
                 Contrary to the outdoor image you see, I'm actually terrified of heights. I primarily do bouldering and
                 sometimes belay in an indoor gym. I am by no means a <em>pro</em>, but I consider myself pretty average
-                where I hover around the <em>"V4-V6"</em> grade range.
+                where I hover around the <em>"V4-V5"</em> grade range.
+                <br /> <br />
+                Other hobbies that I have picked up over the years include board games, archery, and hiking.
               </p>
             </div>
             <div className="interest">

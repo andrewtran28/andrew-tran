@@ -2,11 +2,19 @@
   [
     {
       "title": "The Odin Project",
+      "subtitle": "Full-Stack - Ruby on Rails",
+      "image": "/logos/odin.svg",
+      "date": "Sept 2025 - Present",
+      "location": "",
+      "note": "Returned to learn Ruby on Rails on the side while working full-time."
+    },
+    {
+      "title": "The Odin Project",
       "subtitle": "Full-Stack - JavaScript",
       "image": "/logos/odin.svg",
-      "date": "Sept 2024 - Jan 2025",
+      "date": "May 2024 - Mar 2025",
       "location": "",
-      "note": ""
+      "note": "Completed intensive, project-based curriculum covering full-stack JavaScript development, Git workflows, REST APIs, testing, and deployment."
     },
     {
       "title": "Carleton University",
@@ -26,6 +34,13 @@
     }
   ],
   [
+    {
+      "title": "Teldio",
+      "subtitle": "Software Developer",
+      "image": "/logos/teldio.jpeg",
+      "date": "July 2025 - Present",
+      "location": "Ottawa, ON"
+    },
     {
       "title": "Morrison Hershfield",
       "subtitle": "Electrical Designer, EIT",

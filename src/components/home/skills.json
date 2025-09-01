@@ -24,6 +24,11 @@
       "skill": "React",
       "icon": "/logos/react.svg",
       "info": "A front-end JavaScript library that I use to build modular, reusable components. This website itself was built with React."
+    },
+    {
+      "skill": "Svelte",
+      "icon": "/logos/svelte.svg",
+      "info": "Another front-end JavaScript framework that I had picked up for its efficiency and reactivity."
     }
   ],
   [
@@ -38,20 +43,21 @@
       "info": "A lightweight Node.js framework I use for setting up APIs, handling routes, and managing middleware efficiently."
     },
     {
-      "skill": "Python",
-      "icon": "/logos/python.svg",
-      "info": "I use Python alongside Flask for back-end development, offering an alternative to Node.js."
-    },
-    {
-      "skill": "Flask",
-      "icon": "/logos/flask.svg",
-      "info": "A lightweight Python web framework I use to build flexible and efficient back-end services with minimal overhead."
-    },
-    {
       "skill": "Passport",
       "icon": "/logos/passport.svg",
       "info": "Middleware for Node.js that allows me to implement authentication strategies like JWTs with ease."
     },
+    {
+      "skill": "Ruby on Rails",
+      "icon": "/logos/rails.svg",
+      "info": "Rails is another backend framework I've used for working on real web applications."
+    },
+    {
+      "skill": "Python",
+      "icon": "/logos/python.svg",
+      "info": "I've explored Python alongside Flask for back-end development, offering an alternative to Node.js."
+    },
+
     {
       "skill": "Postman",
       "icon": "/logos/postman.svg",
@@ -119,15 +125,21 @@
       "info": "My preferred IDE for web development, where I maintain a minimal setup for a streamlined workflow."
     },
     {
-      "skill": "Jest",
-      "icon": "/logos/jest.svg",
-      "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
-    },
-    {
       "skill": "npm",
       "icon": "/logos/npm.svg",
       "info": "I use npm to manage dependencies and automate tasks across my development projects."
     },
+    {
+      "skill": "C Programming Language",
+      "icon": "/logos/c_programming.svg",
+      "info": "Learned the basics of C programming during my undergraduate studies to develop low-level applications."
+    },
+    {
+      "skill": "Jest",
+      "icon": "/logos/jest.svg",
+      "info": "A JavaScript testing framework I use to write unit and integration tests for React and Node.js applications"
+    },
+
     {
       "skill": "Go/Golang",
       "icon": "/logos/go.svg",
